@@ -23,6 +23,10 @@ a{
     text-decoration: none;
     color: #f8b700;
 }
+
+a:hover{
+  color: #fff;
+}
  
 img {
     display:block;
@@ -30,7 +34,12 @@ img {
     margin-right: auto;
     text-shadow: 0 0 5px rgba(0,0,0,.8);
     width: 100%;
-    max-width: 1500px
+    max-width: 1500px;
+}
+
+
+.tier-max-width {
+    max-width: 600px;
 }
  
 h1 {
@@ -160,11 +169,8 @@ nav::before{
  
 nav li {
     display: block;
-    /* position: relative; */
     float: left;
     text-align: center;
-    /* width: 10%; */
-    /* left: 8%; */
     margin-right: 10px;
 }
  
@@ -191,7 +197,6 @@ nav li a {
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100wv;
-    /* box-sizing: border-box; */
 }
  
 .dropdown .dropdown-content p:hover {
