@@ -6,12 +6,6 @@ body {
     padding: 0;
     margin:0;
     text-rendering: optimizeLegibility;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    -webkit-font-kerning: normal;
-    -moz-font-kerning: normal;
-    font-kerning: normal;
     color: #fff;
 }
  
@@ -35,6 +29,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-shadow: 0 0 5px rgba(0,0,0,.8);
+    width: 100%;
+    max-width: 1500px
 }
  
 h1 {
@@ -45,13 +41,12 @@ h1 {
 }
  
 h2 {
- 
-    font-size: 75px;
-    text-align: center;
-    color:white;
-    text-shadow: 0 0 5px rgba(0,0,0,.8);
-    padding-top: 100px;
-    border-top: #f8b700 1px solid;
+ font-size: 51px;
+ text-align: center;
+ color:white;
+ text-shadow: 0 0 5px rgba(0,0,0,.8);
+ padding-top: 100px;
+ border-top: #f8b700 1px solid;
 }
  
  
@@ -70,10 +65,15 @@ p, h4 {
  
 #spreadsheet {
     height: 750px;
-    width: 1760px;
+    width: 100%;
     margin: 0 auto;
     display: block;
 }
+
+section {
+    padding: 0 40px;
+}
+
 section:nth-child(2) h2 {
     border: none;
 }
@@ -91,28 +91,81 @@ nav {
     height: 30px;
     display: block;
     width: 100%;
+    margin: 200px 30px 0 30;
+    box-sizing: border-box;
+}
+
+.hover-skull-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
 }
  
 nav::before{
-    background: url(http://i.imgur.com/RQTHTCF.png) center no-repeat;
+    background: url(http://i.imgur.com/RQTHTCF.png) center  top no-repeat;
     display:block;
     height: 500px;
-    width: 550px;
+    width: 321px;
+    background-size: contain;
     content: "";
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     margin-left: 40px;
+    z-index: -1;
+    -webkit-animation-name: hover-skull, hover-skull-hang;
+    animation-name: hover-skull, hover-skull-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+@keyframes hover-skull-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hover-skull {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hover-skull {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
 }
  
 nav li {
     display: block;
-    position: relative;
+    /* position: relative; */
     float: left;
-    /* line-height: 20px; */
     text-align: center;
-    width: 10%;
-    left: 8%;
+    /* width: 10%; */
+    /* left: 8%; */
+    margin-right: 10px;
 }
  
 nav li span {
@@ -137,6 +190,8 @@ nav li a {
     background-color: #f9f9f9;
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100wv;
+    /* box-sizing: border-box; */
 }
  
 .dropdown .dropdown-content p:hover {
