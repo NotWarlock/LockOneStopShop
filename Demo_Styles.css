@@ -1,12 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
  
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     background:#1c0905 url("http://i.imgur.com/cIDtRVK.jpg") top center no-repeat;
+    background-size: contain;
     padding: 0;
     margin:0;
     text-rendering: optimizeLegibility;
     color: #fff;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+.container-fluid {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
  
 header {
@@ -62,6 +163,7 @@ h2 {
 h3 {
     font-size: 40px;
     text-align: center;
+    font-weight:300;
     color:white;
     text-shadow: 0 0 5px rgba(0,0,0,.8);
 }
@@ -70,6 +172,7 @@ p, h4 {
     font-size: 20px;
     line-height: 35px;
     text-align: center;
+    font-weight:300;
 }
  
 #spreadsheet {
@@ -101,7 +204,9 @@ nav {
     display: block;
     width: 100%;
     margin: 200px 30px 0 30;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    z-index: 9999;
+    position: relative;
 }
 
 .hover-skull-hang {
@@ -113,15 +218,15 @@ nav {
 }
  
 nav::before{
-    background: url(http://i.imgur.com/RQTHTCF.png) center  top no-repeat;
+    background: url(http://i.imgur.com/U4Tu45f.png) center  top no-repeat;
     display:block;
     height: 500px;
     width: 321px;
     background-size: contain;
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -183px;
+    left: -200px;
     margin-left: 40px;
     z-index: -1;
     -webkit-animation-name: hover-skull, hover-skull-hang;
@@ -182,6 +287,7 @@ nav li a {
     color: #afafaf;
     font-variant: uppercase;
     font-size: 30px;
+    font-weight: 300;
 }
  
 .dropdown {
