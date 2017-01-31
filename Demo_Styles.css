@@ -344,3 +344,10 @@ nav li a {
     margin-top: 20px;
     display: block;
 }
+
+.guide-html{
+  background:#11151d url("http://i.imgur.com/XOOAQ4I.jpg") top center no-repeat;
+}
+.guide-html img{
+  width: auto;
+}
