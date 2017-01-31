@@ -312,3 +312,35 @@ nav li a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.blizz_container{
+    background-color: #202020;
+    border-radius: 8px;
+    box-shadow: black 2px 2px 2px;
+    color: #0091ff;
+    margin: 10px 15px;
+    padding: 0 30px;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: black 2px 2px 2px;
+    -webkit-box-shadow: black 2px 2px 2px;
+}
+
+
+.blizz_icon {
+    background: url(http://static.mmo-champion.com/mmoc/Themes/mmo3/img/blizz_ico.gif) 0% 50% no-repeat;
+    border-color: #2d2d2d;
+    padding: 10px 30px 5px;
+}
+.expand{
+    overflow: hidden;
+    margin: 30px 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 20px;
+    height: 10px;
+}
+
+.ExpandBtn{
+    margin-top: 20px;
+    display: block;
+}

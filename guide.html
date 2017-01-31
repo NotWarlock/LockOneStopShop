@@ -8,17 +8,17 @@
         pertaining to the Demonology Warlock Specialization in World of Warcraft" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="Demo_Styles.css" rel="stylesheet" type="text/css" />
-    <script src="js/bbcode.min.js"></script>
+    <script src="js/xbbcode.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-    <main>
-        <section id="guide" class="container">
-
-        </section>
+    <main id="toc">
+        <section id="guide" class="container"></section>
     </main>
     <script>
         // Guide goes here
-        var guide = `[CENTER][COLOR="#A52A2A"][U][B]This guide will always be a work in progress as things change quite often! Discussion is always encouraged.[/B][/U][/COLOR]
+        var guide = `
+[CENTER][COLOR="#A52A2A"][U][B]This guide will always be a work in progress as things change quite often! Discussion is always encouraged.[/B][/U][/COLOR]
 
 [IMG]https://i.imgur.com/TWi2WIW.jpg[/IMG][/CENTER]
 
@@ -750,7 +750,8 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
 [anchor]changelog[/anchor][CENTER][IMG]http://i.imgur.com/8b947Dj.png[/IMG][/CENTER]
 [SUB]
 
-[collapse][LIST]
+[collapse]
+[LIST]
 [*]A guide is born!
 [*]Updated a few talents and added experimental Burst Rotation.
 [*]Added notices for Burst and Mixed rotations, added pre-raid Best-in-Slot
@@ -796,15 +797,90 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
 [*]Update Trinket graph
 [*]Add Two Target trinket graph, update Two Target cleave rotation, update Three+ Target rotation
 [*]Fix Mastery calculation
-[/LIST][/SUB][/collapse]
+[/LIST]
+[/SUB]
+[/collapse]
+
+
 [RIGHT][jumpto=toc]Back to top[/jumpto][SIZE=1][/SIZE][/RIGHT]`;
         
         // convert bb to html
         var guideHtmlTag = document.getElementById('guide');
-        var convertedBBtoHtml = new bbcode.Parser().toHTML(guide);
+
+        XBBCODE.addTags(
+        {
+            "jumpto": {
+                openTag: function(params,content) {
+                    var url = (params) ? params.replace(/=/g, '') : '';
+                    return '<a href="#'+url+'">';
+                },
+                closeTag: function(params,content) {
+                    return '</a>';
+                }
+            },
+            "indent": {
+                openTag: function(params,content) {
+                    return '<div style="margin-left:40px">';
+                },
+                closeTag: function(params,content) {
+                    return '</div>';
+                }
+            },
+            "anchor": {
+                openTag: function(params, content){
+                    return '<a href="#'+content+'">';
+                },
+                closeTag: function(params, content){
+                    return '</a>';
+                }
+            },
+            "blizzquote": {
+                openTag: function(params, content){
+                    return '<div class="blizz_container"> <div class="blizz_icon">Originally Posted by Blizzard Entertainment</div>';
+                },
+                closeTag: function(params, content){
+                    return '</div>';
+                }
+            },
+            "collapse":{
+                openTag: function(params, content){
+                    var newID =  Math.ceil(Math.random()*30000);
+                    return '<a href="#" class="ExpandBtn">Expand</a><div class="expand">';
+                },
+                closeTag: function(params, content){
+                    return '</div>';
+                }
+            }
+        }
+        );
+  
+        var convertedBBtoHtml = XBBCODE.process({
+            text: guide,
+            removeMisalignedTags: false,
+            addInLineBreaks: true
+        });
+
+        console.log(XBBCODE.tags());
+
 
         // add to html
-        guideHtmlTag.innerHTML = convertedBBtoHtml;
+        guideHtmlTag.innerHTML = convertedBBtoHtml.html;
+
+
+        //Expand and collapse
+        $(".ExpandBtn").on('click', function(){
+
+            if($(this).text()=='Expand'){
+                $(this).next().animate({height: '100%'});
+                $(this).text('Colapse');
+            }else{
+                $(this).next().animate({height: 10});
+                $(this).text('Expand');
+            }
+
+             return false;
+        });
+
     </script>
 </body>
 </html>
