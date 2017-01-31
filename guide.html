@@ -828,11 +828,12 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
             },
             "anchor": {
                 openTag: function(params, content){
-                    return '<a href="#'+content+'">';
+                    return '<a name="'+content+'">';
                 },
                 closeTag: function(params, content){
                     return '</a>';
-                }
+                },
+                displayContent: false
             },
             "blizzquote": {
                 openTag: function(params, content){
@@ -859,8 +860,6 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
             removeMisalignedTags: false,
             addInLineBreaks: true
         });
-
-        console.log(XBBCODE.tags());
 
 
         // add to html
