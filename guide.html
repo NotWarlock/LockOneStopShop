@@ -797,6 +797,8 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
         // convert bb to html
         var guideHtmlTag = document.getElementById('guide');
 
+        var urlPattern = /^(?:https?|file|c):(?:\/{1,3}|\\{1})[-a-zA-Z0-9:;,@#%&()~_?\+=\/\\\.]*$/;
+
         XBBCODE.addTags(
         {
             "jumpto": {
@@ -853,8 +855,20 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
             },
             "url": {
                 openTag: function(params, content){
-                     var param = (params) ? params.replace(/="/g, '') : '';
-                    return '<a href="'+param+'" >';
+                var myUrl;
+
+                if (!params) {
+                    myUrl = content.replace(/<.*?>/g, "");
+                } else {
+                    myUrl = params.substr(1);
+                }
+
+                urlPattern.lastIndex = 0;
+                if (!urlPattern.test(myUrl)) {
+                   myUrl = myUrl.replace(/"/g, '')
+                }
+
+                return '<a href="' + myUrl + '">';
                 },
                 closeTag: function(params, content){
                     return '</a>';
