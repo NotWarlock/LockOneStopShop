@@ -316,15 +316,11 @@ nav li a {
 .blizz_container{
     background-color: #202020;
     border-radius: 8px;
-    box-shadow: black 2px 2px 2px;
     color: #0091ff;
     margin: 10px 15px;
-    padding: 0 30px;
+    padding: 0 30px 10px;
     -moz-border-radius: 8px;
-    -moz-box-shadow: black 2px 2px 2px;
-    -webkit-box-shadow: black 2px 2px 2px;
 }
-
 
 .blizz_icon {
     background: url(http://static.mmo-champion.com/mmoc/Themes/mmo3/img/blizz_ico.gif) 0% 50% no-repeat;

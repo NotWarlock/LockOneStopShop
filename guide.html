@@ -10,7 +10,7 @@
     <link href="Demo_Styles.css" rel="stylesheet" type="text/css" />
     <script src="js/xbbcode.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
+    <script src="https://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
 </head>
 <body class="guide-html">
     <main id="toc">
@@ -849,6 +849,15 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
                 },
                 closeTag: function(params, content){
                     return '</span>';
+                }
+            },
+            "url": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<a href="'+param+'" >';
+                },
+                closeTag: function(params, content){
+                    return '</a>';
                 }
             }
         }
