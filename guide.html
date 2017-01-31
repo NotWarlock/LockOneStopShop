@@ -10,9 +10,9 @@
     <link href="Demo_Styles.css" rel="stylesheet" type="text/css" />
     <script src="js/xbbcode.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
+    <script type="text/javascript" src="http://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
 </head>
-<body>
+<body class="guide-html">
     <main id="toc">
         <section id="guide" class="container"></section>
     </main>
@@ -840,6 +840,15 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
                 },
                 closeTag: function(params, content){
                     return '</div>';
+                }
+            },
+            "color": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<span style="color: '+param+'" >';
+                },
+                closeTag: function(params, content){
+                    return '</span>';
                 }
             }
         }
