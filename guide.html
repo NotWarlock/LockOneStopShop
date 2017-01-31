@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not's Demonology Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="demonology" content="This page is dedicated to information 
+        pertaining to the Demonology Warlock Specialization in World of Warcraft" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Demo_Styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/bbcode.min.js"></script>
+</head>
+<body>
+    <main>
+        <section id="guide" class="container">
+
+        </section>
+    </main>
+    <script>
+        // Guide goes here
+        var guide = `[b]Hello![/b]`;
+        
+        // convert bb to html
+        var guideHtmlTag = document.getElementById('guide');
+        var convertedBBtoHtml = new bbcode.Parser().toHTML(guide);
+
+        // add to html
+        guideHtmlTag.innerHTML = convertedBBtoHtml;
+    </script>
+</body>
+</html>
