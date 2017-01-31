@@ -801,6 +801,15 @@ And to all my proof readers; Terryn, OOMM, Silver, Frescote, Woudini, Over - gui
 
         XBBCODE.addTags(
         {
+        "right": {
+            openTag: function (params, content) {
+                return '<span class="xbbcode-right">';
+            },
+            closeTag: function (params, content) {
+                return '</span>';
+            }
+        },          
+            {
             "jumpto": {
                 openTag: function(params,content) {
                     var url = (params) ? params.replace(/=/g, '') : '';
