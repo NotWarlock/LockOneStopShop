@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Multi-Level Menu</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<img src="img/logo.png" alt="SouldShard">
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level">
+					<li class="menu__item"><a class="menu__link" data-submenu="affliciton" href="#">Affliction</a></li>
+					<li class="menu__item"><a class="menu__link" data-submenu="destruction" href="#">Destruction</a></li>
+					<li class="menu__item"><a class="menu__link" data-submenu="demonology" href="#">Demonology</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="affliciton" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="#">Introduction</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Talents</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Artifact</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Rotation</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Gear</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Macros</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Addons</a></li>
+					<li class="menu__item"><a class="menu__link" data-submenu="affliciton-1" href="#">Sims</a></li>
+				</ul>
+				<!-- Submenu 1-1 -->
+				<ul data-menu="affliciton-1" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>
+				<!-- Submenu 2 -->
+				<ul data-menu="destruction" class="menu__level">
+				<li class="menu__item"><a class="menu__link" href="#">Introduction</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Talents</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Artifact</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Rotation</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Gear</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Macros</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Addons</a></li>
+				</ul>
+				<!-- Submenu 2-1 -->
+				<ul data-menu="destruction-1" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="#">Exotic Mixes</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Wild Pick</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Vitamin Boosters</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="demonology" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="#">Introduction</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Talents</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Artifact</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Rotation</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Gear</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Macros</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Addons</a></li>
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="demonology-1" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="#">Starter Kit</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">The Essential 8</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Bolivian Secrets</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Flour Packs</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">Please choose a spec</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			console.log(ev);
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>
