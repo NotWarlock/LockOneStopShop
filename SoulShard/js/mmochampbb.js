@@ -62,7 +62,7 @@
                     return '<div style="float: left" >';
                 },
                 closeTag: function(params, content){
-                    return '</div><span class="clearfix"></span>';
+                    return '</div><span class="clearfix"></span><br/>';
                 }
             },
             "right": {
@@ -71,10 +71,10 @@
                     return '<div style="float: right" >';
                 },
                 closeTag: function(params, content){
-                    return '</div><span class="clearfix"></span>';
+                    return '</div><span class="clearfix"></span><br/>';
                 }
             },
-            "centre": {
+            "center": {
                 openTag: function(params, content){
                      var param = (params) ? params.replace(/="/g, '') : '';
                     return '<center>';
