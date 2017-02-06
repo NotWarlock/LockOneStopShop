@@ -172,9 +172,10 @@
 					// guideHtmlTag.innerHTML = convertedBBtoHtml.html;
 					setTimeout(function () {
 						classie.remove(gridWrapper, 'content--loading');
-						gridWrapper.innerHTML = '<div class="guides">'+convertedBBtoHtml.html+"</div>";
-
-
+						gridWrapper.innerHTML = '<div class="guides hidden">' + convertedBBtoHtml.html + "</div>";
+						setTimeout(function () {
+							$(".guides").removeClass("hidden");
+						}, 500);
 						//Expand and collapse
 						$(".ExpandBtn").on('click', function () {
 
@@ -193,7 +194,7 @@
 							return false;
 						});
 
-					}, 700);
+					}, 1500);
 
 				}
 			}
