@@ -854,6 +854,60 @@ Sevvy for all the hard work they've done on all the many calculators and graphs!
                     return '</span>';
                 }
             },
+            "left": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<div style="float: left" >';
+                },
+                closeTag: function(params, content){
+                    return '</div>';
+                }
+            },
+            "right": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<div style="float: right" >';
+                },
+                closeTag: function(params, content){
+                    return '</div>';
+                }
+            },
+            "centre": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<center>';
+                },
+                closeTag: function(params, content){
+                    return '</center>';
+                }
+            },
+            "bold": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<em>';
+                },
+                closeTag: function(params, content){
+                    return '<em>';
+                }
+            },
+            "italic": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<i>';
+                },
+                closeTag: function(params, content){
+                    return '<i>';
+                }
+            },
+            "underline": {
+                openTag: function(params, content){
+                     var param = (params) ? params.replace(/="/g, '') : '';
+                    return '<u>';
+                },
+                closeTag: function(params, content){
+                    return '<u>';
+                }
+            },
             "url": {
                 openTag: function(params, content){
                 var myUrl;

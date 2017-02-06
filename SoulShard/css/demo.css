@@ -42,7 +42,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	  background: #11151d url(http://i.imgur.com/XOOAQ4I.jpg) top center no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 a {
