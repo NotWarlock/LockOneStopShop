@@ -43,6 +43,7 @@
 	width: 300px;
 	height: calc(100vh - 120px);
 	background: rgba(28, 29, 34, 0.85);
+	z-index: 9999;
 }
 
 .menu__wrap {

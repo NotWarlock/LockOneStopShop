@@ -6,7 +6,7 @@
 	font-style: normal;
 	src: url('../fonts/bpicons/bpicons.eot');
 	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'), url('../fonts/bpicons/bpicons.woff') format('woff'), url('../fonts/bpicons/bpicons.ttf') format('truetype'), url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-}/* Made with http://icomoon.io/ */
+}
 
 
 /* Resets */
@@ -41,8 +41,8 @@ body {
 	background: #2a2b30;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	  background: #11151d url(http://i.imgur.com/XOOAQ4I.jpg) top center no-repeat;
-    background-size: cover;
+	background: #11151d url(http://i.imgur.com/XOOAQ4I.jpg) top center no-repeat;
+	background-size: cover;
 }
 
 a {
@@ -137,7 +137,7 @@ a:hover {
 	border-radius: 50%;
 }
 
-.bp-nav__item > span {
+.bp-nav__item>span {
 	display: none;
 }
 
@@ -229,12 +229,42 @@ a:hover {
 .content {
 	position: relative;
 	min-height: 300px;
-	margin: 0 0 0 300px;
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
 }
 
 .content--loading {
-	background: url(../img/loading.svg) no-repeat 50% 50%;
+	background: url(../img/shard-loading.png) no-repeat 50% 50%;
+	 animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
 }
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+ 
 
 .products {
 	margin: 0;
@@ -303,4 +333,101 @@ body #cdawrap a:hover.carbon-poweredby {
 		height: auto;
 		overflow: auto;
 	}
+}
+
+
+/*
+	Saolock custom css
+*/
+
+.guides {
+	position: relative;
+	margin: 40px;
+	-webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.guides img {
+	width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+	.guides {
+		margin: 0 0 0 310px;
+	}
+	.guides img {
+		width: auto;
+	}
+}
+
+.dropdown .dropdown-content p:hover {
+	background-color: #39211d;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+em {
+	font-weight: bold;
+}
+
+u {
+	text-decoration: underline;
+}
+
+i {
+	font-style: italic;
+}
+
+.blizz_container {
+	background-color: #202020;
+	border-radius: 8px;
+	color: #0091ff;
+	margin: 10px 15px;
+	padding: 0 30px 10px;
+	-moz-border-radius: 8px;
+}
+
+.blizz_icon {
+	background: url(http://static.mmo-champion.com/mmoc/Themes/mmo3/img/blizz_ico.gif) 0% 50% no-repeat;
+	border-color: #2d2d2d;
+	padding: 10px 30px 5px;
+}
+
+.expand {
+	overflow: hidden;
+	margin: 30px 0;
+	padding: 30px;
+	background: rgba(0, 0, 0, 0.74);
+	border-radius: 20px;
+	height: 10px;
+}
+
+.ExpandBtn {
+	margin-top: 20px;
+	display: block;
+}
+
+.guide-html {
+	background: #11151d url("http://i.imgur.com/XOOAQ4I.jpg") top center no-repeat;
+	background-size: contain;
+}
+
+.guide-html img {
+	width: auto;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
