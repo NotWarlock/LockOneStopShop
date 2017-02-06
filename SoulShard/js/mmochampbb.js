@@ -86,10 +86,10 @@
             "b": {
                 openTag: function(params, content){
                      var param = (params) ? params.replace(/="/g, '') : '';
-                    return '<em>';
+                    return '<strong>';
                 },
                 closeTag: function(params, content){
-                    return '</em>';
+                    return '</strong>';
                 }
             },
             "i": {
