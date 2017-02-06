@@ -83,31 +83,31 @@
                     return '</center>';
                 }
             },
-            "bold": {
+            "b": {
                 openTag: function(params, content){
                      var param = (params) ? params.replace(/="/g, '') : '';
                     return '<em>';
                 },
                 closeTag: function(params, content){
-                    return '<em>';
+                    return '</em>';
                 }
             },
-            "italic": {
+            "i": {
                 openTag: function(params, content){
                      var param = (params) ? params.replace(/="/g, '') : '';
                     return '<i>';
                 },
                 closeTag: function(params, content){
-                    return '<i>';
+                    return '</i>';
                 }
             },
-            "underline": {
+            "u": {
                 openTag: function(params, content){
                      var param = (params) ? params.replace(/="/g, '') : '';
                     return '<u>';
                 },
                 closeTag: function(params, content){
-                    return '<u>';
+                    return '</u>';
                 }
             },
             "url": {
