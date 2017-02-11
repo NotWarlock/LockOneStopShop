@@ -75,11 +75,16 @@
 				<ul data-menu="demonology" class="menu__level">
 					<li class="menu__item"><a class="menu__link" href="#">Introduction</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Talents</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Mechanics</a></li
+					<li class="menu__item"><a class="menu__link" href="#">Gearing</a></li>>
+					<li class="menu__item"><a class="menu__link" href="#">Stats</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Artifact</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Rotation</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Gear</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Glyphs</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Macros</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Addons</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Changelog</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Special_Thanks</a></li>
 				</ul>
 				<!-- Submenu 3-1 -->
 				<ul data-menu="demonology-1" class="menu__level">
@@ -142,9 +147,11 @@
 				gridWrapper.innerHTML = '';
 				classie.add(gridWrapper, 'content--loading');
 
+				console.log('itemName:', 'guides/' + window.spec + '/'+itemName+'.html');
+
 				var guide;
 				var request = new XMLHttpRequest();
-				request.open('GET', 'guides/' + window.spec + '.html', true);
+				request.open('GET', 'guides/' + window.spec + '/'+itemName+'.html', true);
 				request.onload = function () {
 					if (request.status >= 200 && request.status < 400) {
 						guide = request.responseText;
