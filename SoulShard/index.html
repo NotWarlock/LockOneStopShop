@@ -75,11 +75,16 @@
 				<ul data-menu="demonology" class="menu__level">
 					<li class="menu__item"><a class="menu__link" href="#">Introduction</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Talents</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Mechanics</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Gearing</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Stats</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Artifact</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Rotation</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Gear</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Glyphs</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Macros</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Addons</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Changelog</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Special_Thanks</a></li>
 				</ul>
 				<!-- Submenu 3-1 -->
 				<ul data-menu="demonology-1" class="menu__level">
@@ -142,9 +147,11 @@
 				gridWrapper.innerHTML = '';
 				classie.add(gridWrapper, 'content--loading');
 
+				console.log('itemName:', 'guides/' + window.spec + '/'+itemName+'.html');
+
 				var guide;
 				var request = new XMLHttpRequest();
-				request.open('GET', 'guides/' + window.spec + '.html', true);
+				request.open('GET', 'guides/' + window.spec + '/'+itemName+'.html', true);
 				request.onload = function () {
 					if (request.status >= 200 && request.status < 400) {
 						guide = request.responseText;
@@ -175,6 +182,7 @@
 						gridWrapper.innerHTML = '<div class="guides hidden">' + convertedBBtoHtml.html + "</div>";
 						setTimeout(function () {
 							$(".guides").removeClass("hidden");
+							resetWowDB()
 						}, 500);
 						//Expand and collapse
 						$(".ExpandBtn").on('click', function () {
@@ -196,6 +204,10 @@
 
 					}, 1500);
 
+				}
+
+				function resetWowDB(){
+					var __tip=new CurseTip({Url:"http://www.wowdb.com",Namespace:"wowdb-tooltip",Paths:["achievements","currencies","items","npcs","pet-abilities","quests","spells","wod-talents","world-events","garrison/abilities","garrison/buildings","garrison/followers","garrison/missions","garrison/ships","orderhall/talents",],Arguments:["gems","itemLevel","enchantment","reforge","extragem","upgradeNum","setPieces","bonusIDs"],LoadingText:'<div class="wowdb-tooltip"><div class="db-tooltip"><div class="db-description" style="width: auto">Loading..</div></div></div>',});function WP_Stretch(a){var b=600;a.find(".db-description").each(function(){var e=jQuery(this);var c=e.width();var d=false;e.find(".tooltip-table tr, .db-title, h2, h3, .db-achievement-criteria > li").each(function(){var f=parseInt(jQuery(this).attr("data-height"),10)||25;while(jQuery(this).height()>f&&c<b){d=true;c+=10;e.width(c)}});if(d){e.width(c+20)}})}if(typeof Azeroth!=="undefined"){Azeroth.CurseTip=__tip};
 				}
 			}
 		})();
