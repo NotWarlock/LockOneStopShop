@@ -1,4 +1,4 @@
-warlock="4P"
+warlock="BaselineDemo"
 level=110
 race=gnome
 role=spell
@@ -73,9 +73,7 @@ legs=,id=138317,bonus_id=3518
 feet=,id=140854,bonus_id=3445
 finger1=,id=140897,enchant_id=5428,bonus_id=3519
 finger2=,id=140896,enchant_id=5428,bonus_id=3518
-trinket1=,id=140792,bonus_id=3518
-trinket2=,id=140809,bonus_id=3519
-main_hand=spine_of_thalkiel,id=137246,ilevel=929
+ main_hand=spine_of_thalkiel,id=137246,ilevel=929
 off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
 
 # Gear Summary
@@ -91,66 +89,44 @@ set_bonus=tier19_2pc=1
 set_bonus=tier19_4pc=1
 default_pet=felguard
 
-copy="0p"
+copy="Whispers in the Dark"
 
-head=,id=140851,bonus_id=3445
-neck=,id=140898,enchant_id=5437,bonus_id=3445
-shoulder=,id=140911,bonus_id=3518
-back=,id=140909,enchant_id=5436,bonus_id=3518
-chest=,id=140848,bonus_id=3445
-wrist=,id=140886,bonus_id=3518
-hands=,id=140888,bonus_id=3445
-waist=,id=140887,bonus_id=3518
-legs=,id=140852,bonus_id=3518
-feet=,id=140854,bonus_id=3445
-finger1=,id=140897,enchant_id=5428,bonus_id=3519
-finger2=,id=140896,enchant_id=5428,bonus_id=3518
-trinket1=,id=140792,bonus_id=3518
-trinket2=,id=140809,bonus_id=3519
+trinket1=,id=140809,bonus_id=3519
 main_hand=spine_of_thalkiel,id=137246,ilevel=929
 off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
 
-# Gear Summary
-# gear_ilvl=886.38
-# gear_stamina=28082
-# gear_intellect=18056
-# gear_spell_power=14427
-# gear_crit_rating=7013
-# gear_haste_rating=13577
-# gear_mastery_rating=2487
-# gear_armor=1840
-set_bonus=tier19_2pc=0
-set_bonus=tier19_4pc=0
-default_pet=felguard
+copy="Star Gate"
 
-copy="2p"
-
-head=,id=138314,bonus_id=3518
-neck=,id=140898,enchant_id=5437,bonus_id=3445
-shoulder=,id=138323,bonus_id=3518
-back=,id=140909,enchant_id=5436,bonus_id=3518
-chest=,id=140848,bonus_id=3445
-wrist=,id=140886,bonus_id=3518
-hands=,id=140888,bonus_id=3445
-waist=,id=140887,bonus_id=3518
-legs=,id=140852,bonus_id=3518
-feet=,id=140854,bonus_id=3445
-finger1=,id=140897,enchant_id=5428,bonus_id=3519
-finger2=,id=140896,enchant_id=5428,bonus_id=3518
-trinket1=,id=140792,bonus_id=3518
-trinket2=,id=140809,bonus_id=3519
+trinket1=,id=140804,bonus_id=3518
 main_hand=spine_of_thalkiel,id=137246,ilevel=929
 off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
 
-# Gear Summary
-# gear_ilvl=886.38
-# gear_stamina=28082
-# gear_intellect=18056
-# gear_spell_power=14427
-# gear_crit_rating=7013
-# gear_haste_rating=13577
-# gear_mastery_rating=2487
-# gear_armor=1840
-set_bonus=tier19_2pc=1
-set_bonus=tier19_4pc=0
-default_pet=felguard
+copy="Pharamere's"
+
+trinket1=,id=140800,bonus_id=3518
+main_hand=spine_of_thalkiel,id=137246,ilevel=929
+off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
+
+copy="Icon of Rot"
+
+trinket1=,id=140798,bonus_id=3518
+main_hand=spine_of_thalkiel,id=137246,ilevel=929
+off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
+
+copy="Fury of the Burning Sky"
+
+trinket1=,id=140801,bonus_id=3518
+main_hand=spine_of_thalkiel,id=137246,ilevel=929
+off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
+
+copy="Erratic Metronome"
+
+trinket1=,id=140792,bonus_id=3518
+main_hand=spine_of_thalkiel,id=137246,ilevel=929
+off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
+
+copy="895 Haste Stick"
+
+trinket1=,id=142507,bonus_id=604,ilevel=895
+main_hand=spine_of_thalkiel,id=137246,ilevel=929
+off_hand=skull_of_the_manari,id=128943,gem_id=140826/140837/140822,ilevel=929
