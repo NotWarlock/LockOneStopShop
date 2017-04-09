@@ -151,12 +151,22 @@
 			// simulate grid content loading
 			var gridWrapper = document.querySelector('.content');
 			$("a.menu__link").removeClass("menu__link--current");
-			
+
 			// if url filled get pageData
-			window.spec = window.location.hash.substring(1).split("/")[1] || "";
-			var itemName = window.location.hash.substring(1).split("/")[2] || "";
+			var urlLocation = window.location.hash.substring(1).split("/");
+			window.spec = urlLocation[1] || "";
+			var itemName = urlLocation[2] || "";
+			
 			if(itemName == 'Sims'){
-				$(".menu__level--current li a:contains('Sims')")[0].click();
+				$("a:contains('"+window.spec+"')")[0].click();
+				gridWrapper.innerHTML = '';
+				classie.add(gridWrapper, 'content--loading');
+				setTimeout(function () {
+					$(".menu__level--current li a:contains('Sims')")[0].click();
+					setTimeout(function () {
+						$(".menu__level--current li a:contains('"+urlLocation[urlLocation.length-1]+"')")[0].click();
+					}, 2000);
+				}, 2000);
 			}else if(window.spec == "" && itemName == ""){
 				// do nothing
 			}else{	
