@@ -352,10 +352,10 @@ var XBBCODE = (function () {
                     mySize = 14;
                 }
 
-                return '<span class="xbbcode-size-' + mySize + '">';
+                return '<font size="' + mySize + '">';
             },
             closeTag: function (params, content) {
-                return '</span>';
+                return '</font>';
             }
         },
         "small": {
