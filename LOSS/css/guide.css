@@ -387,7 +387,7 @@ i {
 }
 
 .blizz_container {
-	background-color: #121218;
+	background-color: #121218 !important;
 	border-radius: 8px;
 	color: #0091ff;
 	margin: 10px 15px;
