@@ -37,15 +37,15 @@ body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	overflow: hidden;
 	margin: 0;
-	color: #cecece;
-	background: #2a2b30;
+	color: #B5B3E6;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: #11151d url(http://i.imgur.com/cIDtRVK.jpg) top center no-repeat;
+	/*background: #11151d url(http://i.imgur.com/cIDtRVK.jpg) top center no-repeat;*/
+	background: #191924;
 	background-size: cover;
 }
 
-a {
+a, strong {
 	text-decoration: none;
 	color: #fff;
 	outline: none;

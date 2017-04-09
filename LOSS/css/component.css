@@ -98,7 +98,7 @@
 
 .menu__link:hover,
 .menu__link[data-submenu]:hover::after {
-	color: #5cdc8e;
+	color: #B5B3E6;
 }
 
 .menu__link--current::before {
@@ -109,7 +109,7 @@
 	top: 50%;
 	left: 0.5em;
 	height: 4px;
-	color: #5cdc8e;
+	color: #B5B3E6;
 }
 
 [class^='animate-'],
@@ -235,7 +235,7 @@
 	vertical-align: middle;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #a4d38f;
+	color: #B5B3E6;
 }
 
 .menu__breadcrumbs a:last-child {
