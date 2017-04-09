@@ -150,8 +150,8 @@
 
 			// simulate grid content loading
 			var gridWrapper = document.querySelector('.content');
-
-
+			$("a.menu__link").removeClass("menu__link--current");
+			
 			// if url filled get pageData
 			window.spec = window.location.hash.substring(1).split("/")[1] || "";
 			var itemName = window.location.hash.substring(1).split("/")[2] || "";
@@ -161,7 +161,6 @@
 				// do nothing
 			}else{	
 				$("a:contains('"+window.spec+"')")[0].click();
-				$("a").removeClass("menu__link--current");
 				$("a:contains('"+itemName+"')").addClass("menu__link--current");
 				getPageData("", itemName);
 			}
