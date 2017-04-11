@@ -359,7 +359,7 @@ body #cdawrap a:hover.carbon-poweredby {
 	.guides {
 		margin: 0 0 0 310px;
 	}
-	.guides img {
+	.guides img.heading {
 		width: auto;
 	}
 }
