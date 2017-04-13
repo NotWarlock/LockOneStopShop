@@ -1,62 +1,30 @@
 
 
 
-[CENTER][IMG=heading]http://i.imgur.com/zGeOXY9.png[/IMG][/CENTER]
-[size=4][B][U]Demonwrath[/U][/B][/size]
-There is a lot of confusion out there about how Demonwrath actually works but in reality it is very simple;
-[LIST][*]The damage it deals is spawned in a 10 yard radius from [B]any[/B] of your Demons.
-[*]The chance to proc a Soul Shard is 15% [I]per tick[/I] - so you could have 8 Wild Imps, Felguard and 2 Dreadstalkers around two targets and the chance to proc is 30% per tick (x2 because it's hitting 2 targets)
-[*][I]The chance to proc a Soul Shard is based on how many enemies it hits [B]NOT[/B] how many Demons you have out[/I][/LIST]
-[i]Demonwrath: 30% spell power per second per target, 0.15 shards per second per target
-Shadow Bolt is 40% spell power per second, 0.5 shards per second
-40 / 30 = 1.33 targets for demonwrath to be more damage
-0.5 / 0.15 = 3.33 targets for demonwrath to be more shards[/i]
+[CENTER][IMG=heading]http://imgur.com/bRwYT4A.png[/IMG]
 
-In 7.1 they gave Demonwrath 'bad luck streak protection' so that it's more consistent with it's Soul Shard generation (same mechanic that Agony has in Legion).
+[B][U][URL="http://www.wowdb.com/spells/172-corruption"]Corruption[/URL]: [/U][/B]
+No longer generates shards, it's now entirely a damage dot. 
+[B][U][URL="http://www.wowdb.com/spells/980-agony"]Agony[/URL]:[/U][/B] 
+New shard generator.  Still has the ramp up damage.  Shard generation has changed as well.  Shard generation is no longer based on a flat % chance to proc on tick, nor is it the ramping % chance to proc on tick that was present in alpha.  Instead every agony tick adds 0-32 invisible “soulbits”, and when you hit 100 soulbits you gain a shard.  You can still get bad shard RNG, but overall it is far more consistent than live. The amount gained per tick is reduced by the total number of agonies you have out, but it is still a large dps gain to have a lot of agony’s out.  The end result of this, is that your shard generation is not a linear result of how many agonies you have out, but has a logarithmic return on shard gen vs how many agonies you have out.
+[B][U][URL="http://www.wowdb.com/spells/27285-seed-of-corruption"]Seed of Corruption[/URL]:[/U][/B] 
+Our aoe spell.  Can be used baseline to spread corruption to multiple targets, and talented to deal 3x more damage.
+[B][U][URL="http://www.wowdb.com/spells/30108-unstable-affliction"]Unstable Affliction[/URL]:[/U][/B] 
+Shard consumer, now works like ignite.  When Unstable Affliction is re-applied to a target, the remaining damage of the previous dot is added into the new dot, making it so that you will never lose damage on this (Unless the target dies before hand).  A few notes on UA (Unstable Affliction):
+[LIST]
+[*]UA Does not gain bonus ticks from haste.
+[*]UA only has 4 ticks total.
+[*]Dot lasts 8 seconds, reduced by haste.
+[*]Each cast of UA creates a separate dot on the boss.
+[*]If a target dies before UA expires it refunds a shard.  Note: Only 1 shard is refunded per target, if with multiple UA on the target
+[/LIST]
+[B][U][URL="http://www.wowdb.com/spells/198590-drain-soul"]Drain Soul[/URL]: [/U][/B]
+Base “Filler” spell.  Heals for a lot, and deals ok-ish damage, and generates a soul shard if the target dies under its effect. [b]7.1.5 change:[/b] Drain Life has been replaced by Drain Soul.  The damage and healing of drain life has not changed, but now grants the shard mechanic of drain soul as baseline.
+[U][B]Pandemic[/B][/U]: 
+You'll see this term a lot when researching Warlock. Basically, it's a mechanic that allows you to refresh DoTs and 'add' the full duration as long as the DoT has <30% time remaining. This means you won't waste any DoT time as long as you refresh your DoTs under 30%
 
-[size=4][B][U]DoT damage[/U][/B][/size]
-Damage from DoTs now do dynamically update every tick. Regardless of what buffs you have when you cast the spell every tick of damage will be different according to what buffs you currently have active on yourself.
+[CENTER][B][SIZE=4]Pets[/SIZE][/B][/CENTER]
+Our pet selection is pretty much [URL="http://www.wowdb.com/spells/691-summon-felhunter"]Summon Felhunter[/URL].  He gets bonus damage based on our dots, and gives us an interrupt.  If you're running Grimoire of Supremacy, you're going to run Doomguard in single target, giving you an interrupt and solid single target damage, or Infernal in 3+ targets, giving you solid bonus AOE, and an AOE stun on a 1 minute cooldown with Command Demon.
 
-[size=4][B][U]Implosion[/U][/B][/size]
-The timing of Implosion is as follows; Cast Hand of Gul'dan then next global is immediately 1 Implosion to ensure you blow up your oldest set of Wild Imps while not imploding your new set. Think of it as a combo move between Hand of Gul'dan and Implosion.
-The [B]best[/B] usage of Implosion is to wait as long as possible before you implode your Wild Imps so that you still gain value out of their Felfire Bolts before you suicide them into whatever mob you're attacking. Ideally you would use Implosion with less than 3 seconds left on their duration [B][I]unless[/I][/B] you have another set of Wild Imps ready to come down with Hand of Gul'dan, then implode them before the new set spawns by casting Implosion directly after your Hand of Gul'dan.
-The best way to think of the timing in terms of a "rotation" is this:
-[LIST=1][*]Cast Hand of Gul'dan
-[*]Generate  additional Soul Shards
-[*]Cast Hand of Gul'dan again
-[*]Immediately cast Implosion[/LIST]
-By doing this it implodes your oldest set of imps while keeping your new set alive for your next round of implosion. If you are more visual you can see how to do it in this video: [URL="https://www.youtube.com/watch?v=L2EKP6NoIz4"]https://www.youtube.com/watch?v=L2EKP6NoIz4[/URL]
-
-[size=4][B][U]Hand of Doom[/U][/B][/size]
-There is a lot of confusion about how this spell works with Doom so I'll break it down nice and easy;
-Doom damage will occur once every 20s (reduced by Haste) [B][U][I]no matter when[/I][/U][/B] it's refreshed, this talent simply reapplies Doom for you so you don't have to do it yourself.
-
-[size=4][B][U]Refreshing DoTs[/U][/B][/size]
-Just like in WoD we have the 'Pandemic' effect as baseline for any DoT or buff effects you cast.
-You're able to refresh your DoT or buff (for us it's also most notable for Demonic Empowerment and Doom) at 30% duration remaining and not lose time on your DoT or buff. For example: Doom has a base duration of 20s, 30% of that duration is 6s. If you refresh Doom at or under 6s the remaining duration will carry over to the 'new' Doom. There are many addons that can display Pandemic range for your Doom, for Legion I will be using WeakAuras to display that information.
-In addition to all this because Doom only deals it's damage once over 20s you can still cast it during the Pandemic window and it will deal it's damage no matter when you refresh the DoT. It does damage once every 20s, period.
-
-[size=4][B][U]Shadowflame Stacking[/U][/B][/size]
-The most optimal way of using Shadowflame is to take advantage of the stacking mechanic to get the most damage out of it as possible. It follows the same logic as Shadowflame stacking (or weaving as it once was) from previous expansions except slightly modified since you can stack the new Shadowflame to 3 instead of being capped at 2.
-The basic logic of Shadowflame stacking is;
-[LIST][*]Use a charge
-[*]Cast filler spells
-[*]Use another charge
-[*]Cast more filler spells
-[*]Use another charge[/LIST]
-The more involved logic of Shadowflame stacking is;
-[LIST][*]Cast Shadowflame (1 stack)
-[*]Cast 4 filler spells (Shadow Bolt, Hand of Gul'dan, Doom, Demonic Empowerment or Summon Dreadstalkers -- any combination of spells totaling 3)
-[*]Cast Shadowflame (2 stacks)
-[*]Cast 4 filler spells (Shadow Bolt, Hand of Gul'dan, Doom, Demonic Empowerment or Summon Dreadstalkers -- any combination of spells totaling 4)
-[*]Shadowflame (3 stacks)
-[*]Wait until 2 charges again then repeat[/LIST]
-[I]Ideally[/I] you will want to use Shadowflame with the lowest time remaining on the debuff each time. Going much lower than 1s time remaining cuts it very close however.
-
-[size=4][B][U]Choosing the right pet[/U][/B][/size]
-There isn't much for choice anymore since they are pushing each spec towards a particular direction when it comes to using a certain pet. For Demonology you are pushed towards using Felguard as your all-purpose pet unless you are using Grimoire of Supremacy, in which case you use Doomguard for single target and Infernal for AoE.
-
-[B][U]Doomguard and Infernal[/U][/B]
-Doomguard and Infernal have changed to become our main cooldown, replacing Dark Soul. It makes Doomguard and Infernal a more 'interesting' as you can cast it more often throughout a fight instead of just one time as it has been for a long time. Doomguard still casts Doom Bolt which retained it's execute function so it is still great sub-20% (but it is much better used on CD for Thal'kiel's Consumption).
 
 
