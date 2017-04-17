@@ -343,16 +343,30 @@ body #cdawrap a:hover.carbon-poweredby {
 .guides {
 	position: relative;
 	margin: 40px;
-	-webkit-transition: opacity 2s; /* Safari */
-    transition: opacity 2s;
-}
-
-.hidden {
-	opacity: 0;
+	-webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
 }
 
 .guides img {
 	width: 100%;
+}
+
+.loader {
+	height: 200px;
+	display: block;
+	margin-left: 0px;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 76%;
+	z-index: 100;
+	opacity: 1;
+	-webkit-transition: opacity 1s; /* Safari */
+	transition: opacity 1s;
+}
+
+.hidden {
+	opacity: 0;
 }
 
 @media screen and (min-width: 40em) {
@@ -361,6 +375,9 @@ body #cdawrap a:hover.carbon-poweredby {
 	}
 	.guides img.heading {
 		width: auto;
+	}
+	.loader {
+		margin-left: 310px;
 	}
 }
 
