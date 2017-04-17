@@ -125,7 +125,7 @@
                     myUrl = myUrl.replace(/"/g, '')
                 }
 
-                return '<a href="' + myUrl + '">';
+                return '<a href="' + myUrl + '" target="_blank">';
             },
             closeTag: function (params, content) {
                 return '</a>';
@@ -143,7 +143,7 @@
                     myUrl = "";
                 }
 
-                return '<img class="'+param+'" src="' + myUrl + '" />';
+                return '<img class="' + param + '" src="' + myUrl + '" />';
             },
             closeTag: function (params, content) {
                 return '';
