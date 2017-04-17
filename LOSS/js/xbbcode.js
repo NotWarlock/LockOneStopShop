@@ -164,7 +164,6 @@ var XBBCODE = (function () {
                 } else {
                     myEmail = params.substr(1);
                 }
-
                 emailPattern.lastIndex = 0;
                 if (!emailPattern.test(myEmail)) {
                     return '<a>';
@@ -499,7 +498,7 @@ var XBBCODE = (function () {
                     myUrl = "#";
                 }
 
-                return '<a href="' + myUrl + '">';
+                return '<a href="' + myUrl + '" target="_blank">';
             },
             closeTag: function (params, content) {
                 return '</a>';

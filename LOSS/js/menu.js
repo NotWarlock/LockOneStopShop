@@ -128,6 +128,7 @@
 						if( currentlink ) {
 							classie.remove(self.el.querySelector('.menu__link--current'), 'menu__link--current');
 						}
+                       $('.menu__link--current').removeClass('menu__link--current');
 						classie.add(ev.target, 'menu__link--current');
 						
 						// callback
