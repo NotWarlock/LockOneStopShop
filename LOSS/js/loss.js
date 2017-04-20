@@ -117,6 +117,7 @@
 
         // add to html
         setTimeout(function () {
+            window.scrollTo(0, 0);
             classie.remove(gridWrapper, 'content--loading');
             classie.add(loaderWrapper, 'hidden');
             guideWrapper.innerHTML = convertedBBtoHtml.html;
