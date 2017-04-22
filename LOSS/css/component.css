@@ -42,7 +42,7 @@
 	left: 0;
 	width: 300px;
 	height: calc(100vh - 120px);
-	background: rgba(28, 29, 34, 0.85);
+	background: rgba(#191924);
 	z-index: 9999;
 }
 
@@ -93,7 +93,7 @@
 	position: absolute;
 	right: 0;
 	padding: 0.25em 1.25em;
-	color: #2a2b30;
+	color: #9a79d0;
 }
 
 .menu__link:hover,
@@ -235,7 +235,7 @@
 	vertical-align: middle;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #B5B3E6;
+	color: #9a79d0;
 }
 
 .menu__breadcrumbs a:last-child {

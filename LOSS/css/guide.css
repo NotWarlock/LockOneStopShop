@@ -38,18 +38,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /*background: #11151d url(http://i.imgur.com/cIDtRVK.jpg) top center no-repeat;*/
-    background: #191924;
+    background: #31313c;
     background-size: cover;
 }
 
 a, strong {
     text-decoration: none;
-    color: #fff;
+    color: #d5d5d5;
     outline: none;
 }
 
 a:hover {
-    color: #ddd;
+    color: #9a79d0;
 }
 
 .container {
