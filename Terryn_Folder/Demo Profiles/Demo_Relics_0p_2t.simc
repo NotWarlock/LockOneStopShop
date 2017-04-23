@@ -3,7 +3,7 @@ level=110
 race=orc
 role=spell
 position=back
-talents=3202023
+talents=3101022
 artifact=37:140822:140837:140826:0:1170:1:1171:3:1172:3:1173:3:1174:3:1175:3:1176:6:1177:3:1178:3:1179:3:1180:1:1181:1:1182:1:1183:1:1184:1:1185:1:1354:1:1391:6
 spec=demonology
 
@@ -34,8 +34,8 @@ off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=912
 # gear_mastery_rating=5500
 # gear_versatility_rating=5500
 # gear_armor=1840
-set_bonus=tier19_2pc=1
-set_bonus=tier19_4pc=1
+set_bonus=tier19_2pc=0
+set_bonus=tier19_4pc=0
 default_pet=felguard
 
 #Dreadstalker Crit
