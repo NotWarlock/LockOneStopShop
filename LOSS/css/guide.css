@@ -198,7 +198,7 @@ a:hover {
     content: '\e004';
 }
 
-.dummy-logo {
+.logo {
     position: fixed;
     top: 0;
     left: 0;
@@ -208,6 +208,7 @@ a:hover {
     text-align: center;
     color: #3b3d4a;
     background: #191924;
+    z-index: 9999;
 }
 
 .dummy-icon {
