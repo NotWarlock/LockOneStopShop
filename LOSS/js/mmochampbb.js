@@ -149,6 +149,18 @@
                 return '';
             },
             displayContent: false
-        }
+        },
+        "size": {
+            openTag: function (params, content) {
+                params = params || '';
+
+                var mySize = parseInt(params.substr(1), 10)*10 || 12;
+
+                return '<span style="font-size:' + mySize + 'px">';
+            },
+            closeTag: function (params, content) {
+                return '</span>';
+            }
+        },
     });
 })(window);
