@@ -83,11 +83,11 @@
 
         var request = new XMLHttpRequest();
         if ($("nav a:nth-child(3)")[0] !== undefined && $("nav a:nth-child(3)")[0].text === "Sims") {
-            request.open('GET', 'guides/' + window.spec + '/Sims/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime(), true);
+            request.open('GET', 'guides/' + window.spec + '/Sims/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/Sims/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
             window.location.hash = "/" + window.spec + "/Sims/" + encodeURIComponent(itemName);
         } else {
-            request.open('GET', 'guides/' + window.spec + '/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime(), true);
+            request.open('GET', 'guides/' + window.spec + '/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
             window.location.hash = "/" + window.spec + "/" + encodeURIComponent(itemName);
         }
