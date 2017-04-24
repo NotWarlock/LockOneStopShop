@@ -5,8 +5,8 @@
 (function () {
     var menuEl = document.getElementById('ml-menu'),
         mlmenu = new MLMenu(menuEl, {
-            // breadcrumbsCtrl : true, // show breadcrumbs
-            initialBreadcrumb: 'Home', // initial breadcrumb text
+            breadcrumbsCtrl: true, // show breadcrumbs
+            initialBreadcrumb: 'Menu', // initial breadcrumb text
             backCtrl: false, // show back button
             // itemsDelayInterval : 60, // delay between each menu item sliding animation
             onItemClick: getPageData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
@@ -16,10 +16,12 @@
     // mobile menu toggle
     var openMenuCtrl = document.querySelector('.action--open'),
         closeMenuCtrl = document.querySelector('.action--close'),
-        specMenuCtrl = document.querySelectorAll('.spec');
+        specMenuCtrl = document.querySelectorAll('.spec'),
+        logoMenuCtrl = document.querySelector('.logo a');
 
     openMenuCtrl.addEventListener('click', openMenu);
     closeMenuCtrl.addEventListener('click', closeMenu);
+    logoMenuCtrl.addEventListener('click', goHome);
 
     // add click event to all spec menu links
     for (var i = 0; i < specMenuCtrl.length; i++) {
@@ -32,6 +34,12 @@
 
     function closeMenu() {
         classie.remove(menuEl, 'menu--open');
+    }
+
+    function goHome() {
+        $("a:contains('Home')")[0].click();
+        clearActiveMenu();
+        $("a:contains('" + itemName + "')").addClass("menu__link--current");
     }
 
     function setSpec(e) {
@@ -58,8 +66,12 @@
                 $(".menu__level--current li a:contains('" + urlLocation[urlLocation.length - 1] + "')")[0].click();
             }, 2000);
         }, 2000);
-    } else if (window.spec == "" && itemName == "") {
+    } else if (window.spec == "Home") {
         // do nothing
+        $("a:contains('Home')")[0].click();
+        clearActiveMenu();
+        $(".menu__item a:contains('Home')").addClass("menu__link--current");
+        // clearActiveMenu();
     } else {
         $("a:contains('" + window.spec + "')")[0].click();
         clearActiveMenu();
@@ -68,20 +80,26 @@
     }
 
     function clearActiveMenu() {
-        $("a.menu__link").removeClass("menu__link--current");
+        $("a.menu__link, a").removeClass("menu__link--current");
     }
 
     function getPageData(ev, itemName) {
         if (ev.preventDefault) ev.preventDefault();
         // clearActiveMenu();
         if (ev.target !== undefined && ev.target !== null) classie.add(ev.target, 'menu__link--current')
+        console.log('itemName', itemName);
 
         closeMenu();
         classie.remove(loaderWrapper, 'hidden');
         classie.add(guideWrapper, 'hidden');
 
         var request = new XMLHttpRequest();
-        if ($("nav a:nth-child(3)")[0] !== undefined && $("nav a:nth-child(3)")[0].text === "Sims") {
+
+        if (itemName == "Home") {
+            request.open('GET', 'guides/Home.html?_=' + new Date().getTime(), true);
+            console.log('itemName:', 'guides/Home.html?_=' + new Date().getTime());
+            window.location.hash = "/" + encodeURIComponent(itemName);
+        } else if ($("nav a:nth-child(3)")[0] !== undefined && $("nav a:nth-child(3)")[0].text === "Sims") {
             request.open('GET', 'guides/' + window.spec + '/Sims/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/Sims/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
             window.location.hash = "/" + window.spec + "/Sims/" + encodeURIComponent(itemName);
