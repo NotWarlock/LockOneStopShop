@@ -51,8 +51,7 @@
     // Loading Guides from url path
     if (itemName == 'Sims') {
         $("a:contains('" + window.spec + "')")[0].click();
-        gridWrapper.innerHTML = '';
-        classie.add(gridWrapper, 'content--loading');
+        guideWrapper.innerHTML = '';
         setTimeout(function () {
             $(".menu__level--current li a:contains('Sims')")[0].click();
             setTimeout(function () {
