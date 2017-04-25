@@ -66,7 +66,7 @@
                 $(".menu__level--current li a:contains('" + urlLocation[urlLocation.length - 1] + "')")[0].click();
             }, 2000);
         }, 2000);
-    } else if (window.spec == "Home") {
+    } else if (window.spec == "Home" || window.spec == "") {
         // do nothing
         $("a:contains('Home')")[0].click();
         clearActiveMenu();
