@@ -162,5 +162,25 @@
                 return '</span>';
             }
         },
+        "youtube": {
+            openTag: function(params, content){var myUrl;
+
+                if (!params) {
+                    myUrl = content.replace(/<.*?>/g, "");
+                } else {
+                    myUrl = params.substr(1);
+                }
+
+                urlPattern.lastIndex = 0;
+                if (!urlPattern.test(myUrl)) {
+                    myUrl = myUrl.replace(/"/g, '')
+                }
+
+                return '<div class="youtube-wrapper"><iframe class="youtube" width="560" height="315" src="'+myUrl+'" frameborder="0" allowfullscreen></iframe>'
+            },
+            closeTag: function(params, content){
+                return '</iframe></div>';
+            }
+        }
     });
 })(window);
