@@ -472,3 +472,22 @@ i {
     height: 0;
     clear: both;
 }
+
+/*.youtube {*/
+    /*margin: 0 auto;*/
+    /*display: block;*/
+/*}*/
+
+.youtube-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.youtube-wrapper .youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
