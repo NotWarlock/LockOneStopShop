@@ -1,225 +1,63 @@
-<div style="white-space:pre-wrap;">
-
-
-    <center><img class="" src="http://i.imgur.com/4um27ik.png"/></center>
-
-    <center><img class="heading" src="http://i.imgur.com/N9qDTSu.png]"/></center>
-    Welcome to the Legion Affliction Guide! I am Terryn and I will be your tour guide here today. I main warlock for the
-    US guild VoS on Illidan, and have played warlock off and on since TBC. In my free time you can find me on the
-    warlock discord, playing some Dotes, working on my masters in software engineering, and fixing Gahddo's mistakes in
-    simcraft. You can follow my conversations about Dota on twitter: <a href="https://twitter.com/Terryn_Fred"
-                                                                        target="_blank">@TerrynFred</a> and follow my <a
-        href="https://www.youtube.com/channel/UCIWcvyov2I5H3bUm-_auXew" target="_blank">youtube</a> where I will be
-    releasing some more guides for Affliction. I’d also like to give a special thanks to Woundini for the kick ass
-    banners! Be sure to follow him <a href="https://twitter.com/SSpelorzi" target="_blank">@sspelorzi</a>. Other props
-    to Not, Peter, Bear, Rez, and Pyre for dealing with my horrendous spelling while giving this a few checks.
-
-    First off! I have added a full <a href="https://www.youtube.com/playlist?list=PLcrhUvGQ4mUXYSes49QJtUcvo82FL5NTC"
-                                      target="_blank">visual guide</a> that goes along with this on my youtube! Check it
-    out, it should help explain things that aren't quite as clear in this text. You can also check out my guide on <a
-        href="https://www.wowhead.com/affliction-warlock-guide" target="_blank">wowhead</a>. The information there and
-    here is the same, but their formatting may appeal to other people.
-
-    The Affliction warlock has gone through some pretty drastic changes from WOD to Legion, moving from a drain / tunnel
-    spec to a full on dot monster with many ways to amplify your dots and make them as efficient as possible. Legion has
-    brought about a lot of pruning, but affliction ends up in a not terrible state once the artifact gets rolling. The
-    affliction warlock's primary strengths come into a multi target fight where you can transition into a variety of
-    tunnel targets, allowing you to activate various artifact abilities, and pump a large amount of damage into a boss
-    while still maintaining a nice spread damage on multiple targets. It does tend to fall off due to a long ramp-up
-    time on single target due to the stack mechanic on agony, and has quite a bit of dot micromanagement to keep up with
-    your melee and fire mages.
-
-    <center><img class="heading" src="http://i.imgur.com/76Yo6Qr.png"/></center>
-    <strong>Q: Should I ever cast UA on my effigy to try to maintain contagion on the effigy for added dot
-        damage?</strong>
-    A: <i>No. Never put your most damaging dot on a target that takes 35% damage:</i>
-    <img class="heading" src="http://i.imgur.com/YY4QLVxl.png"/>
-
-    <strong>Q: Is Affliction Viable?!"</strong>
-    A: Yes! We are sub par on Ursoc, Nythendra, and Guarm, and (from the looks of things) Mythic Helya, however we are
-    absoutely fine on everything else, and tend to Excel on every fight that ISN'T those two. As of 7.1.0 if you have
-    the legendary helm or belt you should be, while not the BEST
-    <a href="https://www.warcraftlogs.com/reports/wLGJ9HF3rxcQv6zt#fight=33&type=damage-done" target="_blank">completely
-        viable</a>
-
-    <strong>Q: I apologize if this was asked and answered, but I browsed through the pages and didn't see it. At 110
-        what round about is the dps loss from taking Soul Conduit over Soul Effigy? Is it a huge difference or a
-        moderate one?</strong>
-    A: <i>Theres two parts to this, Council and Add Cleave fights.
-    On council fights, Agony has a drop-off on shard generation that can me modeled like this (Props to Rez for making
-    this kick ass spreadsheet):
-    <img class="heading" src="http://i.imgur.com/DNeznCpm.png"/>
-    Basically going from 2 -&gt; 3 targets only provides a 20% increase in shards, and from 3 -&gt; 4 targets is only
-    about a 15% increase. What this translates to, is for sustained 2 target fights, you get "A similar" number of
-    shards going ether effigy OR conduit, and any more targets conduit will win out on shard generation. As far as
-    damage, its not 100% confirmed. On single target, effigy is going to be ~10-15% of your damage pending on talents /
-    encounter. I would GUESS that 3 target is where you will see enough shard increase from conduit to make up for the
-    damage lost on effigy + the GCD loss from maintaining a minimum of agony on 4 targets instead of 3.
-
-    On add cleave fights, which theres 2 of in nightmare, you will gain more out of conduit if your raid needs you
-    REALLY focused on adds, and less if you are just throwing stray UA's out on adds that are closing in on death
-    (Remember you get the shards back if they die with UA still on them) and focused more on boss damage. Also: Any time
-    you have to replant effigy more than once or twice in a fight, you will want to run Conduit. Ilganoth mythic you
-    will PROBABLY want to run conduit because theres no real places to put an effigy up (this is all pending on PS not
-    lining up to be useful on this fight).</i>
-
-    <strong>Q: WHY IS CRIT SIMMING HIGHER THAN MASTERY AND HASTE?</strong>
-    A: This is almost entirely because of perdition.
-    Perdition: This gives us 15% more crit damage on our everything minus Drain, 30% under reap. This massively inflates
-    crits value above everything until almost 30% crit. <u><strong>THIS DOES NOT MEAN YOU SHOULD STACK CRIT, BUT
-    MAINTAIN A HEALTHY BALANCE OF CRIT / HASTE WITH CRIT BEING SLIGHTLY HIGHER WHILE MAINTAINING 100+% MASTERY.</strong></u>
-
-    <strong>Q: Why is mastery simming so LOW?! You said stack mastery! wtf!</strong>
-    A: This can be explained ether the tldr or the long way.
-    TLDR: Because of <a href="https://www.youtube.com/watch?v=1N6cOC2P8fQ" target="_blank">math</a>, mastery falls off
-    at about 100% <strong> HOWEVER THERE IS NO SOFT CAP OR HARD CAP. MASTERY ABOVE THIS IS FINE</strong>
-
-    <strong>Math: WARNING IN HERE BE MATH DRAGONS:</strong>
-
-    <div style="margin-left:40px">As you get more mastery, the actual effectiveness of mastery goes down. Take for
-        example a 5% mastery gain at 10% mastery on a spell that deals 100 damage:
-
-        Old mastery: 10% Total Damage: 110
-        New Mastery: 15% Total Damage: 115
-        Damage Gain: about 4.5%
-
-        We then look at the same damage change going from 120% mastery to 125% mastery:
-        Old Mastery: 110% Total Damage: 210
-        New Mastery: 115% Total Damage: 215
-        Damage Gain: 2.3%
-        All of this is because mastery applies to the base value of the dot, and 1% isn't always 1%. If you were to look
-        at an (approximately) equal crit gain of ~1.5%, that starts to pull ahead of 2.3%.
-        Other issues involve item stat budgets and how items gain stats going up in itemlevel. The same item going from
-        850 to 880 will only gain about 100 secondary stats, but will gain about 400+ intellect. This means there is
-        also a (relative) soft cap as to how many secondary stats we can accumulate in legion
-    </div>
-
-    <strong>Q: OMG OUR SURVIVABILITY HAS BEEN BUTCHERED IN 715. WHY DID BLIZZARD NURF OUR SELF HEALING FROM
-        DRAIN?!?!?!</strong>
-    A: Judging by the logs I've got for PTR to live Drain, Drain Soul is almost a carbon copy of drain life in damage
-    and healing.
-
-    <strong>DISCLAIMER: THESE LOGS WERE NOT DONE BY THE SAME PERSON, BUT WAS DONE WITH APPROXIMATELY SIMILAR GEAR.
-        HOWEVER: The numbers are close enough that we can basically assume nothing is changing</strong>
-    <a href="https://www.warcraftlogs.com/reports/dzfYk2a76QDTKBpX#fight=7&type=healing&source=49&options=8&ability=689"
-       target="_blank">Live Healing</a>
-    <a href="https://www.warcraftlogs.com/reports/LHaj61dPQCJDXmrx#type=healing&source=4&options=8&ability=198590"
-       target="_blank">PTR Healing</a>
-
-    <a href="https://www.warcraftlogs.com/reports/dzfYk2a76QDTKBpX#fight=7&type=damage-done&source=49&ability=689"
-       target="_blank">Live Damage</a>
-    <a href="https://www.warcraftlogs.com/reports/LHaj61dPQCJDXmrx#type=damage-done&source=4&ability=198590"
-       target="_blank">PTR Damage</a>
-    <strong>TLDR: WE HAVE HAD LITERALLY 0 CHANGE IN SELF HEAL FROM DRAIN LIFE TO DRAIN SOUL, AS WELL AS 0 CHANGE IN
-        DAMAGE FOR DRAIN LIFE TO DRAIN SOUL</strong>
-
-    <strong>Q: WHAT ARE OUR STAT WEIGHTS!???</strong>
-    A: I would like to direct you to a website called <a href="https://simulationcraft.org/" target="_blank">https://simulationcraft.org/</a>
-    There you can download the software to find your own weights. I will not be listing them up to date BECAUSE with
-    literally billions of gear combinations, its impossible for me to give an accurate stat weight for you. The best
-    action would be after the end of a raid where you got a new piece of gear, grab the latest build of simcraft, import
-    your charactor, and run it yourself. That is the only way to get a remotely accurate stat weight.
-
-    <center><span style="font-size:40px">Post 7.1.5 Hotfixes</span></center>
-    Running list of hotfixes <strong>As of January 14</strong>:
-    <ul>
-        <li>Agony now has its full chance to generate a Soul Shard on Soul Effigy (up from a 55% of normal chance).
-        </li>
-        <li>Malefic Grasp now increases the damage of damage over time effects by 70% (down from 80%).
-        </li>
-        <li>Affliction Warlocks will no longer enter combat when using Banish on creatures who are not in combat.</li>
-    </ul>
-    <strong>SMALL NOTE ON THE SOUL SHARD CHANGE</strong>: This is a bug fix, not a nurf or a buff. See <a
-        href="http://www.mmo-champion.com/threads/2039379-Legion-Terryn-s-guide-to-Affliction-Warlock?p=44177869#post44177869"
-        target="_blank">this post</a> pertaining to the change for more details.
-
-    <center><span style="font-size:40px">7.1.5 CHANGES</span></center>
-    Heres the Running list of 7.1.5 Changes as of December 27th.
-    <strong>Baseline Spells: </strong>
-    <ul>
-        <li> Drain Life Replaced by Drain Soul. The shard Regen effect is now back to being baked in.
-        </li>
-        <li> Secrets of the Necrolite removed. Damage buff is now baked into Drain Soul.
-        </li>
-        <li> Seed of Corruption baseline costs 1 shard.</li>
-    </ul>
-    <strong>Talents:</strong>
-    <ul>
-        <li><a href="http://beta.wowdb.com/spells/48181-haunt" target="_blank">Haunt</a> Now increases your damage done
-            by dots by 30% for the duration of the debuff. Haunt also now has a 30 second Cooldown.
-        </li>
-        <li> Drain Soul replaced with Malefic Grasp: Increases the damage dealt by your dots by 70%
-        </li>
-        <li> Mana Tap replaced by Empowered Life Tap: Life Tap increases your damage dealt by 10% for 15 seconds.
-        </li>
-        <li> Soul Harvest increases damage dealt for 15 seconds base instead of 10 seconds.
-        </li>
-        <li> Seed of Corruption damage buffed from 138% to 210%
-        </li>
-        <li> Sow the Seeds now hits 3 total targets, down from 5. <strong><u>NOTE: TOTAL SEED DAMAGE IS REDUCED FROM
-            690% TO 645% GOING FROM 7.1.0 TO 7.1.5</u></strong>
-        </li>
-        <li> UA Dispelled damage doubled.
-        </li>
-        <li> Contagion buffed from 12% to 18%
-        </li>
-        <li> All non-supremacy demons have had their damage dealt increased by 20%. Service demons also have this 20%
-            damage increase. <i>Note: Undocumented on Wowhead's list</i>
-        </li>
-        <li> Infernal aoe damage is up by 44%. This also applies to supremacy infernal. <i>Note: Undocumented on
-            Wowhead's list</i></li>
-    </ul>
-
-    <center><span style="font-size:40px">7.1 CHANGES</span></center>
-    Oh and theres a lot! Here's a compiled list right at the top of this guide:
-    <strong>TALENTS:</strong>
-    <ul>
-        <li> Soul Effigy is no longer effected by AOE. RIP memes.
-        </li>
-        <li> Demon Skin and Demonic Circle have swapped places.
-        </li>
-        <li> Haunt damage improved.
-        </li>
-        <li> Phantom Singularity damage improved.
-        </li>
-        <li> Drain Soul damage improved.</li>
-    </ul>
-    <strong>SPELL CHANGES:</strong>
-    <ul>
-        <li> Unstable Affliction no longer ignites. It now has separate dots for each instance. See updated UA mechanics
-            for more details!
-        </li>
-        <li> UA no longer snapshots
-        </li>
-        <li> Agony damage improved.
-        </li>
-        <li> Corruption damage improved.
-        </li>
-        <li> Drain damage improved.
-        </li>
-        <li> Unstable Affliction damage improved.</li>
-    </ul>
-
-    <center><img class="heading" src="http://imgur.com/RrKS0oS.png"/></center>
-    <strong>I will keep this section up as more good macros appear.</strong> If you would like to submit a macro for
-    this section, please PM me here on MMOC or on Discord.
-
-    How to make Demonic Circle work like PRE legion:
-    #showtooltip Demonic Circle
-    /cancelaura Demonic Circle
-    /cast Demonic Circle
-
-    Cancel Burning Rush when stationary (IE: Draining) This will also work nicely with Unstable Affliction.
-    #showtooltip Drain Soul
-    /cancelaura Burning Rush
-    /cast Drain Soul
-
-
-    Alt modifier for spell (in this case corruption). This allows you to cast on your focus target without actually
-    targeting them. REALLY handy for keeping up dots on your Soul Effigy during a fight.
-
-    #showtooltip Corruption
-    /use [mod:alt,@focus&#93;&#91;&#93;Corruption
-
-
-</div>
+<center>
+    <img class="" src="http://i.imgur.com/4um27ik.png">
+</center>
+<center>
+    <img class="heading" src="http://i.imgur.com/N9qDTSu.png]">
+</center>Welcome to the Legion Affliction Guide! I am Terryn and I will be your tour guide here today. I main warlock for the US guild VoS on Illidan, and have played warlock off and on since TBC. In my free time you can find me on the warlock discord, playing some Dotes, working on my masters in software engineering, and fixing Gahddo's mistakes in simcraft. You can follow my conversations about Dota on twitter: <a href="https://twitter.com/Terryn_Fred" target="_blank">@TerrynFred</a> and follow my <a href="https://www.youtube.com/channel/UCIWcvyov2I5H3bUm-_auXew" target="_blank">youtube</a> where I will be releasing some more guides for Affliction. I’d also like to give a special thanks to Woundini for the kick ass banners! Be sure to follow him <a href="https://twitter.com/SSpelorzi" target="_blank">@sspelorzi</a>. Other props to Not, Peter, Bear, Rez, and Pyre for dealing with my horrendous spelling while giving this a few checks. First off! I have added a full <a href="https://www.youtube.com/playlist?list=PLcrhUvGQ4mUXYSes49QJtUcvo82FL5NTC" target="_blank">visual guide</a> that goes along with this on my youtube! Check it out, it should help explain things that aren't quite as clear in this text. You can also check out my guide on <a href="https://www.wowhead.com/affliction-warlock-guide" target="_blank">wowhead</a>. The information there and here is the same, but their formatting may appeal to other people. The Affliction warlock has gone through some pretty drastic changes from WOD to Legion, moving from a drain / tunnel spec to a full on dot monster with many ways to amplify your dots and make them as efficient as possible. Legion has brought about a lot of pruning, but affliction ends up in a not terrible state once the artifact gets rolling. The affliction warlock's primary strengths come into a multi target fight where you can transition into a variety of tunnel targets, allowing you to activate various artifact abilities, and pump a large amount of damage into a boss while still maintaining a nice spread damage on multiple targets. It does tend to fall off due to a long ramp-up time on single target due to the stack mechanic on agony, and has quite a bit of dot micromanagement to keep up with your melee and fire mages.
+<center>
+    <img class="heading" src="http://i.imgur.com/76Yo6Qr.png">
+</center><strong>Q: Should I ever cast UA on my effigy to try to maintain contagion on the effigy for added dot damage?</strong> A: <i>No. Never put your most damaging dot on a target that takes 35% damage:</i> <img class="heading" src="http://i.imgur.com/YY4QLVxl.png"> <strong>Q: Is Affliction Viable?!"</strong> A: Yes! We are sub par on Ursoc, Nythendra, and Guarm, and (from the looks of things) Mythic Helya, however we are absoutely fine on everything else, and tend to Excel on every fight that ISN'T those two. As of 7.1.0 if you have the legendary helm or belt you should be, while not the BEST <a href="https://www.warcraftlogs.com/reports/wLGJ9HF3rxcQv6zt#fight=33&type=damage-done" target="_blank">completely viable</a> <strong>Q: I apologize if this was asked and answered, but I browsed through the pages and didn't see it. At 110 what round about is the dps loss from taking Soul Conduit over Soul Effigy? Is it a huge difference or a moderate one?</strong> A: <i>Theres two parts to this, Council and Add Cleave fights. On council fights, Agony has a drop-off on shard generation that can me modeled like this (Props to Rez for making this kick ass spreadsheet): <img class="heading" src="http://i.imgur.com/DNeznCpm.png"> Basically going from 2 -&gt; 3 targets only provides a 20% increase in shards, and from 3 -&gt; 4 targets is only about a 15% increase. What this translates to, is for sustained 2 target fights, you get "A similar" number of shards going ether effigy OR conduit, and any more targets conduit will win out on shard generation. As far as damage, its not 100% confirmed. On single target, effigy is going to be ~10-15% of your damage pending on talents / encounter. I would GUESS that 3 target is where you will see enough shard increase from conduit to make up for the damage lost on effigy + the GCD loss from maintaining a minimum of agony on 4 targets instead of 3. On add cleave fights, which theres 2 of in nightmare, you will gain more out of conduit if your raid needs you REALLY focused on adds, and less if you are just throwing stray UA's out on adds that are closing in on death (Remember you get the shards back if they die with UA still on them) and focused more on boss damage. Also: Any time you have to replant effigy more than once or twice in a fight, you will want to run Conduit. Ilganoth mythic you will PROBABLY want to run conduit because theres no real places to put an effigy up (this is all pending on PS not lining up to be useful on this fight).</i> <strong>Q: WHY IS CRIT SIMMING HIGHER THAN MASTERY AND HASTE?</strong> A: This is almost entirely because of perdition. Perdition: This gives us 15% more crit damage on our everything minus Drain, 30% under reap. This massively inflates crits value above everything until almost 30% crit. <u><strong>THIS DOES NOT MEAN YOU SHOULD STACK CRIT, BUT MAINTAIN A HEALTHY BALANCE OF CRIT / HASTE WITH CRIT BEING SLIGHTLY HIGHER WHILE MAINTAINING 100+% MASTERY.</strong></u> <strong>Q: Why is mastery simming so LOW?! You said stack mastery! wtf!</strong> A: This can be explained ether the tldr or the long way. TLDR: Because of <a href="https://www.youtube.com/watch?v=1N6cOC2P8fQ" target="_blank">math</a>, mastery falls off at about 100% <strong>HOWEVER THERE IS NO SOFT CAP OR HARD CAP. MASTERY ABOVE THIS IS FINE</strong> <strong>Math: WARNING IN HERE BE MATH DRAGONS:</strong>
+<div style="margin-left:40px">
+    As you get more mastery, the actual effectiveness of mastery goes down. Take for example a 5% mastery gain at 10% mastery on a spell that deals 100 damage: Old mastery: 10% Total Damage: 110 New Mastery: 15% Total Damage: 115 Damage Gain: about 4.5% We then look at the same damage change going from 120% mastery to 125% mastery: Old Mastery: 110% Total Damage: 210 New Mastery: 115% Total Damage: 215 Damage Gain: 2.3% All of this is because mastery applies to the base value of the dot, and 1% isn't always 1%. If you were to look at an (approximately) equal crit gain of ~1.5%, that starts to pull ahead of 2.3%. Other issues involve item stat budgets and how items gain stats going up in itemlevel. The same item going from 850 to 880 will only gain about 100 secondary stats, but will gain about 400+ intellect. This means there is also a (relative) soft cap as to how many secondary stats we can accumulate in legion
+</div><strong>Q: OMG OUR SURVIVABILITY HAS BEEN BUTCHERED IN 715. WHY DID BLIZZARD NURF OUR SELF HEALING FROM DRAIN?!?!?!</strong> A: Judging by the logs I've got for PTR to live Drain, Drain Soul is almost a carbon copy of drain life in damage and healing. <strong>DISCLAIMER: THESE LOGS WERE NOT DONE BY THE SAME PERSON, BUT WAS DONE WITH APPROXIMATELY SIMILAR GEAR. HOWEVER: The numbers are close enough that we can basically assume nothing is changing</strong> <a href="https://www.warcraftlogs.com/reports/dzfYk2a76QDTKBpX#fight=7&type=healing&source=49&options=8&ability=689" target="_blank">Live Healing</a> <a href="https://www.warcraftlogs.com/reports/LHaj61dPQCJDXmrx#type=healing&source=4&options=8&ability=198590" target="_blank">PTR Healing</a> <a href="https://www.warcraftlogs.com/reports/dzfYk2a76QDTKBpX#fight=7&type=damage-done&source=49&ability=689" target="_blank">Live Damage</a> <a href="https://www.warcraftlogs.com/reports/LHaj61dPQCJDXmrx#type=damage-done&source=4&ability=198590" target="_blank">PTR Damage</a> <strong>TLDR: WE HAVE HAD LITERALLY 0 CHANGE IN SELF HEAL FROM DRAIN LIFE TO DRAIN SOUL, AS WELL AS 0 CHANGE IN DAMAGE FOR DRAIN LIFE TO DRAIN SOUL</strong> <strong>Q: WHAT ARE OUR STAT WEIGHTS!???</strong> A: I would like to direct you to a website called <a href="https://simulationcraft.org/" target="_blank">https://simulationcraft.org/</a> There you can download the software to find your own weights. I will not be listing them up to date BECAUSE with literally billions of gear combinations, its impossible for me to give an accurate stat weight for you. The best action would be after the end of a raid where you got a new piece of gear, grab the latest build of simcraft, import your charactor, and run it yourself. That is the only way to get a remotely accurate stat weight.
+<center>
+    <span style="font-size:40px">Post 7.1.5 Hotfixes</span>
+</center>Running list of hotfixes <strong>As of January 14</strong>:
+<ul>
+    <li>Agony now has its full chance to generate a Soul Shard on Soul Effigy (up from a 55% of normal chance).</li>
+    <li>Malefic Grasp now increases the damage of damage over time effects by 70% (down from 80%).</li>
+    <li>Affliction Warlocks will no longer enter combat when using Banish on creatures who are not in combat.</li>
+</ul><strong>SMALL NOTE ON THE SOUL SHARD CHANGE</strong>: This is a bug fix, not a nurf or a buff. See <a href="http://www.mmo-champion.com/threads/2039379-Legion-Terryn-s-guide-to-Affliction-Warlock?p=44177869#post44177869" target="_blank">this post</a> pertaining to the change for more details.
+<center>
+    <span style="font-size:40px">7.1.5 CHANGES</span>
+</center>Heres the Running list of 7.1.5 Changes as of December 27th. <strong>Baseline Spells:</strong>
+<ul>
+    <li>Drain Life Replaced by Drain Soul. The shard Regen effect is now back to being baked in.</li>
+    <li>Secrets of the Necrolite removed. Damage buff is now baked into Drain Soul.</li>
+    <li>Seed of Corruption baseline costs 1 shard.</li>
+</ul><strong>Talents:</strong>
+<ul>
+    <li>
+        <a href="http://beta.wowdb.com/spells/48181-haunt" target="_blank">Haunt</a> Now increases your damage done by dots by 30% for the duration of the debuff. Haunt also now has a 30 second Cooldown.
+    </li>
+    <li>Drain Soul replaced with Malefic Grasp: Increases the damage dealt by your dots by 70%</li>
+    <li>Mana Tap replaced by Empowered Life Tap: Life Tap increases your damage dealt by 10% for 15 seconds.</li>
+    <li>Soul Harvest increases damage dealt for 15 seconds base instead of 10 seconds.</li>
+    <li>Seed of Corruption damage buffed from 138% to 210%</li>
+    <li>Sow the Seeds now hits 3 total targets, down from 5. <strong><u>NOTE: TOTAL SEED DAMAGE IS REDUCED FROM 690% TO 645% GOING FROM 7.1.0 TO 7.1.5</u></strong></li>
+    <li>UA Dispelled damage doubled.</li>
+    <li>Contagion buffed from 12% to 18%</li>
+    <li>All non-supremacy demons have had their damage dealt increased by 20%. Service demons also have this 20% damage increase. <i>Note: Undocumented on Wowhead's list</i></li>
+    <li>Infernal aoe damage is up by 44%. This also applies to supremacy infernal. <i>Note: Undocumented on Wowhead's list</i></li>
+</ul>
+<center>
+    <span style="font-size:40px">7.1 CHANGES</span>
+</center>Oh and theres a lot! Here's a compiled list right at the top of this guide: <strong>TALENTS:</strong>
+<ul>
+    <li>Soul Effigy is no longer effected by AOE. RIP memes.</li>
+    <li>Demon Skin and Demonic Circle have swapped places.</li>
+    <li>Haunt damage improved.</li>
+    <li>Phantom Singularity damage improved.</li>
+    <li>Drain Soul damage improved.</li>
+</ul><strong>SPELL CHANGES:</strong>
+<ul>
+    <li>Unstable Affliction no longer ignites. It now has separate dots for each instance. See updated UA mechanics for more details!</li>
+    <li>UA no longer snapshots</li>
+    <li>Agony damage improved.</li>
+    <li>Corruption damage improved.</li>
+    <li>Drain damage improved.</li>
+    <li>Unstable Affliction damage improved.</li>
+</ul>
+<center>
+    <img class="heading" src="http://imgur.com/RrKS0oS.png">
+</center><strong>I will keep this section up as more good macros appear.</strong> If you would like to submit a macro for this section, please PM me here on MMOC or on Discord. How to make Demonic Circle work like PRE legion: #showtooltip Demonic Circle /cancelaura Demonic Circle /cast Demonic Circle Cancel Burning Rush when stationary (IE: Draining) This will also work nicely with Unstable Affliction. #showtooltip Drain Soul /cancelaura Burning Rush /cast Drain Soul Alt modifier for spell (in this case corruption). This allows you to cast on your focus target without actually targeting them. REALLY handy for keeping up dots on your Soul Effigy during a fight. #showtooltip Corruption /use [mod:alt,@focus&#93;&#91;&#93;Corruption
