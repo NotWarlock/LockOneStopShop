@@ -112,7 +112,7 @@
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
-                parseBb();
+                loadContent();
             } else {
                 guide = 'Loading Error try again';
             }
@@ -125,19 +125,13 @@
         request.send();
     }
 
-    function parseBb() {
-        var convertedBBtoHtml = XBBCODE.process({
-            text: guide,
-            removeMisalignedTags: false,
-            addInLineBreaks: true
-        });
-
+    function loadContent() {
         // add to html
         setTimeout(function () {
             window.scrollTo(0, 0);
             classie.remove(gridWrapper, 'content--loading');
             classie.add(loaderWrapper, 'hidden');
-            guideWrapper.innerHTML = convertedBBtoHtml.html;
+            guideWrapper.innerHTML = guide;
             setTimeout(function () {
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
