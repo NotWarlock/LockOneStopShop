@@ -50,7 +50,6 @@
     var gridWrapper = document.querySelector('.content');
     var guideWrapper = document.querySelector('.guides');
     var loaderWrapper = document.querySelector('.loader');
-    var htmlTextArea = document.getElementById('abc1235');
 
     // if url filled get pageData
     var urlLocation = window.location.hash.substring(1).split("/");
@@ -113,7 +112,7 @@
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
-                parseBb();
+                loadContent();
             } else {
                 guide = 'Loading Error try again';
             }
@@ -126,21 +125,13 @@
         request.send();
     }
 
-    function parseBb() {
-        var convertedBBtoHtml = XBBCODE.process({
-            text: guide,
-            removeMisalignedTags: false,
-            addInLineBreaks: true
-        });
-
+    function loadContent() {
         // add to html
         setTimeout(function () {
             window.scrollTo(0, 0);
             classie.remove(gridWrapper, 'content--loading');
             classie.add(loaderWrapper, 'hidden');
             guideWrapper.innerHTML = guide;
-            htmlTextArea.value = convertedBBtoHtml.html;
-            console.log(convertedBBtoHtml.html);
             setTimeout(function () {
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
