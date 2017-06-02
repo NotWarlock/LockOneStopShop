@@ -474,8 +474,8 @@ i {
 }
 
 /*.youtube {*/
-    /*margin: 0 auto;*/
-    /*display: block;*/
+/*margin: 0 auto;*/
+/*display: block;*/
 /*}*/
 
 .youtube-wrapper {
@@ -484,10 +484,15 @@ i {
     padding-top: 25px;
     height: 0;
 }
+
 .youtube-wrapper .youtube {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.center {
+    text-align: center;
 }
