@@ -50,6 +50,7 @@
     var gridWrapper = document.querySelector('.content');
     var guideWrapper = document.querySelector('.guides');
     var loaderWrapper = document.querySelector('.loader');
+    var disqus_config = null;
 
     // if url filled get pageData
     var urlLocation = window.location.hash.substring(1).split("/");
@@ -109,6 +110,11 @@
             window.location.hash = "/" + window.spec + "/" + encodeURIComponent(itemName);
         }
 
+        disqus_config = function () {
+            this.page.url = window.location.host;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'guides/' + window.spec + '/Sims/' + itemName; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
@@ -125,16 +131,23 @@
         request.send();
     }
 
+
     function loadContent() {
         // add to html
         setTimeout(function () {
             window.scrollTo(0, 0);
             classie.remove(gridWrapper, 'content--loading');
             classie.add(loaderWrapper, 'hidden');
-            guideWrapper.innerHTML = guide;
+            guideWrapper.innerHTML = guide+'<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
             setTimeout(function () {
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://loss-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
                 resetWowDB();
             }, 500);
             setupExpandAndCollapse();
