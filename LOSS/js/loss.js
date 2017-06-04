@@ -23,6 +23,20 @@
     closeMenuCtrl.addEventListener('click', closeMenu);
     logoMenuCtrl.addEventListener('click', goHome);
 
+    function setAnchorTransition() {
+        var guideLinks = document.querySelector('.guide-link');
+        if(guideLinks === null) return;
+        guideLinks.addEventListener("click", function (e) {
+            var urlLocation = e.target.href.split('#/')[1].split("/");
+            window.spec = urlLocation[0] || "";
+            var itemName = urlLocation[1] || "";
+            $("a:contains('" + window.spec + "')")[0].click();
+            clearActiveMenu();
+            $("a:contains('" + itemName + "')").addClass("menu__link--current");
+            getPageData("", itemName);
+        }, false);
+    }
+
     // add click event to all spec menu links
     for (var i = 0; i < specMenuCtrl.length; i++) {
         specMenuCtrl[i].addEventListener('click', setSpec);
@@ -50,7 +64,7 @@
     var gridWrapper = document.querySelector('.content');
     var guideWrapper = document.querySelector('.guides');
     var loaderWrapper = document.querySelector('.loader');
-    var disqus_config = null;
+    var disqus_config = window.disqus_config = null;
 
     // if url filled get pageData
     var urlLocation = window.location.hash.substring(1).split("/");
@@ -58,7 +72,7 @@
     var itemName = urlLocation[2] || "";
 
     // Loading Guides from url path
-    if (itemName == 'Sims') {
+    if (itemName === 'Sims') {
         $("a:contains('" + window.spec + "')")[0].click();
         guideWrapper.innerHTML = '';
         setTimeout(function () {
@@ -67,7 +81,7 @@
                 $(".menu__level--current li a:contains('" + urlLocation[urlLocation.length - 1] + "')")[0].click();
             }, 2000);
         }, 2000);
-    } else if (window.spec == "Home" || window.spec == "") {
+    } else if (window.spec === "Home" || window.spec === "") {
         // do nothing
         $("a:contains('Home')")[0].click();
         clearActiveMenu();
@@ -96,7 +110,7 @@
 
         var request = new XMLHttpRequest();
 
-        if (itemName == "Home") {
+        if (itemName === "Home") {
             request.open('GET', 'guides/Home.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/Home.html?_=' + new Date().getTime());
             window.location.hash = "/" + encodeURIComponent(itemName);
@@ -113,7 +127,7 @@
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
-                disqus_config = function () {
+                window.disqus_config = function () {
                     this.page.url = 'http://lockonestopshop.com/LOSS';  // Replace PAGE_URL with your page's canonical URL variable
                     this.page.identifier = window.spec; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                 };
@@ -137,16 +151,27 @@
             window.scrollTo(0, 0);
             classie.remove(gridWrapper, 'content--loading');
             classie.add(loaderWrapper, 'hidden');
-            guideWrapper.innerHTML = guide+'<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
+            guideWrapper.innerHTML = guide;
             setTimeout(function () {
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
-                (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://loss-1.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
+                if(window.location.hash.split("#/")[1] != "Home"){
+                    guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://loss-1.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                }else{
+                    $('.grid').isotope({
+                        itemSelector: '.grid-item',
+                        masonry: {
+                            columnWidth: 100
+                        }
+                    });
+                }
+                setAnchorTransition();
                 resetWowDB();
             }, 500);
             setupExpandAndCollapse();
