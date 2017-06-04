@@ -1,21 +1,181 @@
-<h1>Welcome to our very own Lock One Stop Shop!</h1>
-<h2>Here you will find guides and sims of every kind for all Warlock specs. On the left will be your navigation guide to
-    each spec with their respective guides and sims included, please use it freely and liberally!</h2>
+<!--There are multiple people involved in this project and I'd like to take a moment to briefly thank them all for the-->
+<!--contributions:-->
+<!--<ul>-->
+    <!--<li>Saocow: HTML, CSS, JavaScript wizard</li>-->
+    <!--<li>Sevvy: Chart and Spreadsheet math lady</li>-->
+    <!--<li>Allaf: LOSS v1 contributor</li>-->
+    <!--<li>Woudini: Graphic design</li>-->
+    <!--<li>Terryn: Affliction guide writer</li>-->
+    <!--<li>Loozy: Destruction guide writer</li>-->
+    <!--<li>Gahddo/Motoko/Silver: Sim runners</li>-->
+    <!--<li>Me (Not): Demonology guide, sim runner, website mother</li>-->
+<!--</ul>-->
 
-<p>The intention of this site is to have an easy and accessible place for all your Warlock needs for learning and sims
-    instead of having to go to 3, 4 or more places. If you find anything to not work, have a question about
-    functionality or have any other questions feel free to contact myself (Not) or anyone else on the LOSS team and
-    they'd be happy to try and answer any questions you might have.</p>
 
-There are multiple people involved in this project and I'd like to take a moment to briefly thank them all for the
-contributions:
-<ul>
-    <li>Saocow: HTML, CSS, JavaScript wizard</li>
-    <li>Sevvy: Chart and Spreadsheet math lady</li>
-    <li>Allaf: LOSS v1 contributor</li>
-    <li>Woudini: Graphic design</li>
-    <li>Terryn: Affliction guide writer</li>
-    <li>Loozy: Destruction guide writer</li>
-    <li>Gahddo/Motoko/Silver: Sim runners</li>
-    <li>Me (Not): Demonology guide, sim runner, website mother</li>
-</ul>
+<div class="grid">
+    <div class="grid-item grid-item--width2">
+        <div class="grid--content">
+        <h1>Welcome to our very own Lock One Stop Shop!</h1>
+        <p>Here you will find guides and sims of every kind for all Warlock specs. On the left will be your navigation guide to
+            each spec with their respective guides and sims included, please use it freely and liberally!</p>
+
+        <p>The intention of this site is to have an easy and accessible place for all your Warlock needs for learning and sims
+            instead of having to go to 3, 4 or more places. If you find anything to not work, have a question about
+            functionality or have any other questions feel free to contact myself (Not) or anyone else on the LOSS team and
+            they'd be happy to try and answer any questions you might have.</p>
+        </div>
+    </div>
+    <div class="grid-item grid-item--width2 grid-item--height2 demo_guide updated">
+        <div class="grid--content">
+            <h2>Demonology Guide</h2>
+            <h3>Quick links</h3>
+            <ul>
+                <li><a class="guide-link" href="#/Demonology/Introduction">Intro</a></li>
+                <li><a class="guide-link" href="#/Demonology/Talents">Talents</a></li>
+                <li><a class="guide-link" href="#/Demonology/Gearing">Gearing</a></li>
+                <li><a class="guide-link" href="#/Demonology/Stats">Stats</a></li>
+                <li><a class="guide-link" href="#/Demonology/Rotation">Rotation</a></li>
+            </ul>
+            <a href="#" class="btn">Go To Guide</a>
+        </div>
+    </div>
+    <div class="grid-item demo_guide">
+        <div class="grid--content">
+            <h2>Affliction Guide</h2>
+            <h3>Quick links</h3>
+            <ul>
+                <li><a class="guide-link" href="#/Affliction/Introduction">Intro</a></li>
+                <li><a class="guide-link" href="#/Affliction/Talents">Talents</a></li>
+                <li><a class="guide-link" href="#/Affliction/Gearing">Gearing</a></li>
+                <li><a class="guide-link" href="#/Affliction/Stats">Stats</a></li>
+                <li><a class="guide-link" href="#/Affliction/Rotation">Rotation</a></li>
+            </ul>
+            <a href="#" class="btn">Go To Guide</a>
+        </div>
+    </div>
+    <div class="grid-item destro_guide">
+        <div class="grid--content">
+            <h2>Destruction Guide</h2>
+            <h3>Quick links</h3>
+            <ul>
+                <li><a class="guide-link" href="#/Destruction/Introduction">Intro</a></li>
+                <li><a class="guide-link" href="#/Destruction/Talents">Talents</a></li>
+                <li><a class="guide-link" href="#/Destruction/Gearing">Gearing</a></li>
+                <li><a class="guide-link" href="#/Destruction/Stats">Stats</a></li>
+                <li><a class="guide-link" href="#/Destruction/Rotation">Rotation</a></li>
+            </ul>
+            <a href="#" class="btn">Go To Guide</a>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="grid--content blue_post">
+            <h2 class="blizz_icon">Blue Post</h2>
+            <p>Blizzard is removing Intellect from the game to better align with it's player base.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>po
+    </div>
+    <div class="grid-item">
+        <div class="grid--content blue_post">
+            <h2 class="blizz_icon">Blue Post</h2>
+            <p>Blizzard is removing Intellect from the game to better align with it's player base.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+    <!--<div class="grid-item grid-item&#45;&#45;height2"></div>-->
+    <!--<div class="grid-item"></div>-->
+    <!--<div class="grid-item grid-item&#45;&#45;width2"></div>-->
+    <!--<div class="grid-item grid-item&#45;&#45;height2"></div>-->
+    <!--<div class="grid-item"></div>-->
+    <!--<div class="grid-item"></div>-->
+</div>
+
+<style>
+    .grid {
+        max-width: 100%;
+    }
+
+    /* clear fix */
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* ---- .grid-item ---- */
+
+    .grid-item {
+        float: left;
+        width: 200px;
+        min-height: 200px;
+        background: #191924;
+        border: 2px solid #31313c;
+    }
+    .grid .grid--content {
+        padding: 20px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0.65+0,0.01+50,0.01+100,1+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.01) 50%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 50%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        height:100%;
+        padding-bottom: 80px;
+    }
+
+    .grid-item--width2 { width: 400px; }
+    .grid-item--height2 { height: 400px; }
+
+    .updated {
+        -webkit-box-shadow: inset 0px 0px 0px 5px rgb(154, 121, 208);
+        -moz-box-shadow: inset 0px 0px 0px 5px rgb(154, 121, 208);
+        box-shadow: inset 0px 0px 0px 5px rgb(154, 121, 208);
+        position: relative;
+    }
+    .updated:after {
+        content: "New!";
+        background: rgb(154, 121, 208);
+        position: absolute;
+        bottom:0;
+        right:0;
+        padding:10px;
+        color: #ffffff;
+        font-weight:bold;
+    }
+    .btn {
+        padding: 15px 30px;
+        background: #856ab5;
+        color: white;
+        font-weight: bolder;
+        font-size:17px;
+        position: absolute;
+        bottom:20px;
+    }
+    .blue_post {
+        color: #0091ff;
+    }
+
+    .blue_post .btn {
+       background:  #0091ff;
+    }
+
+    .blue_post .btn:hover {
+        color:  black;
+    }
+
+    .blizz_icon {
+        background: url(http://static.mmo-champion.com/mmoc/Themes/mmo3/img/blizz_ico.gif) 0% 50% no-repeat;
+        border-color: #2d2d2d;
+        padding: 10px 30px 5px;
+        font-size: 18px;
+        padding-left: 38px;
+    }
+
+    .demo_guide {
+        background: url("img/Demo_Lock.jpg") no-repeat;
+        background-size: cover;
+        background-position: -300px 0px;
+    }
+    .destro_guide {
+        background: url("img/Destro_Lock.jpg") no-repeat;
+        background-size: cover;
+    }
+</style>
