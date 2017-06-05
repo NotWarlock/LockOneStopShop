@@ -27,17 +27,19 @@
 
     // Once Page is loaded look for anchors and create events for transitions
     function setAnchorTransition() {
-        var guideLinks = document.querySelector('.guide-link');
+        var guideLinks = document.querySelectorAll('.guide-link');
         if(guideLinks === null) return;
-        guideLinks.addEventListener("click", function (e) {
-            var urlLocation = e.target.href.split('#/')[1].split("/");
-            window.spec = urlLocation[0] || "";
-            var itemName = urlLocation[1] || "";
-            $("a:contains('" + window.spec + "')")[0].click();
-            clearActiveMenu();
-            $("a:contains('" + itemName + "')").addClass("menu__link--current");
-            getPageData("", itemName);
-        }, false);
+        for (var i = 0; i < guideLinks.length; i++) {
+            guideLinks[i].addEventListener("click", function (e) {
+                var urlLocation = e.target.href.split('#/')[1].split("/");
+                window.spec = urlLocation[0] || "";
+                var itemName = urlLocation[1] || "";
+                $("a:contains('" + window.spec + "')")[0].click();
+                clearActiveMenu();
+                $("a:contains('" + itemName + "')").addClass("menu__link--current");
+                getPageData("", itemName);
+            }, false);
+        }
     }
 
     // add click event to all spec menu links
