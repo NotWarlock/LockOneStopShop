@@ -225,8 +225,12 @@ a:hover {
     position: relative;
     min-height: 300px;
     margin: 0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     overflow-x: hidden;
+}
+
+.Home .content {
+    margin: inherit;
 }
 
 .content--loading {
