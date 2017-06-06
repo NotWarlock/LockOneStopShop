@@ -13,16 +13,19 @@
         }),
         guide = null;
 
-    // mobile menu toggle
+    // mobile menu toggle and selectors
     var openMenuCtrl = document.querySelector('.action--open'),
         closeMenuCtrl = document.querySelector('.action--close'),
         specMenuCtrl = document.querySelectorAll('.spec'),
-        logoMenuCtrl = document.querySelector('.logo a');
+        logoMenuCtrl = document.querySelector('.logo a'),
+        bodyCtrl = document.querySelector('body');
 
+    // Click events
     openMenuCtrl.addEventListener('click', openMenu);
     closeMenuCtrl.addEventListener('click', closeMenu);
     logoMenuCtrl.addEventListener('click', goHome);
 
+    // Once Page is loaded look for anchors and create events for transitions
     function setAnchorTransition() {
         var guideLinks = document.querySelectorAll('.guide-link');
         if(guideLinks === null) return;
@@ -88,7 +91,6 @@
         $("a:contains('Home')")[0].click();
         clearActiveMenu();
         $(".menu__item a:contains('Home')").addClass("menu__link--current");
-        // clearActiveMenu();
     } else {
         $("a:contains('" + window.spec + "')")[0].click();
         clearActiveMenu();
@@ -104,7 +106,7 @@
         if (ev.preventDefault) ev.preventDefault();
         // clearActiveMenu();
         if (ev.target !== undefined && ev.target !== null) classie.add(ev.target, 'menu__link--current')
-        console.log('itemName', itemName);
+        console.log('itemName:', itemName);
 
         closeMenu();
         classie.remove(loaderWrapper, 'hidden');
@@ -155,21 +157,31 @@
             classie.add(loaderWrapper, 'hidden');
             guideWrapper.innerHTML = guide;
             setTimeout(function () {
+
+                //Reset body class first then add current page class.
+                bodyCtrl.className = '';
+                bodyCtrl.classList.add(window.spec);
+
+                // Show content
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
+
+                // If content is NOT home page load discus
                 if(window.location.hash.split("#/")[1] != "Home"){
+                    //Load Discus plugin
                     guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
-                    (function() { // DON'T EDIT BELOW THIS LINE
+                    (function() {
                         var d = document, s = d.createElement('script');
                         s.src = 'https://loss-1.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
                 }else{
+                    // Create isotope grid
                     $('.grid').isotope({
                         itemSelector: '.grid-item',
                         masonry: {
-                            columnWidth: 100
+                            columnWidth: 200
                         }
                     });
                 }
