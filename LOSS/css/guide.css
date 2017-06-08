@@ -368,13 +368,17 @@ body #cdawrap a:hover.carbon-poweredby {
 
 .guides {
     position: relative;
-    margin: 40px;
+    margin: 0;
     -webkit-transition: opacity 1s; /* Safari */
     transition: opacity 1s;
 }
 
 .guides img {
     width: 100%;
+}
+
+body:not(.Home) .guides {
+    padding: 50px 20px 0 20px;
 }
 
 .loader {
@@ -384,7 +388,7 @@ body #cdawrap a:hover.carbon-poweredby {
     position: absolute;
     left: 0;
     top: 100px;
-    width: 76%;
+    width: 100%;
     z-index: 100;
     opacity: 1;
     -webkit-transition: opacity 1s; /* Safari */
@@ -395,8 +399,19 @@ body #cdawrap a:hover.carbon-poweredby {
     opacity: 0;
     z-index: -1;
 }
+.bp-header {
+    padding-top: 0;
+}
+.action--open {
+    display: none;
+}
 
 @media screen and (min-width: 40em) {
+    body:not(.Home) .guides {
+        padding: 0 100px;
+        /*margin: 40px;*/
+    }
+
     .guides {
         margin: 0 0 0 310px;
     }
@@ -404,9 +419,12 @@ body #cdawrap a:hover.carbon-poweredby {
     .guides img.heading {
         width: auto;
     }
-
+    .action--open {
+        z-index: -1 !important;
+    }
     .loader {
         margin-left: 310px;
+        width: 76%;
     }
 }
 

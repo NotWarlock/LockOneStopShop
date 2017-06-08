@@ -16,6 +16,7 @@
     // mobile menu toggle and selectors
     var openMenuCtrl = document.querySelector('.action--open'),
         closeMenuCtrl = document.querySelector('.action--close'),
+        hamburgerMenuCtrl = document.querySelector('.action--open'),
         specMenuCtrl = document.querySelectorAll('.spec'),
         logoMenuCtrl = document.querySelector('.logo a'),
         bodyCtrl = document.querySelector('body');
@@ -49,10 +50,12 @@
 
     function openMenu() {
         classie.add(menuEl, 'menu--open');
+        hamburgerMenuCtrl.style.display = "none";
     }
 
     function closeMenu() {
         classie.remove(menuEl, 'menu--open');
+        hamburgerMenuCtrl.style.display = "block";
     }
 
     function goHome() {
