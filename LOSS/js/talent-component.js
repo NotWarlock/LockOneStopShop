@@ -258,35 +258,35 @@ TalentProto.createdCallback = function () {
     // Destro
     data.Destruction[15] = [
         {
-            name: 'Haunt',
-            url: 'http://www.wowdb.com/spells/48181',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_haunt.jpg'
+            name: 'Backdraft',
+            url: 'http://www.wowdb.com/spells/196406-backdraft',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_backdraft.jpg'
         },
         {
-            name: 'Writhe in Agony',
-            url: 'http://www.wowdb.com/spells/196102',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_curseofsargeras.jpg'
+            name: 'Roaring Blaze',
+            url: 'http://www.wowdb.com/spells/205184-roaring-blaze',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_inferno.jpg'
         },
         {
-            name: 'Malefic Grasp',
-            url: 'http://www.wowdb.com/spells/235155',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_everlastingaffliction.jpg'
+            name: 'Shadowburn',
+            url: 'http://www.wowdb.com/spells/17877-shadowburn',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_scourgebuild.jpg'
         },
     ];
     data.Destruction[30] = [
         {
-            name: 'Contagion',
-            url: 'http://www.wowdb.com/spells/196105-contagion',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_creature_disease_03.jpg'
+            name: 'Reverse Entropy',
+            url: 'http://www.wowdb.com/spells/205148-reverse-entropy',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_backdraftgreen.jpg'
         },
         {
-            name: 'Absolute Corruption',
-            url: 'http://www.wowdb.com/spells/196103-absolute-corruption',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_bossmannoroth_empoweredmannorothsgaze.jpg'
+            name: 'Eradicationn',
+            url: 'http://www.wowdb.com/spells/196412-eradication',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_eradication.jpg'
         },
         {
-            name: 'Empowered Life Tap',
-            url: 'http://ptr.wowdb.com/spells/235157-empowered-life-tap',
+            name: 'Empower Life Tap',
+            url: 'http://www.wowdb.com/spells/235157-empowered-life-tap',
             img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_manafeed.jpg'
         },
     ];
@@ -302,21 +302,21 @@ TalentProto.createdCallback = function () {
             img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_mortalcoil.jpg'
         },
         {
-            name: 'Howl of Terror',
-            url: 'http://www.wowdb.com/spells/5484-howl-of-terror',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_howlofterror.jpg'
+            name: 'Shadowfury',
+            url: 'http://www.wowdb.com/spells/30283-shadowfury',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_shadowfurytga.jpg'
         },
     ];
     data.Destruction[60] = [
         {
-            name: 'Phantom Singularity',
-            url: 'http://www.wowdb.com/spells/196103-absolute-corruption',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/inv_enchant_voidsphere.jpg'
+            name: 'Cataclysm',
+            url: 'http://www.wowdb.com/spells/152108-cataclysm',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/achievement_zone_cataclysm.jpg'
         },
         {
-            name: 'Sow the Seeds',
-            url: 'http://www.wowdb.com/spells/196226-sow-the-seeds',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_seedofdestruction.jpg'
+            name: 'Fire and Brimstone',
+            url: 'http://www.wowdb.com/spells/196408-fire-and-brimstone',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_fireandbrimstone.jpg'
         },
         {
             name: 'Soul Harvest',
@@ -360,14 +360,14 @@ TalentProto.createdCallback = function () {
     ];
     data.Destruction[100] = [
         {
-            name: 'Death\'s Embrace',
-            url: 'http://ptr.wowdb.com/spells/234876-deaths-embrace',
-            img: 'http://media-azeroth.cursecdn.com/wow/icons/24287/large/spell_shadow_deathsembrace.jpg'
+            name: 'Wreak Havoc',
+            url: 'http://www.wowdb.com/spells/196410-wreak-havoc',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_baneofhavoc.jpg'
         },
         {
-            name: 'Siphon Life',
-            url: 'http://www.wowdb.com/spells/63106-siphon-life',
-            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_requiem.jpg'
+            name: 'Channel Demonfire',
+            url: 'http://www.wowdb.com/spells/196447-channel-demonfire',
+            img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_fire_ragnaros_lavaboltgreen.jpg'
         },
         {
             name: 'Soul Conduit',
