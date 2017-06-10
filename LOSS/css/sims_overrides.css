@@ -1,0 +1,23 @@
+span#logo {
+    background: url(http://lockonestopshop.com/LOSS/img/logo-NEW.png) no-repeat 50% 50%;
+}
+
+body {
+    background: #31313c;
+}
+
+.section {
+    background: #191924;
+}
+
+rect.highcharts-background {
+    fill: #191924;
+}
+
+div#masthead {
+    background: #191924;
+}
+
+h2 {
+    color: #aa94ea;
+}
