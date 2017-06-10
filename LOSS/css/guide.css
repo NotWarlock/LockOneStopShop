@@ -235,10 +235,10 @@ a:hover {
 
 .content--loading {
     background: url(../img/logo-loading.png) no-repeat 50% 50%;
-    animation: rotateloading 2s infinite;
-    -webkit-animation: rotateloading 2s infinite;
-    -moz-animation: rotateloading 2s infinite;
-    -o-animation: rotateloading 2s infinite;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -435,6 +435,7 @@ body:not(.Home) .guides {
     opacity: 0;
     z-index: -1;
 }
+
 .bp-header {
     padding-top: 0;
 }
