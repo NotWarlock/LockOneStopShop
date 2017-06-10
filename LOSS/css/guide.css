@@ -234,11 +234,11 @@ a:hover {
 }
 
 .content--loading {
-    background: url(../img/shard-loading.png) no-repeat 50% 50%;
-    animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    -moz-animation: bounce 2s infinite;
-    -o-animation: bounce 2s infinite;
+    background: url(../img/logo-loading.png) no-repeat 50% 50%;
+    animation: rotateloading 2s infinite;
+    -webkit-animation: rotateloading 2s infinite;
+    -moz-animation: rotateloading 2s infinite;
+    -o-animation: rotateloading 2s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -288,6 +288,42 @@ a:hover {
         transform: translateY(-15px);
     }
 }
+
+@-webkit-keyframes rotateloading {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotateloading {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotateloading {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateloading {
+     from {
+         transform: rotate(0deg);
+     }
+     to {
+         transform: rotate(360deg);
+     }
+ }
 
 .products {
     margin: 0;
