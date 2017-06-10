@@ -1,0 +1,301 @@
+warlock="Demonology_Warlock_T20H"
+level=110
+race=orc
+role=spell
+position=back
+talents=1202023
+artifact=37:0:0:0:0:1170:1:1171:4:1172:4:1173:4:1174:4:1175:4:1176:4:1177:4:1178:4:1179:4:1180:1:1181:1:1182:1:1183:1:1184:1:1185:1:1354:1:1391:1:1605:4:1606:1:1607:1:1608:1:1712:1
+spec=demonology
+
+head=,id=146991,ilevel=915
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=147186,ilevel=915
+back=,id=146984,enchant_id=5436,ilevel=915
+chest=,id=147185,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=147182,ilevel=915
+waist=,id=146999,ilevel=915
+legs=,id=147184,ilevel=915
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+trinket1=,id=147016,ilevel=915
+trinket2=,id=147002,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=936
+off_hand=,id=128943,bonus_id=748,gem_id=0/0/0,ilevel=936
+
+# Gear Summary
+# gear_ilvl=907.38
+# gear_stamina=34013
+# gear_intellect=23359
+# gear_spell_power=16280
+# gear_crit_rating=3142
+# gear_haste_rating=11417
+# gear_mastery_rating=5822
+# gear_versatility_rating=2855
+# gear_armor=1969
+# set_bonus=tier20_2pc=0
+# set_bonus=tier20_4pc=0
+default_pet=felguard
+default_actions=1
+
+#Dreadstalker Crit
+copy="Dreadstalker Crit 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=936
+copy="Dreadstalker Crit 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=938
+copy="Dreadstalker Crit 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=939
+copy="Dreadstalker Crit 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=941
+copy="Dreadstalker Crit 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=942
+copy="Dreadstalker Crit 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=944
+copy="Dreadstalker Crit 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=945
+copy="Dreadstalker Crit 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=946
+copy="Dreadstalker Crit 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137476,ilevel=948
+
+#SB Crit
+copy="SB Crit 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=936
+copy="SB Crit 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=938
+copy="SB Crit 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=939
+copy="SB Crit 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=941
+copy="SB Crit 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=942
+copy="SB Crit 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=944
+copy="SB Crit 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=945
+copy="SB Crit 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=946
+copy="SB Crit 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/136721,ilevel=948
+
+#HoG Damage
+copy="HoG Damage 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=936
+copy="HoG Damage 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=938
+copy="HoG Damage 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=939
+copy="HoG Damage 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=941
+copy="HoG Damage 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=942
+copy="HoG Damage 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=944
+copy="HoG Damage 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=945
+copy="HoG Damage 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=946
+copy="HoG Damage 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137491,ilevel=948
+
+#Imp Firebolt DMG
+copy="Imp Firebolt DMG 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=936
+copy="Imp Firebolt DMG 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=938
+copy="Imp Firebolt DMG 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=939
+copy="Imp Firebolt DMG 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=941
+copy="Imp Firebolt DMG 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=942
+copy="Imp Firebolt DMG 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=944
+copy="Imp Firebolt DMG 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=945
+copy="Imp Firebolt DMG 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=946
+copy="Imp Firebolt DMG 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/133764,ilevel=948
+
+#Doom DMG
+copy="Doom DMG 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=936
+copy="Doom DMG 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=938
+copy="Doom DMG 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=939
+copy="Doom DMG 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=941
+copy="Doom DMG 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=942
+copy="Doom DMG 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=944
+copy="Doom DMG 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=945
+copy="Doom DMG 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=946
+copy="Doom DMG 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137351,ilevel=948
+
+#Demonwrath DMG
+copy="Demonwrath DMG 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=936
+copy="Demonwrath DMG 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=938
+copy="Demonwrath DMG 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=939
+copy="Demonwrath DMG 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=941
+copy="Demonwrath DMG 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=942
+copy="Demonwrath DMG 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=944
+copy="Demonwrath DMG 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=945
+copy="Demonwrath DMG 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=946
+copy="Demonwrath DMG 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137405,ilevel=948
+
+#DE Increased
+copy="DE Increased 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=936
+copy="DE Increased 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=938
+copy="DE Increased 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=939
+copy="DE Increased 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=941
+copy="DE Increased 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=942
+copy="DE Increased 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=944
+copy="DE Increased 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=945
+copy="DE Increased 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=946
+copy="DE Increased 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/137542,ilevel=948
+
+#NonDMG Relics
+copy="NonDMG Relics 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=936
+copy="NonDMG Relics 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=938
+copy="NonDMG Relics 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=939
+copy="NonDMG Relics 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=941
+copy="NonDMG Relics 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=942
+copy="NonDMG Relics 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=944
+copy="NonDMG Relics 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=945
+copy="NonDMG Relics 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=946
+copy="NonDMG Relics 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/0,ilevel=948
+
+#Left Hand of Darkness
+copy="Left Hand of Darkness 915"
+main_hand=spine_of_thalkiel,id=137246,ilevel=936
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=936
+copy="Left Hand of Darkness 920"
+main_hand=spine_of_thalkiel,id=137246,ilevel=938
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=938
+copy="Left Hand of Darkness 925"
+main_hand=spine_of_thalkiel,id=137246,ilevel=939
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=939
+copy="Left Hand of Darkness 930"
+main_hand=spine_of_thalkiel,id=137246,ilevel=941
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=941
+copy="Left Hand of Darkness 935"
+main_hand=spine_of_thalkiel,id=137246,ilevel=942
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=942
+copy="Left Hand of Darkness 940"
+main_hand=spine_of_thalkiel,id=137246,ilevel=944
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=944
+copy="Left Hand of Darkness 945"
+main_hand=spine_of_thalkiel,id=137246,ilevel=945
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=945
+copy="Left Hand of Darkness 950"
+main_hand=spine_of_thalkiel,id=137246,ilevel=946
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=946
+copy="Left Hand of Darkness 955"
+main_hand=spine_of_thalkiel,id=137246,ilevel=948
+off_hand=skull_of_the_manari,id=128943,gem_id=0/0/147085,ilevel=948
