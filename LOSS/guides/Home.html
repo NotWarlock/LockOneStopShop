@@ -140,12 +140,18 @@
         float: left;
         width: 200px;
         min-height: 246px;
-        /*background: #191924;*/
         border: 2px solid #31313c;
+        max-width: 100%;
     }
+
+    @media screen and (max-width: 40em) {
+        .grid-item {
+            max-width: inherit;
+        }
+    }
+
     .grid .grid--content {
         padding: 20px;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0.65+0,0.01+50,0.01+100,1+100 */
         background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.01) 50%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 50%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -243,15 +249,4 @@
         background: url("img/Aff_Lock.jpg") no-repeat;
         background-size: cover;
     }
-
-    /*.guides .grid-item {*/
-        /*opacity: 0;*/
-        /*transition: all 300ms;*/
-        /*-webkit-transform: translateY(-20px);*/
-    /*}*/
-
-    /*.guides .grid-item.animated {*/
-        /*opacity: 1;*/
-        /*-webkit-transform: translateY(0);*/
-    /*}*/
 </style>
