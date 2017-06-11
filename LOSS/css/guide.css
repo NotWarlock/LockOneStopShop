@@ -490,15 +490,23 @@ i {
     background-color: #121218 !important;
     border-radius: 8px;
     color: #0091ff;
-    margin: 10px 15px;
-    padding: 0 30px 10px;
+    padding: 10px 20px;
     -moz-border-radius: 8px;
+    border: 1px solid #5c5edc;
 }
 
 .blizz_icon {
     background: url(http://static.mmo-champion.com/mmoc/Themes/mmo3/img/blizz_ico.gif) 0% 50% no-repeat;
     border-color: #2d2d2d;
     padding: 10px 30px 5px;
+}
+
+.spell_icon_span a{
+    display: inline-block;
+}
+.spell_icon {
+    width: 14px !important;
+    height:14px;
 }
 
 .expand {
