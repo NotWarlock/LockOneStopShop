@@ -122,6 +122,7 @@
 </div>
 
 <style>
+
     .grid {
         max-width: 100%;
     }
@@ -139,7 +140,7 @@
         float: left;
         width: 200px;
         min-height: 246px;
-        background: #191924;
+        /*background: #191924;*/
         border: 2px solid #31313c;
     }
     .grid .grid--content {
@@ -242,37 +243,15 @@
         background: url("img/Aff_Lock.jpg") no-repeat;
         background-size: cover;
     }
+
+    /*.guides .grid-item {*/
+        /*opacity: 0;*/
+        /*transition: all 300ms;*/
+        /*-webkit-transform: translateY(-20px);*/
+    /*}*/
+
+    /*.guides .grid-item.animated {*/
+        /*opacity: 1;*/
+        /*-webkit-transform: translateY(0);*/
+    /*}*/
 </style>
-
-<script>
-    $(function() {
-
-        var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
-            $fluidEl = $("figure");
-
-        $allVideos.each(function() {
-
-            $(this)
-            // jQuery .data does not work on object/embed elements
-                .attr('data-aspectRatio', this.height / this.width)
-                .removeAttr('height')
-                .removeAttr('width');
-
-        });
-
-        $(window).resize(function() {
-
-            var newWidth = $fluidEl.width();
-            $allVideos.each(function() {
-
-                var $el = $(this);
-                $el
-                    .width(newWidth)
-                    .height(newWidth * $el.attr('data-aspectRatio'));
-
-            });
-
-        }).resize();
-
-    });
-</script>

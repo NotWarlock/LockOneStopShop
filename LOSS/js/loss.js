@@ -179,6 +179,8 @@
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
+
+
                 }else{
                     // Create isotope grid
                     $('.grid').isotope({
