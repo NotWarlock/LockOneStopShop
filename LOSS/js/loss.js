@@ -136,7 +136,7 @@
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
                 window.disqus_config = function () {
-                    this.page.url = 'http://lockonestopshop.com/LOSS';  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.url = 'http://lockonestopshop.com/LOSS'+window.location.hash;  // Replace PAGE_URL with your page's canonical URL variable
                     this.page.identifier = window.spec; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                 };
                 loadContent();
@@ -187,7 +187,7 @@
                             reload: true,
                             config: function () {
                                 this.page.identifier = window.spec;
-                                this.page.url = 'http://lockonestopshop.com/LOSS';
+                                this.page.url = 'http://lockonestopshop.com/LOSS/'+window.location.hash;
                             }
                         });
                     }
