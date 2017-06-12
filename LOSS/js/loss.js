@@ -128,12 +128,12 @@
             request.open('GET', 'guides/' + window.spec + '/Sims/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/Sims/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
             window.location.hash = "/" + window.spec + "/Sims/" + encodeURIComponent(itemName);
-            window.document.title = "Lock One Stop Shop | " + itemName + " Sims for" + window.spec;
+            window.document.title = "Lock One Stop Shop | " + itemName + " Sims for " + window.spec;
         } else {
             request.open('GET', 'guides/' + window.spec + '/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
             window.location.hash = "/" + window.spec + "/" + encodeURIComponent(itemName);
-            window.document.title = "Lock One Stop Shop | " + itemName + " for" + window.spec;
+            window.document.title = "Lock One Stop Shop | " + itemName + " for " + window.spec;
         }
 
         request.onload = function () {
@@ -192,6 +192,8 @@
                             config: function () {
                                 this.page.identifier = window.spec;
                                 this.page.url = 'http://lockonestopshop.com/LOSS/'+window.location.hash;
+                                this.page.title = window.document.title;
+                                console.log(this.page)
                             }
                         });
                     }
