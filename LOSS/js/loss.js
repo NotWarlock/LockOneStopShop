@@ -73,6 +73,7 @@
     var guideWrapper = document.querySelector('.guides');
     var loaderWrapper = document.querySelector('.loader');
     var disqus_config = window.disqus_config = null;
+    var disqus_loaded = false;
 
     // if url filled get pageData
     var urlLocation = window.location.hash.substring(1).split("/");
@@ -173,12 +174,23 @@
                 if(window.location.hash.split("#/")[1] != "Home"){
                     //Load Discus plugin
                     guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
-                    (function() {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://loss-1.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
+                    if(!disqus_loaded) {
+                        (function () {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://loss-1.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                        disqus_loaded = true;
+                    }else{
+                        DISQUS.reset({
+                            reload: true,
+                            config: function () {
+                                this.page.identifier = window.spec;
+                                this.page.url = 'http://lockonestopshop.com/LOSS';
+                            }
+                        });
+                    }
 
 
                 }else{
@@ -190,9 +202,11 @@
                         }
                     });
                 }
+                gaTrack(window.location.hash, 'LOSS '+window.spec);
                 setAnchorTransition();
                 resetWowDB();
             }, 500);
+
             setupExpandAndCollapse();
         }, 1700);
     }
@@ -251,4 +265,22 @@
             return false;
         });
     }
+
+    function gaTracker(id){
+        var script = document.createElement('script');
+        script.src = '//www.google-analytics.com/ga.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', id, 'auto');
+        ga('send', 'pageview');
+    }
+
+    // Function to track a virtual page view
+    function gaTrack(path, title) {
+        ga('set', { page: path, title: title });
+        ga('send', 'pageview');
+    }
+
+    // Initiate the tracker after app has loaded
+    gaTracker('UA-93914647-1');
 })();
