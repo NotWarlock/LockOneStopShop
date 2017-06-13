@@ -80,8 +80,18 @@
     window.spec = urlLocation[1] || "";
     var itemName = urlLocation[2] || "";
 
+    //check if has qsp
+    if(window.spec.indexOf("?") != -1) {
+        window.spec = window.spec.split('?')[0];
+    }
+
+    // maintainance
+    var maintainance = true;
+
     // Loading Guides from url path
-    if (itemName === 'Sims') {
+    if(maintainance && getCookie('beta') === undefined) {
+        $('.container').html('<center><h1>Coming soon</h1></center>');
+    } else if (itemName === 'Sims') {
         $("a:contains('" + window.spec + "')")[0].click();
         guideWrapper.innerHTML = '';
         setTimeout(function () {
@@ -289,4 +299,10 @@
 
     // Initiate the tracker after app has loaded
     gaTracker('UA-93914647-1');
+
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
 })();
