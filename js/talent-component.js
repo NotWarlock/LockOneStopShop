@@ -68,7 +68,7 @@ TalentProto.createdCallback = function () {
     data.Affliction[60] = [
         {
             name: 'Phantom Singularity',
-            url: 'http://www.wowdb.com/spells/196103-absolute-corruption',
+            url: 'http://www.wowdb.com/spells/205179-phantom-singularity',
             img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/inv_enchant_voidsphere.jpg'
         },
         {
@@ -280,7 +280,7 @@ TalentProto.createdCallback = function () {
             img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_backdraftgreen.jpg'
         },
         {
-            name: 'Eradicationn',
+            name: 'Eradication',
             url: 'http://www.wowdb.com/spells/196412-eradication',
             img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_eradication.jpg'
         },
