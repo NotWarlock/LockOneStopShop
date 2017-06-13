@@ -188,9 +188,9 @@
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
 
-                // If content is NOT home page load discus
+                // If content is NOT home page load disqus
                 if(window.location.hash.split("#!/")[1] != "Home"){
-                    //Load Discus plugin
+                    //Load Disqus plugin
                     guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
                     if(!disqus_loaded) {
                         (function () {
@@ -200,14 +200,13 @@
                             (d.head || d.body).appendChild(s);
                         })();
                         disqus_loaded = true;
-                    }else{
+                    } else if (typeof DISQUS !== "undefined") {
                         DISQUS.reset({
                             reload: true,
                             config: function () {
                                 this.page.identifier = window.spec;
                                 this.page.url = 'http://lockonestopshop.com/'+window.location.hash;
                                 this.page.title = window.document.title;
-                                console.log(this.page)
                             }
                         });
                     }
