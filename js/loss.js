@@ -21,6 +21,9 @@
         logoMenuCtrl = document.querySelector('.logo a'),
         bodyCtrl = document.querySelector('body');
 
+    // maintainance
+    var maintainance = false;
+
     // Click events
     openMenuCtrl.addEventListener('click', openMenu);
     closeMenuCtrl.addEventListener('click', closeMenu);
@@ -85,8 +88,7 @@
         window.spec = window.spec.split('?')[0];
     }
 
-    // maintainance
-    var maintainance = true;
+
 
     // Loading Guides from url path
     if(maintainance && getCookie('beta') === undefined) {
