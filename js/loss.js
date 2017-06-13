@@ -35,7 +35,7 @@
         if(guideLinks === null) return;
         for (var i = 0; i < guideLinks.length; i++) {
             guideLinks[i].addEventListener("click", function (e) {
-                var urlLocation = e.target.href.split('#/')[1].split("/");
+                var urlLocation = e.target.href.split('#!/')[1].split("/");
                 window.spec = urlLocation[0] || "";
                 var itemName = urlLocation[1] || "";
                 $("a:contains('" + window.spec + "')")[0].click();
@@ -134,17 +134,17 @@
         if (itemName === "Home") {
             request.open('GET', 'guides/Home.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/Home.html?_=' + new Date().getTime());
-            window.location.hash = "/" + encodeURIComponent(itemName);
+            window.location.hash = "!/" + encodeURIComponent(itemName);
             window.document.title = "Lock One Stop Shop | "+itemName;
         } else if ($("nav a:nth-child(3)")[0] !== undefined && $("nav a:nth-child(3)")[0].text === "Sims") {
             request.open('GET', 'guides/' + window.spec + '/Sims/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/Sims/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
-            window.location.hash = "/" + window.spec + "/Sims/" + encodeURIComponent(itemName);
+            window.location.hash = "!/" + window.spec + "/Sims/" + encodeURIComponent(itemName);
             window.document.title = "Lock One Stop Shop | " + itemName + " Sims for " + window.spec;
         } else {
             request.open('GET', 'guides/' + window.spec + '/' + itemName + '.html?_=' + new Date().getTime(), true);
             console.log('itemName:', 'guides/' + window.spec + '/' + encodeURIComponent(itemName) + '.html?_=' + new Date().getTime());
-            window.location.hash = "/" + window.spec + "/" + encodeURIComponent(itemName);
+            window.location.hash = "!/" + window.spec + "/" + encodeURIComponent(itemName);
             window.document.title = "Lock One Stop Shop | " + itemName + " for " + window.spec;
         }
 
@@ -187,7 +187,7 @@
                 classie.remove(gridWrapper, 'hidden');
 
                 // If content is NOT home page load discus
-                if(window.location.hash.split("#/")[1] != "Home"){
+                if(window.location.hash.split("#!/")[1] != "Home"){
                     //Load Discus plugin
                     guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
                     if(!disqus_loaded) {
