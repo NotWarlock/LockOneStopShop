@@ -71,7 +71,7 @@
         <div class="grid--content blue_post">
             <h2 class="blizz_icon">Blue Post</h2>
             <p>Blizzard Released World of Warcraft 7.2.5 Patch Notes.</p>
-            <a href="http://www.wowhead.com/news=265638/world-of-warcraft-7-2-5-patch-notes" class="btn">Read more</a>
+            <a href="http://www.wowhead.com/news=265638/world-of-warcraft-7-2-5-patch-notes" class="btn">Read More</a>
         </div>
     </div>
     <div class="grid-item">
@@ -115,6 +115,13 @@
     <div class="grid-item grid-item--width2 video">
         <div class="grid--content">
             <iframe width="395" height="200" src="https://www.youtube.com/embed/rxt3Btn6wVo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="grid--content git_post">
+            <h2 class="git_icon">Find Bugs?</h2>
+            <p>Feel free to report them</p>
+            <a href="https://github.com/NotWarlock/LockOneStopShop/issues/new" class="btn">Squish Bugs</a>
         </div>
     </div>
 
@@ -224,10 +231,21 @@
         color:  black;
     }
 
+    .git_post {
+        color: #da5700;
+    }
+    .git_post .btn {
+        background:  #da5700;
+    }
+    .git_post .btn:hover {
+        color:  black;
+    }
+
     .discord_icon {
         background: url(https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png) 0% 50% no-repeat;
         border-color: #7289da;
-        padding: 10px 0 10px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 18px;
         padding-left: 38px;
         -webkit-background-size: 40px 40px;
@@ -240,6 +258,15 @@
         padding: 10px 30px 5px;
         font-size: 18px;
         padding-left: 38px;
+    }
+    .git_icon {
+        background: url(img/github_icon.png) 0% 50% no-repeat;
+        border-color: #fff;
+        font-size: 18px;
+        padding-left: 48px;
+        background-size: 40px 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .demo_guide {
