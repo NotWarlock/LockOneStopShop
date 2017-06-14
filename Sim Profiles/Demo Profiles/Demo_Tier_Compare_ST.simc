@@ -1,11 +1,11 @@
-warlock="Troll"
-talents=1202023
-spec=demonology
+warlock="4P_T19"
 level=110
-race=troll
+race=orc
 role=spell
 position=back
+talents=1202023
 artifact=37:0:0:0:0:1170:1:1171:4:1172:4:1173:4:1174:4:1175:4:1176:4:1177:4:1178:4:1179:4:1180:1:1181:1:1182:1:1183:1:1184:1:1185:1:1354:1:1391:1:1605:4:1606:1:1607:1:1608:1:1712:1
+spec=demonology
 
 # This default action priority list is automatically created based on your character.
 # It is a attempt to provide you with a action list that is both simple and practicable,
@@ -70,57 +70,164 @@ actions+=/demonic_empowerment,if=artifact.thalkiels_ascendance.rank&talent.power
 actions+=/shadow_bolt
 actions+=/life_tap
 
-head=,id=146991,ilevel=915
-neck=string_of_extracted_incisors,id=147013,ilevel=915,enchant_id=5437
-shoulder=,id=147186,ilevel=915
-back=diabolic_shroud,id=147181,ilevel=915,enchant_id=5436
-chest=diabolic_robe,id=147185,ilevel=915
-wrists=ravenous_devotees_bracelets,id=147000,ilevel=915
-hands=diabolic_gloves,id=147182,ilevel=915
-waist=striferiddled_cinch,id=146999,ilevel=915
-legs=diabolic_leggings,id=147184,ilevel=915
-feet=slippers_of_enduring_vigilance,id=146987,ilevel=915
-finger1=scaled_band_of_servitude,id=147020,ilevel=915,enchant_id=5428
-finger2=seal_of_the_second_duumvirate,id=147195,ilevel=925,enchant_id=5428
-trinket1=charm_of_the_rising_tide,id=147002,ilevel=915
-trinket2=tome_of_unraveling_sanity,id=147019,ilevel=925
-main_hand=spine_of_thalkiel,id=137246,ilevel=939,gem_id=0/0/0/0,relic_id=0/0
-off_hand=skull_of_the_manari,id=128943,bonus_id=748,ilevel=939,gem_id=147087/147091/147110
+head=,id=138314,ilevel=905
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=146997,ilevel=915
+back=,id=138373,enchant_id=5436,ilevel=905
+chest=,id=146995,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=138311,ilevel=905
+waist=,id=146999,ilevel=915
+legs=,id=138317,ilevel=905
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+trinket1=,id=147016,ilevel=915
+trinket2=,id=147002,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=939
+off_hand=,id=128943,bonus_id=748,gem_id=147087/147091/147110,ilevel=939
 
 # Gear Summary
-# gear_ilvl=926.13
-# gear_stamina=42224
-# gear_intellect=26602
-# gear_spell_power=17871
-# gear_crit_rating=4565
-# gear_haste_rating=11298
-# gear_mastery_rating=7731
-# gear_versatility_rating=2943
-# gear_armor=2163
-# set_bonus=tier20_2pc=1
-# set_bonus=tier20_4pc=1
+# gear_ilvl=886.38
+# gear_stamina=28082
+# gear_intellect=18056
+# gear_spell_power=14427
+# gear_crit_rating=7013
+# gear_haste_rating=13577
+# gear_mastery_rating=2487
+# gear_armor=1840
+set_bonus=tier19_2pc=1
+set_bonus=tier19_4pc=1
 default_pet=felguard
 
-copy="Orc"
-race=orc
+copy="0P"
 
-copy="Undead"
-race=undead
+head=,id=146991,ilevel=915
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=147186,ilevel=915
+back=,id=146984,enchant_id=5436,ilevel=915
+chest=,id=147185,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=147182,ilevel=915
+waist=,id=146999,ilevel=915
+legs=,id=147184,ilevel=915
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=939
+off_hand=,id=128943,bonus_id=748,gem_id=147087/147091/147110,ilevel=939
 
-copy="Goblin"
-race=goblin
+# Gear Summary
+# gear_ilvl=886.38
+# gear_stamina=28082
+# gear_intellect=18056
+# gear_spell_power=14427
+# gear_crit_rating=7013
+# gear_haste_rating=13577
+# gear_mastery_rating=2487
+# gear_armor=1840
+set_bonus=tier19_2pc=0
+set_bonus=tier19_4pc=0
+set_bonus=tier20_2pc=0
+set_bonus=tier20_4pc=0
+default_pet=felguard
 
-copy="Blood Elf"
-race=bloodelf
+copy="4P_T19 & 2P_T20"
 
-copy="Dwarf"
-race=dwarf
+head=,id=138314,ilevel=905
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=147186,ilevel=915
+back=,id=138373,enchant_id=5436,ilevel=905
+chest=,id=147185,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=138311,ilevel=905
+waist=,id=146999,ilevel=915
+legs=,id=138317,ilevel=905
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+trinket1=,id=147016,ilevel=915
+trinket2=,id=147002,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=939
+off_hand=,id=128943,bonus_id=748,gem_id=147087/147091/147110,ilevel=939
 
-copy="Human"
-race=Human
+# Gear Summary
+# gear_ilvl=886.38
+# gear_stamina=28082
+# gear_intellect=18056
+# gear_spell_power=14427
+# gear_crit_rating=7013
+# gear_haste_rating=13577
+# gear_mastery_rating=2487
+# gear_armor=1840
+set_bonus=tier19_2pc=1
+set_bonus=tier19_4pc=1
+set_bonus=tier20_2pc=1
+set_bonus=tier20_4pc=0
+default_pet=felguard
 
-copy="Gnome"
-race=gnome
+copy="4P_T20"
 
-copy="Worgen"
-race=worgen
+head=,id=146991,ilevel=915
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=147186,ilevel=915
+back=,id=146984,enchant_id=5436,ilevel=915
+chest=,id=147185,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=147182,ilevel=915
+waist=,id=146999,ilevel=915
+legs=,id=147184,ilevel=915
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+trinket1=,id=147016,ilevel=915
+trinket2=,id=147002,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=939
+off_hand=,id=128943,bonus_id=748,gem_id=147087/147091/147110,ilevel=939
+
+# Gear Summary
+# gear_ilvl=886.38
+# gear_stamina=28082
+# gear_intellect=18056
+# gear_spell_power=14427
+# gear_crit_rating=7013
+# gear_haste_rating=13577
+# gear_mastery_rating=2487
+# gear_armor=1840
+set_bonus=tier20_2pc=1
+set_bonus=tier20_4pc=1
+default_pet=felguard
+
+copy="4P_T20 & 2P_T19"
+
+head=,id=138314,ilevel=905
+neck=,id=147013,enchant_id=5437,ilevel=915
+shoulder=,id=147186,ilevel=915
+back=,id=138373,enchant_id=5436,ilevel=905
+chest=,id=147185,ilevel=915
+wrist=,id=147000,ilevel=915
+hands=,id=147182,ilevel=915
+waist=,id=146999,ilevel=915
+legs=,id=147184,ilevel=915
+feet=,id=146987,ilevel=915
+finger1=,id=147020,enchant_id=5428,ilevel=915
+finger2=,id=147195,enchant_id=5428,ilevel=915
+trinket1=,id=147016,ilevel=915
+trinket2=,id=147002,ilevel=915
+main_hand=,id=137246,relic_id=0/0,gem_id=0/0/0/0,ilevel=939
+off_hand=,id=128943,bonus_id=748,gem_id=147087/147091/147110,ilevel=939
+
+# Gear Summary
+# gear_ilvl=886.38
+# gear_stamina=28082
+# gear_intellect=18056
+# gear_spell_power=14427
+# gear_crit_rating=7013
+# gear_haste_rating=13577
+# gear_mastery_rating=2487
+# gear_armor=1840
+set_bonus=tier19_2pc=1
+set_bonus=tier19_4pc=0
+set_bonus=tier20_2pc=1
+set_bonus=tier20_4pc=1
+default_pet=felguard
