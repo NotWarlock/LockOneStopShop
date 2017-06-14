@@ -344,23 +344,45 @@
 	display: flex;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
+	-webkit-flex-direction: column;
+	flex-direction: column;
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
 	align-items: center;
 }
+@media screen and (min-width: 1140px) {
+	.talent-row {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+}
 
 .talent {
-	-webkit-box-flex: 6 0 0;
-	-webkit-flex: 6 0 0;
-	-ms-flex: 6 0 0;
-	flex: 6 0 0;
+	-webkit-box-flex: 0;
+	-webkit-flex:0;
+	-ms-flex: 0;
+	flex: 0;
+	width:100%;
 	background: rgba(0, 0, 0, 0.34);
 	margin: 10px;
 	padding: 10px 20px;
 	position: relative;
 	overflow: hidden;
+}
+
+@media screen and (min-width: 1140px) {
+	.talent {
+		-webkit-box-flex: 6 0 0;
+		-webkit-flex: 6 0 0;
+		-ms-flex: 6 0 0;
+		flex: 6 0 0;
+		width:inherit;
+		background: rgba(0, 0, 0, 0.34);
+		margin: 10px;
+		padding: 10px 20px;
+		position: relative;
+		overflow: hidden;
+	}
 }
 
 .talent:nth-child(3):after {
@@ -407,3 +429,4 @@
 	-moz-box-shadow: inset 0px 0px 0px 3px rgba(159, 98, 235, 0.72);
 	box-shadow: inset 0px 0px 0px 3px rgba(159, 98, 235, 0.72);
 }
+
