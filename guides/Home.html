@@ -75,10 +75,10 @@
         </div>
     </div>
     <div class="grid-item">
-        <div class="grid--content discord_post">
-            <h2 class="discord_icon">JOIN Discord!</h2>
-            <p>We won't bite! ...Just curse you.</p>
-            <a href="https://discord.gg/8AYXGFw" class="btn">Join Chat</a>
+        <div class="grid--content patreon_post">
+            <h2 class="patreon_icon">Want to help</h2>
+            <p>Patreon the best way to help this project</p>
+            <a href="https://www.patreon.com/LockOneStopShop" class="btn">Support Us</a>
         </div>
     </div>
     <div class="grid-item grid-item--width2 video">
@@ -124,13 +124,13 @@
             <a href="https://github.com/NotWarlock/LockOneStopShop/issues/new" class="btn">Squish Bugs</a>
         </div>
     </div>
-
-    <!--<div class="grid-item grid-item&#45;&#45;height2"></div>-->
-    <!--<div class="grid-item"></div>-->
-    <!--<div class="grid-item grid-item&#45;&#45;width2"></div>-->
-    <!--<div class="grid-item grid-item&#45;&#45;height2"></div>-->
-    <!--<div class="grid-item"></div>-->
-    <!--<div class="grid-item"></div>-->
+    <div class="grid-item">
+        <div class="grid--content discord_post">
+            <h2 class="discord_icon">JOIN Discord!</h2>
+            <p>We won't bite! ...Just curse you.</p>
+            <a href="https://discord.gg/8AYXGFw" class="btn">Join Chat</a>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -232,12 +232,21 @@
     }
 
     .git_post {
-        color: #da5700;
+        color: #00bada;
     }
     .git_post .btn {
-        background:  #da5700;
+        background:  #00bada;
     }
     .git_post .btn:hover {
+        color:  black;
+    }
+    .patreon_post {
+        color: #da5700;
+    }
+    .patreon_post .btn {
+        background:  #da5700;
+    }
+    .patreon_post .btn:hover {
         color:  black;
     }
 
@@ -247,7 +256,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 18px;
-        padding-left: 38px;
+        padding-left: 41px;
         -webkit-background-size: 40px 40px;
         background-size: 40px 40px;
     }
@@ -267,6 +276,19 @@
         background-size: 40px 40px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .patreon_icon {
+        background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Patreon_logo.svg/1024px-Patreon_logo.svg.png) 0% 50% no-repeat;
+        border-color: #fff;
+        font-size: 18px;
+        padding-left: 48px;
+        background-size: 40px 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .patreon_post, .git_post, .blue_post, .discord_post {
+        min-height: 250px;
     }
 
     .demo_guide {
