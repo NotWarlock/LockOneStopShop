@@ -1,5 +1,3 @@
-#Warlock Sims & Guides
-
-[![Feature Requests](http://feathub.com/NotWarlock/LockOneStopShop?format=svg)](http://feathub.com/NotWarlock/LockOneStopShop)
+# Warlock Sims & Guides
 
 http://LockOneStopShop.com
