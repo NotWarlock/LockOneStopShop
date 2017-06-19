@@ -292,7 +292,7 @@ xtag.register('x-talent', {
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_eradication.jpg'
                 },
                 {
-                    name: 'Empower Life Tap',
+                    name: 'Empowered Life Tap',
                     url: 'http://www.wowdb.com/spells/235157-empowered-life-tap',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_manafeed.jpg'
                 },
