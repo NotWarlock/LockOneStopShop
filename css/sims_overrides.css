@@ -1,13 +1,13 @@
 span#logo {
-    background: url(http://lockonestopshop.com/LOSS/img/logo-NEW.png) no-repeat 50% 50%;
+    background: url(http://lockonestopshop.com/img/logo-NEW.png) no-repeat 50% 50%;
 }
 
 body {
-    background: #31313c;
+    background: #31313c !important;
 }
 
 .section {
-    background: #191924;
+    background: #191924 !important;
 }
 
 rect.highcharts-background {
