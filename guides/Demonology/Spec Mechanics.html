@@ -23,6 +23,35 @@
 <p>
   Damage from DoTs now do dynamically update every tick. Regardless of what buffs you have when you cast the spell every tick of damage will be different according to what buffs you currently have active on yourself.
 </p>
+<h2><u>How Doom works</u></h2>
+<p>
+During creation of IpseShards, Ipse went to great lengths in describing how Doom works in full along with some examples as follows below:<br>
+
+Doom is a dot, it ticks for damage at the end of it's duration. Doom can partially tick if it's doesn't tick for it's full tickrate. If Doom is going to fall off before reaching it's full tick duration, the tick will happen at the end of Doom's duration unless Doom is refreshed. Then the current tick will take how ever much more time it needs from the refresh to fully tick.<br>
+Doom's pandemic window is based on your current haste (it's current tickrate). Shard generation is based on how much Doom ticked, vs it's tickrate. Doom snapshots haste on cast, but the hasted interval is only calculated, from the next tick.<br>
+
+<strong><i>Let's look at some examples:</i></strong><br>
+
+<strong>Short -> Long | (High Haste -> Low Haste)</strong><br>
+
+Let's assume that you cast Doom, with haste such that it's tickrate is 10 seconds. Your haste when you casted the Doom, has now snapshotted it's tickrate (10 seconds). If your haste effects now fall off, such that Doom's tickrate is now 20 seconds (Doom's pandemic is now 6 seconds).<br>
+Assume that you now refresh Doom at 4 seconds remaining, bringing it's duration up to 24 seconds. Doom will then tick 4 seconds after the refresh at 20 seconds, for a full tick. The next Doom tick then starts, snapshotting the lest refresh's haste as it's tickrate.<br>
+
+<strong>Long -> Short | (Long Haste -> High Haste)</strong><br>
+
+Let's say that you opened with Hand of Gul'dan (before your haste procs and Bloodlust). Applying a Doom with a tickrate of 20 seconds (snapshotting your haste). Now you gain some haste, through the effects of Bloodlust and whispers, and Doom's tickrate is brought down to 10 seconds. While under the haste effects, you refresh Doom at 5 seconds. Bringing the duration down to 13 seconds (10 + 10*0.3), because it's current pandemic is 3 seconds.<br>
+You've now brought the duration of a Doom, with the tickrate of 20 seconds, down to 13 seconds. You will get a tick at the end of Dooms duration, that will deal 65% damage (13/20) and have a 65% change to generate a shard.<br>
+
+<strong>Extended ticklength</strong><br>
+
+Let's assume a situation in which you refresh a short Doom, with a long duration above it's pandemic threshold. For simplicity we'll keep the ticks at 10 and 20 respectively.<br> 
+You cast Doom to start the fight. Then refresh it with Hand of Gul'dan when it has 9 seconds remaining (1 seconds after you applied it).<br>
+This brings the duration up to 26 seconds (20 + 0.3*20). <br>
+Doom will tick at 17 seconds remaining (9 seconds after the refresh), snapshotting the next hasted interval with the last refreshed tickrate (20 seconds).
+Following the logic provided, Doom should partially tick at the end of it's duration for 85% damage, and an 85% chance to generate a shard.<br>
+Now assume that you refresh Doom before it expires at 3 seconds remaining, pushing Doom's duration to 23 seconds (20 + 3).<br>
+Doom now has enough time to make a full tick, so the nexttick will get pushed back from the time at which it would have expired to 6 seconds after the refresh (17 seconds remaning).<br>
+</p>
   <h2><u>Implosion</u></h2>
 <p>
   The timing of Implosion is as follows; Cast Hand of Gul'dan then next global is immediately 1 Implosion to ensure you blow up your oldest set of Wild Imps while not imploding your new set. Think of it as a combo move between Hand of Gul'dan and Implosion.
