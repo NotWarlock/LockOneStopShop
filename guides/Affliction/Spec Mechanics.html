@@ -2,14 +2,14 @@
   <div class="center">
       <img class="heading" src="http://i.imgur.com/Au1iAUk.png">
   </div>
-  <p><strong><u><a href="http://www.wowdb.com/spells/172-corruption" target="_blank">Corruption</a>:</u></strong> No longer generates shards, it's now entirely a damage dot.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/980-agony" target="_blank">Agony</a>:</u></strong> New shard generator. Still has the ramp up damage. Shard generation has changed as well. Shard generation is no longer based on a flat % chance to proc on tick, nor is it the ramping % chance to proc on tick that was present in alpha. Instead every agony tick adds 0-32 invisible “soulbits”, and when you hit 100 soulbits you gain a shard. You can still get bad shard RNG, but overall it is far more consistent than live. The amount gained per tick is reduced by the total number of agonies you have out, but it is still a large dps gain to have a lot of agony’s out. The end result of this, is that your shard generation is not a linear result of how many agonies you have out, but has a logarithmic return on shard gen vs how many agonies you have out.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/27285-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our aoe spell. Can be used baseline to spread corruption to multiple targets, and talented to deal 3x more damage.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target spender.  Costs 1 shard for our hardest hitting spell in the game.  A few notes on UA:</p>
+  <p><strong><u><a href="http://www.wowdb.com/spells/980-agony" target="_blank">Agony</a>:</u></strong> Our primary source of soul shards. Everytime the DoT ticks it gains a stack, and the damage increases for every stack it has. Shard generation is no longer based on a flat % chance to proc on tick, nor is it the ramping % chance to proc on tick that was present in alpha. Instead, every agony tick adds 0-32 invisible “soulbits." When you hit 100 soulbits, you gain a shard. The amount of shardbits gained per tick is reduced by the number of agonies you have ticking currently. This means that at some point it stops being worth it to apply agony to targets, usually around 5 agonies.</p>
+  <p><strong><u><a href="http://www.wowdb.com/spells/27285-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our AoE Soul Shard Spender. Can be used baseline to spread corruption to multiple targets, and talented to deal 3x more damage.</p>
+  <p><strong><u><a href="http://www.wowdb.com/spells/30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target Soul Shard spender.  Costs 1 shard for an extremely high damage DoT.  A few notes on UA:</p>
   <ul>
-      <li>UA Does not gain bonus ticks from haste.</li>
-      <li>UA only has 4 ticks total.</li>
-      <li>Dot lasts 8 seconds, reduced by haste.</li>
+      <li>Does not gain bonus ticks from haste.</li>
+      <li>Always has 4 total ticks.</li>
+      <li>Has an 8 second duration, reduced by haste.</li>
+      <li>Because the total number of ticks is static, haste effectively just reduces the time it takes your UA to deal full damage. It's designed this way because haste also increases shard generation, and if it also added more UA ticks it would scale your spender twice.</li>
       <li>Each cast of UA creates a separate dot on the boss, up to 5 seperate instances, using the following spell IDs:
       <ul>
         <li>233490</li>
@@ -18,6 +18,7 @@
         <li>233498</li>
         <li>233499</li>
       </ul> You can use those to track it with weak auras, or other similar addons.</li>
+      <li>Despite being able to apply 6 UAs before the first one applied expires, it's not possible to waste UA damage by applying more than 5 in a row, as the DoT pandemics.</li>
       <li>If a target dies before UA expires it refunds a shard. Note: Only 1 shard is refunded per target, multiple UAs on one target will only refund 1 shard.</li>
   </ul>
 
