@@ -75,8 +75,8 @@
     var gridWrapper = document.querySelector('.content');
     var guideWrapper = document.querySelector('.guides');
     var loaderWrapper = document.querySelector('.loader');
-    var disqus_config = window.disqus_config = null;
-    var disqus_loaded = false;
+    // var disqus_config = window.disqus_config = null;
+    // var disqus_loaded = false;
 
     // if url filled get pageData
     var urlLocation = window.location.hash.substring(1).split("/");
@@ -153,10 +153,10 @@
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 guide = request.responseText;
-                window.disqus_config = function () {
-                    this.page.url = 'http://lockonestopshop.com/'+window.location.hash;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = window.spec; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
+                // window.disqus_config = function () {
+                //     this.page.url = 'http://lockonestopshop.com/'+window.location.hash;  // Replace PAGE_URL with your page's canonical URL variable
+                //     this.page.identifier = window.spec; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                // };
                 loadContent();
             } else {
                 guide = 'Loading Error try again';
@@ -190,28 +190,29 @@
 
                 // If content is NOT home page load disqus
                 if(window.location.hash.split("#!/")[1] != "Home"){
-                    //Load Disqus plugin
-                    guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
-                    if(!disqus_loaded) {
-                        (function () {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://loss-1.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                        disqus_loaded = true;
-                    } else if (typeof DISQUS !== "undefined") {
-                        DISQUS.reset({
-                            reload: true,
-                            config: function () {
-                                this.page.identifier = window.spec;
-                                this.page.url = 'http://lockonestopshop.com/'+window.location.hash;
-                                this.page.title = window.document.title;
-                            }
-                        });
-                    }
-
-
+                //     //Load Disqus plugin
+                //     guideWrapper.innerHTML += '<br><br><h2>Discussion</h2><hr/><div id="disqus_thread"></div>';
+                    guideWrapper.innerHTML += '<br><br>';
+                //     if(!disqus_loaded) {
+                //         (function () {
+                //             var d = document, s = d.createElement('script');
+                //             s.src = 'https://loss-1.disqus.com/embed.js';
+                //             s.setAttribute('data-timestamp', +new Date());
+                //             (d.head || d.body).appendChild(s);
+                //         })();
+                //         disqus_loaded = true;
+                //     } else if (typeof DISQUS !== "undefined") {
+                //         DISQUS.reset({
+                //             reload: true,
+                //             config: function () {
+                //                 this.page.identifier = window.spec;
+                //                 this.page.url = 'http://lockonestopshop.com/'+window.location.hash;
+                //                 this.page.title = window.document.title;
+                //             }
+                //         });
+                //     }
+                //
+                //
                 }else{
                     // Create isotope grid
                     $('.grid').isotope({
