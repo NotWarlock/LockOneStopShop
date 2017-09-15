@@ -2,28 +2,24 @@
   <div class="center">
       <img class="heading" src="http://i.imgur.com/Au1iAUk.png">
   </div>
-  <p><strong><u><a href="http://www.wowdb.com/spells/980-agony" target="_blank">Agony</a>:</u></strong> Our primary source of soul shards. Everytime the DoT ticks it gains a stack, and the damage increases for every stack it has. Shard generation is no longer based on a flat % chance to proc on tick, nor is it the ramping % chance to proc on tick that was present in alpha. Instead, every agony tick adds 0-32 invisible “soulbits." When you hit 100 soulbits, you gain a shard. The amount of shardbits gained per tick is reduced by the number of agonies you have ticking currently. This means that at some point it stops being worth it to apply agony to targets, usually around 5 agonies.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/27285-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our AoE Soul Shard Spender. Can be used baseline to spread corruption to multiple targets, and talented to deal 3x more damage.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target Soul Shard spender.  Costs 1 shard for an extremely high damage DoT.  A few notes on UA:</p>
+  
+  <p><u><strong>Pandemic</strong></u>:</p>
   <ul>
-      <li>Does not gain bonus ticks from haste.</li>
-      <li>Always has 4 total ticks.</li>
-      <li>Has an 8 second duration, reduced by haste.</li>
-      <li>Because the total number of ticks is static, haste effectively just reduces the time it takes your UA to deal full damage. It's designed this way because haste also increases shard generation, and if it also added more UA ticks it would scale your spender twice.</li>
-      <li>Each cast of UA creates a separate dot on the boss, up to 5 seperate instances, using the following spell IDs:
-      <ul>
-        <li>233490</li>
-        <li>233496</li>
-        <li>233497</li>
-        <li>233498</li>
-        <li>233499</li>
-      </ul> You can use those to track it with weak auras, or other similar addons.</li>
-      <li>Despite being able to apply 6 UAs before the first one applied expires, it's not possible to waste UA damage by applying more than 5 in a row, as the DoT pandemics.</li>
-      <li>If a target dies before UA expires it refunds a shard. Note: Only 1 shard is refunded per target, multiple UAs on one target will only refund 1 shard.</li>
+    <li>You'll see this term a lot when researching Warlock. The basic concept is that you want to refresh a DoT when it has 30% of it's base duration remaining or less: <=5.4 seconds for Agony, <=4.5 seconds for Siphon Life, <=4.2 seconds for Corruption.</li>
+    <li>Refreshing before a DoT hits 30% isn't the end of the world: the dps loss is tiny, and is actually dps gain if you're moving.</li>
+    <li>Complicated Explanation (skip this if you don't care about math): Every DoT and HoT in wow can have it's duration extended to up to 30% over base duration (130% total). When you apply a DoT/HoT, you effectively add 100% of it's duration to the debuff. If you refresh a DoT/HoT at <30% of it's base duration, you end up at or below 130%. If you refresh before the DoT/HoT hits 30%, you end up with more than 130%. Anything over 130% gets wasted.</li>
+    <li>Example: Agony has a base duration of 18 seconds. The max duration it can have is 23.4 seconds (130% base). If you refresh at <=5.4 seconds (30% base) you will never exceed the 23.4 second cap. If you refresh at >5.4 seconds, you exceed 23.4 seconds and anything over that gets wasted. Say you refresh at 10 seconds remaining, 10+18=28. You've wasted 28.5-23.4=5.1 seconds.</li>
+  </ul>
+  <p><strong><u><a href="http://www.wowdb.com/spells/980-agony" target="_blank">Agony</a>:</u></strong> Our primary source of soul shards. Everytime the DoT deals damage it gains a stack, and the damage increases for every stack it has. Each tick also has a chance to generate a Soul Shard.</p>
+  <p><strong><u><a href="http://www.wowdb.com/spells/27285-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our AoE Soul Shard Spender. Can be used baseline to apply corruption to multiple targets, and talented to deal 3x more damage.</p>
+  <p><strong><u><a href="http://www.wowdb.com/spells/30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target Soul Shard spender.  Costs 1 shard for an extremely high damage DoT.  A few notes on Unstable Affliction:</p>
+  <ul>
+      <li>Unlike other DoTs, it does not gain bonus damage from haste. It always deals damage 4 times.</li>
+      <li>Has an 8 second duration, reduced by haste. Haste effectively just makes Unstable Affliction deal it's full damage more quickly.</li>
+      <li>If a target dies with an Unstable Affliction on it, you gain 1 Soul Shard. Note: Only 1 shard is refunded per target, multiple Unstable Afflictions on one target will only refund 1 shard.</li>
   </ul>
 
-  <p><strong><u><a href="http://www.wowdb.com/spells/198590-drain-soul" target="_blank">Drain Soul</a>:</u></strong> Base “Filler” spell. Heals for a lot, and deals ok-ish damage, and generates a soul shard if the target dies under its effect.</p>
-  <p><u><strong>Pandemic</strong></u>: You'll see this term a lot when researching Warlock. Basically, it's a mechanic that allows you to refresh DoTs and 'add' the full duration as long as the DoT has &lt;30% time remaining. This means you won't waste any DoT time as long as you refresh your DoTs under 30%</p>
-
+  <p><strong><u><a href="http://www.wowdb.com/spells/198590-drain-soul" target="_blank">Drain Soul</a>:</u></strong> Base Filler (used when you have nothing else to do) spell. Heals for a lot, damage sucks. Generates a soul shard if the target dies under its effect.</p>
+  
   <p><strong><span style="font-size:20px">Pets</span></strong><br>
-  Our pet selection is pretty much <a href="http://www.wowdb.com/spells/691-summon-felhunter" target="_blank">Summon Felhunter</a>. He gets bonus damage based on our dots, and gives us an interrupt. If you're running Grimoire of Supremacy, you're going to run Doomguard in single target, giving you an interrupt and solid single target damage, or Infernal in 3+ targets, giving you solid bonus AOE, and an AOE stun on a 1 minute cooldown with Command Demon.</p>
+  Our pet selection is pretty much <a href="http://www.wowdb.com/spells/691-summon-felhunter" target="_blank">Summon Felhunter</a>. He gets bonus damage based on our dots, and gives us an interrupt. If you're running Grimoire of Supremacy, you're going to run Doomguard in single target, giving you an interrupt and solid single target damage, or Infernal in 3+ targets, giving you solid bonus AoE, and an AoE stun on a 1 minute cooldown with Command Demon.</p>
