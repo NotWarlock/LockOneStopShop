@@ -41,7 +41,7 @@
                 $("a:contains('" + window.spec + "')")[0].click();
                 clearActiveMenu();
                 $("a:contains('" + itemName + "')").addClass("menu__link--current");
-                // console.log('itemName Sergio', itemName);
+                console.log('itemName Sergio', itemName);
                 getPageData("", itemName);
             }, false);
         }
@@ -238,10 +238,46 @@
                 }
                 gaTrack(window.location.hash, 'LOSS ' + window.spec);
                 setAnchorTransition();
+                resetWowDB();
             }, 500);
 
             setupExpandAndCollapse();
         }, 1700);
+    }
+
+     function resetWowDB() {
+         var __tip = new CurseTip({
+             Url: "http://www.wowdb.com",
+             Namespace: "wowdb-tooltip",
+             Paths: ["achievements", "currencies", "items", "npcs", "pet-abilities", "quests", "spells", "wod-talents", "world-events", "garrison/abilities", "garrison/buildings", "garrison/followers", "garrison/missions", "garrison/ships", "orderhall/talents",],
+             Arguments: ["gems", "itemLevel", "enchantment", "reforge", "extragem", "upgradeNum", "setPieces", "bonusIDs"],
+             LoadingText: '<div class="wowdb-tooltip"><div class="db-tooltip"><div class="db-description" style="width: auto">Loading..</div></div></div>',
+         });
+ 
+         function WP_Stretch(a) {
+             var b = 600;
+             a.find(".db-description").each(function () {
+                 var e = jQuery(this);
+                 var c = e.width();
+                 var d = false;
+                 e.find(".tooltip-table tr, .db-title, h2, h3, .db-achievement-criteria > li").each(function () {
+                     var f = parseInt(jQuery(this).attr("data-height"), 10) || 25;
+                     while (jQuery(this).height() > f && c < b) {
+                         d = true;
+                         c += 10;
+                         e.width(c)
+                     }
+                 });
+                 if (d) {
+                     e.width(c + 20)
+                 }
+             })
+         }
+ 
+         if (typeof Azeroth !== "undefined") {
+             Azeroth.CurseTip = __tip
+         }
+         ;
     }
 
     function setupExpandAndCollapse() {
