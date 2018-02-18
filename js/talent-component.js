@@ -301,17 +301,17 @@ xtag.register('x-talent', {
             data.BFADemonology[45] = [
                 {
                     name: 'Demon Skin',
-                    url: 'http://www.beta.wowdb.com/spells/219272-demon-skin',
+                    url: 'http://www.wowdb.com/spells/219272-demon-skin',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_felarmour.jpg'
                 },
                 {
                     name: 'Burning Rush',
-                    url: 'http://www.beta.wowdb.com/spells/111400-burning-rush',
+                    url: 'http://www.wowdb.com/spells/111400-burning-rush',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_deathwing_sealarmorbreachtga.jpg'
                 },
                 {
                     name: 'Dark Pact',
-                    url: 'http://www.beta.wowdb.com/spells/108416-dark-pact',
+                    url: 'http://www.wowdb.com/spells/108416-dark-pact',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_sacrificial_pact.jpg'
                 },
             ];
