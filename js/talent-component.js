@@ -18,7 +18,9 @@ xtag.register('x-talent', {
                 Affliction: [],
                 Demonology: [],
                 Destruction: [],
-                BFADemonology: []
+                BFADemonology: [],
+                BFAAffliction: [],
+                BFADestruction: []
             };
 
             // Affliction Specs
@@ -139,6 +141,127 @@ xtag.register('x-talent', {
                     name: 'Soul Conduit',
                     url: 'http://www.wowdb.com/spells/215941-soul-conduit',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+            ];
+
+                        // BFA Affliction
+            data.BFAAffliction[15] = [
+                {
+                    name: 'Shadow Embrace',
+                    url: 'http://beta.wowdb.com/spells/32388-shadow-embrace',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_shadowembrace.381c7f8b9bbb7ed8aa1f4d7b34645bac46748f9b.jpg'
+                },
+                {
+                    name: 'Haunt',
+                    url: 'http://beta.wowdb.com/spells/48181-haunt',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_haunt.60e8cab6e64f16b4dee5cdbede14b9ae5e26c183.jpg'
+                },
+                {
+                    name: 'Deathbolt',
+                    url: 'http://beta.wowdb.com/spells/264106-deathbolt',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_twilightflamebolt.e4c7587e194ac25679ea68f403fc75fa143f44fb.jpg'
+                },
+            ];
+            data.BFAAffliction[30] = [
+                {
+                    name: 'Writhe in Agony',
+                    url: 'http://beta.wowdb.com/spells/196102-writhe-in-agony',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_curseofsargeras.f5b31a070776934f900822127efe56db4e65141b.jpg'
+                },
+                {
+                    name: 'Absolute Corruption',
+                    url: 'http://beta.wowdb.com/spells/196103-absolute-corruption',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_bossmannoroth_empoweredmannorothsgaze.06e1b5095df19e817c90b4b167917d244bce0731.jpg'
+                },
+                {
+                    name: 'Death\'s Embrace',
+                    url: 'http://beta.wowdb.com/spells/234876-deaths-embrace',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_deathsembrace.24a394a25b867372a81858ce33cf427a066e5f81.jpg'
+                },
+            ];
+            data.BFAAffliction[45] = [
+                {
+                    name: 'Demon Skin',
+                    url: 'http://www.beta.wowdb.com/spells/219272-demon-skin',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_felarmour.jpg'
+                },
+                {
+                    name: 'Burning Rush',
+                    url: 'http://www.beta.wowdb.com/spells/111400-burning-rush',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_deathwing_sealarmorbreachtga.jpg'
+                },
+                {
+                    name: 'Dark Pact',
+                    url: 'http://www.beta.wowdb.com/spells/108416-dark-pact',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_sacrificial_pact.jpg'
+                },
+            ];
+            data.BFAAffliction[60] = [
+                {
+                    name: 'Sow the Seeds',
+                    url: 'http://beta.wowdb.com/spells/196226-sow-the-seeds',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_seedofdestruction.40526df7f72274a376554474a1e62bd39399d062.jpg'
+                },
+                {
+                    name: 'Phantom Singularity',
+                    url: 'http://beta.wowdb.com/spells/205179-phantom-singularity',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_enchant_voidsphere.61af3a262db10b3929f443b1381a155e2c329435.jpg'
+                },
+                {
+                    name: 'Soul Harvest',
+                    url: 'http://beta.wowdb.com/spells/196098-soul-harvest',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_demonsoul.2e91da3af180fc6675c6878a911cab6b9b5da24e.jpg'
+                },
+            ];
+            data.BFAAffliction[75] = [
+                {
+                    name: 'Darkfury',
+                    url: 'http://beta.wowdb.com/spells/264874-darkfury',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_shadowfurytga.jpg'
+                },
+                {
+                    name: 'Mortal Coil',
+                    url: 'http://www.beta.wowdb.com/spells/108396-mortal-coil',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_mortalcoil.jpg'
+                },
+                {
+                    name: 'Demonic Circle',
+                    url: 'http://www.beta.wowdb.com/spells/48018-demonic-circle',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_demoniccirclesummon.jpg'
+                },
+            ];
+            data.BFAAffliction[90] = [
+                {
+                    name: 'Nightfall',
+                    url: 'http://beta.wowdb.com/spells/108558-nightfall',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_twilight.55cd9357408b38902d2cb83198e4c34521ece10f.jpg'
+                },
+                {
+                    name: 'NYI',
+                    url: 'http://beta.wowdb.com/spells/212812',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_misc_questionmark.5619c707a0cc45fa0c8f1b3b510d504ac6388aba.jpg'
+                },
+                {
+                    name: 'Grimoire of Sacrifice',
+                    url: 'http://beta.wowdb.com/spells/108503-grimoire-of-sacrifice',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/warlock_grimoireofsacrifice.d36a1443aee2da141a379a10e4e3312158495174.jpg'
+                },
+            ];
+            data.BFAAffliction[100] = [
+                {
+                    name: 'Soul Conduit',
+                    url: 'http://beta.wowdb.com/spells/215941-soul-conduit',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+                {
+                    name: 'Creeping Death',
+                    url: 'http://beta.wowdb.com/spells/264000-creeping-death',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_creature_cursed_03.7c98f35544ab159e3ffd0e6e0991b0cf91702436.jpg'
+                },
+                {
+                    name: 'Siphon Life',
+                    url: 'http://beta.wowdb.com/spells/63106-siphon-life',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_requiem.d508a94cdabfdf542a7e6f7ad888d50550f65398.jpg'
                 },
             ];
 
@@ -301,17 +424,17 @@ xtag.register('x-talent', {
             data.BFADemonology[45] = [
                 {
                     name: 'Demon Skin',
-                    url: 'http://www.wowdb.com/spells/219272-demon-skin',
+                    url: 'http://www.beta.wowdb.com/spells/219272-demon-skin',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_felarmour.jpg'
                 },
                 {
                     name: 'Burning Rush',
-                    url: 'http://www.wowdb.com/spells/111400-burning-rush',
+                    url: 'http://www.beta.wowdb.com/spells/111400-burning-rush',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_deathwing_sealarmorbreachtga.jpg'
                 },
                 {
                     name: 'Dark Pact',
-                    url: 'http://www.wowdb.com/spells/108416-dark-pact',
+                    url: 'http://www.beta.wowdb.com/spells/108416-dark-pact',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_sacrificial_pact.jpg'
                 },
             ];
@@ -502,6 +625,128 @@ xtag.register('x-talent', {
                     name: 'Soul Conduit',
                     url: 'http://www.wowdb.com/spells/215941-soul-conduit',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+            ];
+
+
+            // BFADestro
+            data.BFADestruction[15] = [
+                {
+                    name: 'Eradication',
+                    url: 'http://beta.wowdb.com/spells/196412-eradication',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
+                },
+                {
+                    name: 'Flashover',
+                    url: 'http://beta.wowdb.com/spells/267115-flashover',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_backdraft.32342ceaa5f8b67cc47c51d02a543f82febb507a.jpg'
+                },
+                {
+                    name: 'Soul Fire',
+                    url: 'http://beta.wowdb.com/spells/6353-soul-fire',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_fireball02.f1f1341295ba5387c8b8f81d3dd07fbf0a7b0934.jpg'
+                },
+            ];
+            data.BFADestruction[30] = [
+                {
+                    name: 'Reverse Entropy',
+                    url: 'http://beta.wowdb.com/spells/205148-reverse-entropy',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_backdraftgreen.jpg'
+                },
+                {
+                    name: 'Internal Combustion',
+                    url: 'http://beta.wowdb.com/spells/266134-internal-combustion',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_mage_livingbomb.b18a0dea8715737b85b6151642e6051784113021.jpg'
+                },
+                {
+                    name: 'Shadowburn',
+                    url: 'http://beta.wowdb.com/spells/17877-shadowburn',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_scourgebuild.2cc6b5919f794d08da7e1e2c88dab477371af8bd.jpg'
+                },
+            ];
+            data.BFADestruction[45] = [
+                {
+                    name: 'Demon Skin',
+                    url: 'http://www.beta.wowdb.com/spells/219272-demon-skin',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_felarmour.jpg'
+                },
+                {
+                    name: 'Burning Rush',
+                    url: 'http://www.beta.wowdb.com/spells/111400-burning-rush',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_deathwing_sealarmorbreachtga.jpg'
+                },
+                {
+                    name: 'Dark Pact',
+                    url: 'http://www.beta.wowdb.com/spells/108416-dark-pact',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_sacrificial_pact.jpg'
+                },
+            ];
+            data.BFADestruction[60] = [
+                {
+                    name: 'Fire and Brimstone',
+                    url: 'http://www.beta.wowdb.com/spells/196408-fire-and-brimstone',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_fireandbrimstone.jpg'
+                },
+                {
+                    name: 'Cataclysm',
+                    url: 'http://www.beta.wowdb.com/spells/152108-cataclysm',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/achievement_zone_cataclysm.jpg'
+                },
+                {
+                    name: 'Hellfire',
+                    url: 'http://beta.wowdb.com/spells/1949-hellfire',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_incinerate.7694b63a6682ff479887e1371451e233e603838e.jpg'
+                },
+            ];
+            data.BFADestruction[75] = [
+                {
+                    name: 'Darkfury',
+                    url: 'http://beta.wowdb.com/spells/264874-darkfury',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_shadowfurytga.jpg'
+                },
+                {
+                    name: 'Mortal Coil',
+                    url: 'http://www.beta.wowdb.com/spells/108396-mortal-coil',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_mortalcoil.jpg'
+                },
+                {
+                    name: 'Demonic Circle',
+                    url: 'http://www.beta.wowdb.com/spells/48018-demonic-circle',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_demoniccirclesummon.jpg'
+                },
+            ];
+            data.BFADestruction[90] = [
+                {
+                    name: 'Roaring Blaze',
+                    url: 'http://beta.wowdb.com/spells/205184-roaring-blaze',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_inferno.63558dacaeed5b4be7b889beb6670b67ab665e98.jpg'
+                },
+                {
+                    name: 'Grimoire of Supremacy',
+                    url: 'http://www.beta.wowdb.com/spells/152107-grimoire-of-supremacy',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_grimoireofcommand.jpg'
+                },
+                {
+                    name: 'Grimoire of Sacrifice',
+                    url: 'http://www.beta.wowdb.com/spells/108503-grimoire-of-sacrifice',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_grimoireofsacrifice.jpg'
+                },
+            ];
+            data.BFADestruction[100] = [
+                {
+                    name: 'Soul Conduit',
+                    url: 'http://www.beta.wowdb.com/spells/215941-soul-conduit',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+                {
+                    name: 'Channel Demonfire',
+                    url: 'http://www.beta.wowdb.com/spells/196447-channel-demonfire',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_fire_ragnaros_lavaboltgreen.jpg'
+                },
+                {
+                    name: 'Dark Soul',
+                    url: 'http://beta.wowdb.com/spells/113858-dark-soul',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.e27c49660a6eb6d557d1755d728f7bd6613189be.jpg'
                 },
             ];
 
