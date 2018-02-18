@@ -17,7 +17,8 @@ xtag.register('x-talent', {
             var data = {
                 Affliction: [],
                 Demonology: [],
-                Destruction: []
+                Destruction: [],
+                BFADemonology: [],
             };
 
             // Affliction Specs
@@ -259,6 +260,127 @@ xtag.register('x-talent', {
                     name: 'Soul Conduit',
                     url: 'http://www.wowdb.com/spells/215941-soul-conduit',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+            ];
+
+            // BFA Demonlogy
+            data.BFADemonology[15] = [
+                {
+                    name: 'Demonic Strength',
+                    url: 'http://beta.wowdb.com/spells/264057-demonic-strength',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_shadowbolt.d579173e08a44fe67765cf9a9c0489b7c8a7edc4.jpg'
+                },
+                {
+                    name: 'Demonic Calling',
+                    url: 'http://beta.wowdb.com/spells/205145-demonic-calling',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_impoweredimp.jpg'
+                },
+                {
+                    name: 'Doom',
+                    url: 'http://beta.wowdb.com/spells/265412-doom',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_auraofdarkness.801acd7236672952f66846356dcff587f734865f.jpg'
+                },
+            ];
+            data.BFADemonology[30] = [
+                {
+                    name: 'Riders',
+                    url: 'http://beta.wowdb.com/spells/264078-riders',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_handofguldan.d70d8379664054d1dcd15d4491564407207fa6ac.jpg'
+                },
+                {
+                    name: 'Power Siphon',
+                    url: 'http://beta.wowdb.com/spells/264130-power-siphon',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_backdraft.32342ceaa5f8b67cc47c51d02a543f82febb507a.jpg'
+                },
+                {
+                    name: 'Summon Vilefiend',
+                    url: 'http://beta.wowdb.com/spells/264119-summon-vilefiend',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_argusfelstalkermount.90996e938f73c9c98badca3ec92b8cf275602c62.jpg'
+                },
+            ];
+            data.BFADemonology[45] = [
+                {
+                    name: 'Demon Skin',
+                    url: 'http://www.beta.wowdb.com/spells/219272-demon-skin',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_felarmour.jpg'
+                },
+                {
+                    name: 'Burning Rush',
+                    url: 'http://www.beta.wowdb.com/spells/111400-burning-rush',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_deathwing_sealarmorbreachtga.jpg'
+                },
+                {
+                    name: 'Dark Pact',
+                    url: 'http://www.beta.wowdb.com/spells/108416-dark-pact',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/warlock_sacrificial_pact.jpg'
+                },
+            ];
+            data.BFADemonology[60] = [
+                {
+                    name: 'Overloaded',
+                    url: 'http://beta.wowdb.com/spells/267170-overloaded',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_handofguldan.jpg'
+                },
+                {
+                    name: 'Demonic Strength',
+                    url: 'http://beta.wowdb.com/spells/267171-demonic-strength',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_demonicempowerment.f74cd065dabf21dff8cd55178c94445120becb22.jpg'
+                },
+                {
+                    name: 'Bilescourge Bombers',
+                    url: 'http://beta.wowdb.com/spells/267211-biliescourge-bombers',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_hunter_pet_bat.4b98ab4e9d0bae001bd82761cbaaf7c1ccb4ffbb.jpg'
+                },
+            ];
+            data.BFADemonology[75] = [
+                {
+                    name: 'Darkfury',
+                    url: 'http://beta.wowdb.com/spells/264874-darkfury',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_shadowfurytga.jpg'
+                },
+                {
+                    name: 'Mortal Coil',
+                    url: 'http://www.beta.wowdb.com/spells/108396-mortal-coil',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_mortalcoil.jpg'
+                },
+                {
+                    name: 'Demonic Circle',
+                    url: 'http://www.beta.wowdb.com/spells/48018-demonic-circle',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_demoniccirclesummon.jpg'
+                },
+            ];
+            data.BFADemonology[90] = [
+                {
+                    name: 'Grimoire of Synergy',
+                    url: 'http://beta.wowdb.com/spells/171975-grimoire-of-synergy',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/warlock_grimoireofsacrifice.d36a1443aee2da141a379a10e4e3312158495174.jpg'
+                },
+                {
+                    name: 'Demonic Consumption',
+                    url: 'http://beta.wowdb.com/spells/267215-demonic-consumption',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.e27c49660a6eb6d557d1755d728f7bd6613189be.jpg'
+                },
+                {
+                    name: 'Grimoire of Service',
+                    url: 'http://beta.wowdb.com/spells/108501-grimoire-of-service',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/warlock_grimoireofservice.acd8ca5e554dc43d76aa5571f97f31ddd272ef86.jpg'
+                },
+            ];
+            data.BFADemonology[100] = [
+                {
+                    name: 'Inner Demons',
+                    url: 'http://beta.wowdb.com/spells/267216-inner-demons',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
+                },
+                {
+                    name: 'Soul Conduit',
+                    url: 'http://beta.wowdb.com/spells/215941-soul-conduit',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                },
+                {
+                    name: 'Nether Portal',
+                    url: 'http://beta.wowdb.com/spells/267217-nether-portal',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_demonicportal_green.79241940d3be099c0d7a3cdaf29589108a4ac614.jpg'
                 },
             ];
 
