@@ -1,5 +1,6 @@
 /**
  * Created by Sergio Masellis on 6/9/2017.
+ * BfA Talents added by Zach Sedlacek on 2/17/2018.
  */
 
 xtag.register('x-talent', {
