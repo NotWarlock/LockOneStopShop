@@ -18,7 +18,7 @@ xtag.register('x-talent', {
                 Affliction: [],
                 Demonology: [],
                 Destruction: [],
-                BFADemonology: [],
+                BFADemonology: []
             };
 
             // Affliction Specs
