@@ -633,14 +633,14 @@ xtag.register('x-talent', {
             // BFADestro
             data.BFADestruction[15] = [
                 {
-                    name: 'Eradication',
-                    url: 'http://beta.wowdb.com/spells/196412-eradication',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
-                },
-                {
                     name: 'Flashover',
                     url: 'http://beta.wowdb.com/spells/267115-flashover',
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_backdraft.32342ceaa5f8b67cc47c51d02a543f82febb507a.jpg'
+                },
+                {
+                    name: 'Eradication',
+                    url: 'http://beta.wowdb.com/spells/196412-eradication',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
                 },
                 {
                     name: 'Soul Fire',
@@ -684,6 +684,11 @@ xtag.register('x-talent', {
             ];
             data.BFADestruction[60] = [
                 {
+                    name: 'Inferno',
+                    url: 'https://beta.wowdb.com/spells/270545-inferno',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_rainoffire.4fddda9e25a991c00d14750510d47e32f56c122f.jpg'
+                },
+                {
                     name: 'Fire and Brimstone',
                     url: 'http://www.beta.wowdb.com/spells/196408-fire-and-brimstone',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_fireandbrimstone.jpg'
@@ -692,11 +697,6 @@ xtag.register('x-talent', {
                     name: 'Cataclysm',
                     url: 'http://www.beta.wowdb.com/spells/152108-cataclysm',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/achievement_zone_cataclysm.jpg'
-                },
-                {
-                    name: 'Hellfire',
-                    url: 'http://beta.wowdb.com/spells/1949-hellfire',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_incinerate.7694b63a6682ff479887e1371451e233e603838e.jpg'
                 },
             ];
             data.BFADestruction[75] = [
