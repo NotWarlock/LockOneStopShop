@@ -390,26 +390,26 @@ xtag.register('x-talent', {
             // BFA Demonlogy
             data.BFADemonology[15] = [
                 {
-                    name: 'Demonic Calling',
-                    url: 'http://beta.wowdb.com/spells/205145-demonic-calling',
-                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_impoweredimp.jpg'
+                    name: 'Riders',
+                    url: 'http://beta.wowdb.com/spells/264078-riders',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_handofguldan.d70d8379664054d1dcd15d4491564407207fa6ac.jpg'
                 },
                 {
-                    name: 'Fel Strike',
-                    url: 'http://beta.wowdb.com/spells/264057-fel-strike',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_polearm_2h_fellord_04.c82c7c28657b09f45b82a453a8f4a936b9438bb4.jpg'
+                    name: 'Demonic Strength',
+                    url: 'http://beta.wowdb.com/spells/267171-demonic-strength',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_demonicempowerment.f74cd065dabf21dff8cd55178c94445120becb22.jpg'
                 },
                 {
-                    name: 'Doom',
-                    url: 'http://beta.wowdb.com/spells/265412-doom',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_auraofdarkness.801acd7236672952f66846356dcff587f734865f.jpg'
+                    name: 'Bilescourge Bombers',
+                    url: 'http://beta.wowdb.com/spells/267211-bilescourge-bombers',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_hunter_pet_bat.4b98ab4e9d0bae001bd82761cbaaf7c1ccb4ffbb.jpg'
                 },
             ];
             data.BFADemonology[30] = [
                 {
-                    name: 'Riders',
-                    url: 'http://beta.wowdb.com/spells/264078-riders',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_handofguldan.d70d8379664054d1dcd15d4491564407207fa6ac.jpg'
+                    name: 'Demonic Calling',
+                    url: 'http://beta.wowdb.com/spells/205145-demonic-calling',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/ability_warlock_impoweredimp.jpg'
                 },
                 {
                     name: 'Power Siphon',
@@ -417,9 +417,9 @@ xtag.register('x-talent', {
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_backdraft.32342ceaa5f8b67cc47c51d02a543f82febb507a.jpg'
                 },
                 {
-                    name: 'Summon Vilefiend',
-                    url: 'http://beta.wowdb.com/spells/264119-summon-vilefiend',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_argusfelstalkermount.90996e938f73c9c98badca3ec92b8cf275602c62.jpg'
+                    name: 'Doom',
+                    url: 'http://beta.wowdb.com/spells/265412-doom',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_auraofdarkness.801acd7236672952f66846356dcff587f734865f.jpg'
                 },
             ];
             data.BFADemonology[45] = [
@@ -441,19 +441,19 @@ xtag.register('x-talent', {
             ];
             data.BFADemonology[60] = [
                 {
-                    name: 'Raging Imps',
-                    url: 'http://beta.wowdb.com/spells/267170-raging-imps',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_soulburn.540c4a710782f1ab1013750a03cf40762a80a27a.jpg'
+                    name: 'From the Shadows',
+                    url: 'https://beta.wowdb.com/spells/267170-from-the-shadows',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_calldreadstalkers.3f17013a9fd7009fad1feed22cd63d6b13ff0d2a.jpg'
                 },
                 {
-                    name: 'Demonic Strength',
-                    url: 'http://beta.wowdb.com/spells/267171-demonic-strength',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_demonicempowerment.f74cd065dabf21dff8cd55178c94445120becb22.jpg'
+                    name: 'Soul Strike',
+                    url: 'https://beta.wowdb.com/spells/264057-soul-strike',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/inv_polearm_2h_fellord_04.c82c7c28657b09f45b82a453a8f4a936b9438bb4.jpg'
                 },
                 {
-                    name: 'Bilescourge Bombers',
-                    url: 'http://beta.wowdb.com/spells/267211-bilescourge-bombers',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_hunter_pet_bat.4b98ab4e9d0bae001bd82761cbaaf7c1ccb4ffbb.jpg'
+                    name: 'Summon Vilefiend',
+                    url: 'http://beta.wowdb.com/spells/264119-summon-vilefiend',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_argusfelstalkermount.90996e938f73c9c98badca3ec92b8cf275602c62.jpg'
                 },
             ];
             data.BFADemonology[75] = [
@@ -475,14 +475,14 @@ xtag.register('x-talent', {
             ];
             data.BFADemonology[90] = [
                 {
-                    name: 'Sacrificed Souls',
-                    url: 'http://beta.wowdb.com/spells/267214-sacrificed-souls',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_creature_disease_05.3dfe2c4aca2c65eb7bf5d588a6670940142dc956.jpg'
+                    name: 'Inner Demons',
+                    url: 'http://beta.wowdb.com/spells/267216-inner-demons',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
                 },
                 {
-                    name: 'Demonic Consumption',
-                    url: 'http://beta.wowdb.com/spells/267215-demonic-consumption',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.e27c49660a6eb6d557d1755d728f7bd6613189be.jpg'
+                    name: 'Soul Conduit',
+                    url: 'http://beta.wowdb.com/spells/215941-soul-conduit',
+                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
                 },
                 {
                     name: 'Grimoire of Service',
@@ -492,14 +492,14 @@ xtag.register('x-talent', {
             ];
             data.BFADemonology[100] = [
                 {
-                    name: 'Inner Demons',
-                    url: 'http://beta.wowdb.com/spells/267216-inner-demons',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
+                    name: 'Sacrificed Souls',
+                    url: 'http://beta.wowdb.com/spells/267214-sacrificed-souls',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_creature_disease_05.3dfe2c4aca2c65eb7bf5d588a6670940142dc956.jpg'
                 },
                 {
-                    name: 'Soul Conduit',
-                    url: 'http://beta.wowdb.com/spells/215941-soul-conduit',
-                    img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
+                    name: 'Demonic Consumption',
+                    url: 'http://beta.wowdb.com/spells/267215-demonic-consumption',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.e27c49660a6eb6d557d1755d728f7bd6613189be.jpg'
                 },
                 {
                     name: 'Nether Portal',
