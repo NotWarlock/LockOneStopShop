@@ -148,19 +148,19 @@ xtag.register('x-talent', {
                         // BFA Affliction
             data.BFAAffliction[15] = [
                 {
-                    name: 'Shadow Embrace',
-                    url: 'http://beta.wowdb.com/spells/32388-shadow-embrace',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_shadowembrace.381c7f8b9bbb7ed8aa1f4d7b34645bac46748f9b.jpg'
+                    name: 'Nightfall',
+                    url: 'http://beta.wowdb.com/spells/108558-nightfall',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_twilight.55cd9357408b38902d2cb83198e4c34521ece10f.jpg'
+                },
+                {
+                    name: 'Drain Soul',
+                    url: 'https://beta.wowdb.com/spells/198590-drain-soul',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_haunting.jpg'
                 },
                 {
                     name: 'Haunt',
                     url: 'http://beta.wowdb.com/spells/48181-haunt',
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_haunt.60e8cab6e64f16b4dee5cdbede14b9ae5e26c183.jpg'
-                },
-                {
-                    name: 'Deathbolt',
-                    url: 'http://beta.wowdb.com/spells/264106-deathbolt',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_twilightflamebolt.e4c7587e194ac25679ea68f403fc75fa143f44fb.jpg'
                 },
             ];
             data.BFAAffliction[30] = [
@@ -175,9 +175,9 @@ xtag.register('x-talent', {
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_bossmannoroth_empoweredmannorothsgaze.06e1b5095df19e817c90b4b167917d244bce0731.jpg'
                 },
                 {
-                    name: 'Death\'s Embrace',
-                    url: 'http://beta.wowdb.com/spells/234876-deaths-embrace',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_deathsembrace.24a394a25b867372a81858ce33cf427a066e5f81.jpg'
+                    name: 'Siphon Life',
+                    url: 'http://beta.wowdb.com/spells/63106-siphon-life',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_requiem.d508a94cdabfdf542a7e6f7ad888d50550f65398.jpg'
                 },
             ];
             data.BFAAffliction[45] = [
@@ -209,9 +209,9 @@ xtag.register('x-talent', {
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_enchant_voidsphere.61af3a262db10b3929f443b1381a155e2c329435.jpg'
                 },
                 {
-                    name: 'Soul Harvest',
-                    url: 'http://beta.wowdb.com/spells/196098-soul-harvest',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_demonsoul.2e91da3af180fc6675c6878a911cab6b9b5da24e.jpg'
+                    name: 'Vile Taint',
+                    url: 'https://beta.wowdb.com/spells/278350-vile-taint',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/sha_spell_shadow_shadesofdarkness_nightborne.jpg'
                 },
             ];
             data.BFAAffliction[75] = [
@@ -233,14 +233,14 @@ xtag.register('x-talent', {
             ];
             data.BFAAffliction[90] = [
                 {
-                    name: 'Nightfall',
-                    url: 'http://beta.wowdb.com/spells/108558-nightfall',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_twilight.55cd9357408b38902d2cb83198e4c34521ece10f.jpg'
+                    name: 'Shadow Embrace',
+                    url: 'http://beta.wowdb.com/spells/32388-shadow-embrace',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_shadowembrace.381c7f8b9bbb7ed8aa1f4d7b34645bac46748f9b.jpg'
                 },
                 {
-                    name: 'Coming Soon',
-                    url: 'http://beta.wowdb.com/spells/268044-coming-soon',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/inv_misc_questionmark.5619c707a0cc45fa0c8f1b3b510d504ac6388aba.jpg'
+                    name: 'Deathbolt',
+                    url: 'http://beta.wowdb.com/spells/264106-deathbolt',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_twilightflamebolt.e4c7587e194ac25679ea68f403fc75fa143f44fb.jpg'
                 },
                 {
                     name: 'Grimoire of Sacrifice',
@@ -260,9 +260,9 @@ xtag.register('x-talent', {
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_creature_cursed_03.7c98f35544ab159e3ffd0e6e0991b0cf91702436.jpg'
                 },
                 {
-                    name: 'Siphon Life',
-                    url: 'http://beta.wowdb.com/spells/63106-siphon-life',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_requiem.d508a94cdabfdf542a7e6f7ad888d50550f65398.jpg'
+                    name: 'Dark Soul: Misery',
+                    url: 'https://beta.wowdb.com/spells/113860-dark-soul-misery',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.jpg'
                 },
             ];
 
@@ -390,9 +390,9 @@ xtag.register('x-talent', {
             // BFA Demonlogy
             data.BFADemonology[15] = [
                 {
-                    name: 'Riders',
-                    url: 'http://beta.wowdb.com/spells/264078-riders',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_handofguldan.d70d8379664054d1dcd15d4491564407207fa6ac.jpg'
+                    name: 'Dreadlash',
+                    url: 'https://beta.wowdb.com/spells/264078-dreadlash',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_summonvoidwalker.jpg'
                 },
                 {
                     name: 'Demonic Strength',
@@ -475,19 +475,19 @@ xtag.register('x-talent', {
             ];
             data.BFADemonology[90] = [
                 {
-                    name: 'Inner Demons',
-                    url: 'http://beta.wowdb.com/spells/267216-inner-demons',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
-                },
-                {
                     name: 'Soul Conduit',
                     url: 'http://beta.wowdb.com/spells/215941-soul-conduit',
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_shadow_soulleech_2.jpg'
                 },
                 {
-                    name: 'Grimoire of Service',
-                    url: 'http://beta.wowdb.com/spells/108501-grimoire-of-service',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/warlock_grimoireofservice.acd8ca5e554dc43d76aa5571f97f31ddd272ef86.jpg'
+                    name: 'Inner Demons',
+                    url: 'http://beta.wowdb.com/spells/267216-inner-demons',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_eradication.3af47ada116062f96515af05ba718c30b034f8a3.jpg'
+                },
+                {
+                    name: 'Grimoire: Felguard',
+                    url: 'https://beta.wowdb.com/spells/111898-grimoire-felguard',
+                    img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_summonfelguard.jpg'
                 },
             ];
             data.BFADemonology[100] = [
@@ -745,7 +745,7 @@ xtag.register('x-talent', {
                     img: 'https://blzmedia-a.akamaihd.net/wow/icons/56/spell_fire_ragnaros_lavaboltgreen.jpg'
                 },
                 {
-                    name: 'Dark Soul',
+                    name: 'Dark Soul: Instability',
                     url: 'http://beta.wowdb.com/spells/113858-dark-soul',
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_warlock_soulburn.e27c49660a6eb6d557d1755d728f7bd6613189be.jpg'
                 },
