@@ -158,9 +158,9 @@ xtag.register('x-talent', {
                     img: 'https://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_haunting.jpg'
                 },
                 {
-                    name: 'Haunt',
-                    url: 'http://beta.wowdb.com/spells/48181-haunt',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_haunt.60e8cab6e64f16b4dee5cdbede14b9ae5e26c183.jpg'
+                    name: 'Deathbolt',
+                    url: 'http://beta.wowdb.com/spells/264106-deathbolt',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_twilightflamebolt.e4c7587e194ac25679ea68f403fc75fa143f44fb.jpg'
                 },
             ];
             data.BFAAffliction[30] = [
@@ -238,9 +238,9 @@ xtag.register('x-talent', {
                     img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_shadow_shadowembrace.381c7f8b9bbb7ed8aa1f4d7b34645bac46748f9b.jpg'
                 },
                 {
-                    name: 'Deathbolt',
-                    url: 'http://beta.wowdb.com/spells/264106-deathbolt',
-                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/spell_fire_twilightflamebolt.e4c7587e194ac25679ea68f403fc75fa143f44fb.jpg'
+                    name: 'Haunt',
+                    url: 'http://beta.wowdb.com/spells/48181-haunt',
+                    img: 'http://media-azeroth.cursecdn.com/wow/icons/large/ability_warlock_haunt.60e8cab6e64f16b4dee5cdbede14b9ae5e26c183.jpg'
                 },
                 {
                     name: 'Grimoire of Sacrifice',
