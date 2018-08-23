@@ -1,123 +1,104 @@
 <div class="center">
-    <img class="heading" src="http://i.imgur.com/zGeOXY9.png">
+    <img src="http://i.imgur.com/7w5mtbo.png">
 </div>
-<h2><u>Demonwrath</u></h2>
+  <h2><u>Demonic Consumption</u></h2>
 <p>
-  There is a lot of confusion out there about how Demonwrath actually works but in reality it is very simple;
+  Optimal use of Demonic Consumption involves some forethought or the use of a WeakAura/Addon to track the power gain from summoning Demonic Tyrant based on how many Wild Imps are currently summoned.<br>
+  The power gained from consuming your Wild Imps is based on how much remaining energy they have:<br>
+  <div class="center">
+  <table class="grid" width=250px>
+<tr>
+<td><b>Point of energy</b></td><td width=50%><b>% damage gain</b></td>
+</tr>
+<tr>
+<td>1</td><td>0.25</td>
+</tr>
+<tr>
+<td>2</td><td>0.50</td>
+</tr>
+<tr>
+<td>3</td><td>0.75</td>
+</tr>
+<tr>
+<td>4</td><td>1.0</td>
+</tr>
+<tr>
+<td>5</td><td>1.25</td>
+</tr>
+<tr>
+<td>10</td><td>2.50</td>
+</tr>
+<tr>
+<td>20</td><td>5.00</td>
+</tr>
+<tr>
+<td>40</td><td>10.00</td>
+</tr>
+<tr>
+<td>60</td><td>15.00</td>
+</tr>
+<tr>
+<td>80</td><td>20.00</td>
+</tr>
+<tr>
+<td>100</td><td>25.00</td>
+</tr>
+</table>
+</div>
+  With this in mind you should be looking to summon optimally Demonic Tyrant with two sets of Wild Imps out that are summoned back to back, one of which will be at full energy. The cast sequence would look something like this:<br>
+    <ol>
+    <li>Build to 5  Soul Shards</li>
+    <li>Cast  Hand of Gul'dan</li>
+    <li>Build to 3  Soul Shards</li>
+    <li>Cast  Hand of Gul'dan</li>
+    <li>Cast  Summon Demonic Tyrant</li>
+    </ol>
 </p>
-<ul>
-    <li>The damage it deals is spawned in a 10 yard radius from <strong>any</strong> of your Demons.</li>
-    <li>The chance to proc a Soul Shard is 15% <i>per tick</i> - so you could have 8 Wild Imps, Felguard and 2 Dreadstalkers around two targets and the chance to proc is 30% per tick (x2 because it's hitting 2 targets)</li>
-    <li><i>The chance to proc a Soul Shard is based on how many enemies it hits <strong>NOT</strong> how many Demons you have out</i></li>
-</ul>
-<p>
-  <i>Demonwrath: 30% spell power per second per target, 0.15 shards per second per target
-    <br>Shadow Bolt is 40% spell power per second, 0.5 shards per second
-    <br><br>40 / 30 = 1.33 targets for demonwrath to be more damage
-    <br>0.5 / 0.15 = 3.33 targets for demonwrath to be more shards</i>
-</p>
-<p>
-  In 7.1 they gave Demonwrath 'bad luck streak protection' so that it's more consistent with it's Soul Shard generation (same mechanic that Agony has in Legion).
-</p>
-<h2><u>DoT damage</u></h2>
-<p>
-  Damage from DoTs now do dynamically update every tick. Regardless of what buffs you have when you cast the spell every tick of damage will be different according to what buffs you currently have active on yourself.
-</p>
-<h2><u>How Doom works</u></h2>
-<p>
-During creation of IpseShards, Ipse went to great lengths in describing how Doom works in full along with some examples as follows below:<br>
 
-Doom is a dot, it ticks for damage at the end of it's duration. Doom can partially tick if it's doesn't tick for it's full tickrate. If Doom is going to fall off before reaching it's full tick duration, the tick will happen at the end of Doom's duration unless Doom is refreshed. Then the current tick will take how ever much more time it needs from the refresh to fully tick.<br>
-Doom's pandemic window is based on your current haste (it's current tickrate). Shard generation is based on how much Doom ticked, vs it's tickrate. Doom snapshots haste on cast, but the hasted interval is only calculated, from the next tick.<br>
-
-<strong><i>Let's look at some examples:</i></strong><br>
-
-<strong>Short -> Long | (High Haste -> Low Haste)</strong><br>
-
-Let's assume that you cast Doom, with haste such that it's tickrate is 10 seconds. Your haste when you casted the Doom, has now snapshotted it's tickrate (10 seconds). If your haste effects now fall off, such that Doom's tickrate is now 20 seconds (Doom's pandemic is now 6 seconds).<br>
-Assume that you now refresh Doom at 4 seconds remaining, bringing it's duration up to 24 seconds. Doom will then tick 4 seconds after the refresh at 20 seconds, for a full tick. The next Doom tick then starts, snapshotting the lest refresh's haste as it's tickrate.<br>
-
-<strong>Long -> Short | (Long Haste -> High Haste)</strong><br>
-
-Let's say that you opened with Hand of Gul'dan (before your haste procs and Bloodlust). Applying a Doom with a tickrate of 20 seconds (snapshotting your haste). Now you gain some haste, through the effects of Bloodlust and whispers, and Doom's tickrate is brought down to 10 seconds. While under the haste effects, you refresh Doom at 5 seconds. Bringing the duration down to 13 seconds (10 + 10*0.3), because it's current pandemic is 3 seconds.<br>
-You've now brought the duration of a Doom, with the tickrate of 20 seconds, down to 13 seconds. You will get a tick at the end of Dooms duration, that will deal 65% damage (13/20) and have a 65% change to generate a shard.<br>
-
-<strong>Extended ticklength</strong><br>
-
-Let's assume a situation in which you refresh a short Doom, with a long duration above it's pandemic threshold. For simplicity we'll keep the ticks at 10 and 20 respectively.<br> 
-You cast Doom to start the fight. Then refresh it with Hand of Gul'dan when it has 9 seconds remaining (1 seconds after you applied it).<br>
-This brings the duration up to 26 seconds (20 + 0.3*20). <br>
-Doom will tick at 17 seconds remaining (9 seconds after the refresh), snapshotting the next hasted interval with the last refreshed tickrate (20 seconds).
-Following the logic provided, Doom should partially tick at the end of it's duration for 85% damage, and an 85% chance to generate a shard.<br>
-Now assume that you refresh Doom before it expires at 3 seconds remaining, pushing Doom's duration to 23 seconds (20 + 3).<br>
-Doom now has enough time to make a full tick, so the nexttick will get pushed back from the time at which it would have expired to 6 seconds after the refresh (17 seconds remaning).<br>
-</p>
   <h2><u>Implosion</u></h2>
 <p>
-  The timing of Implosion is as follows; Cast Hand of Gul'dan then next global is immediately 1 Implosion to ensure you blow up your oldest set of Wild Imps while not imploding your new set. Think of it as a combo move between Hand of Gul'dan and Implosion.
-  <br>The <strong>best</strong> usage of Implosion is to wait as long as possible before you implode your Wild Imps so that you still gain value out of their Felfire Bolts before you suicide them into whatever mob you're attacking. Ideally you would use Implosion with less than 3 seconds left on their duration <strong><i>unless</i></strong> you have another set of Wild Imps ready to come down with Hand of Gul'dan, then implode them before the new set spawns by casting Implosion directly after your Hand of Gul'dan
-</p>
-<p>
-   The best way to think of the timing in terms of a "rotation" is this:
- </p>
-<ul>
+ Implosion is, as always, a topic of debate on how to best use the ability. Contrary to Legion Implosion there is a bit more of rotation, if you will, depending on if you have a Demonic Core stack or not.<br>
+ We can explore these situations a bit more in details here:<br>
+ <br>
+ If you have <b>2</b> or more stacks of Demonic Core you...
+ <ul>
+    <li>Build to 5 Soul Shards</li>
     <li>Cast Hand of Gul'dan</li>
-    <li>Generate additional Soul Shards</li>
-    <li>Cast Hand of Gul'dan again</li>
-    <li>Immediately cast Implosion</li>
-</ul>
-<p>
+    <li>Build 4 Soul Shards using Demonbolt</li>
+    <li>Cast Hand of Gul'dan</li>
+    <li>Build to 3 Soul Shards using Demonbolt</li>
+    <li>Cast Hand of Gul'dan</li>
+    <li>Cast Shadow Bolt</li>
+    <li>Cast Shadow Bolt</li>
+    <li>Cast Implosion</li>
+  </ul>
+  If you have <b>1 or 0</b> stacks of Demonic Core you...
+  <ul>
+    <li>Build to 5 Soul Shards</li>
+    <li>Cast Hand of Gul'dan</li>
+    <li>Build to 3 Soul Shards</li>
+    <li>Cast Hand of Gul'dan</li>
+    <li>Cast Shadow Bolt or Demonbolt if you have a stack of Demonic Core</li>
+    <li>Cast Shadow Bolt</li>
+    <li>Cast Implosion</li>
+  </ul>
+</p>
+<!-- p>
   By doing this it implodes your oldest set of imps while keeping your new set alive for your next round of implosion. If you are more visual you can see how to do it in this video: <a href="https://www.youtube.com/watch?v=L2EKP6NoIz4" target="_blank">https://www.youtube.com/watch?v=L2EKP6NoIz4</a>
-</p>
-<h2><u>Hand of Doom</u></h2>
+</p -->
+
+  <h2><u>Refreshing DoTs</u></h2>
 <p>
-  There is a lot of confusion about how this spell works with Doom so I'll break it down nice and easy; Doom damage will occur once every 20s (reduced by Haste) <strong><u><i>no matter when</i></u></strong> it's refreshed, this talent simply reapplies Doom for you so you don't have to do it yourself.
-</p>
-<h2><u>Refreshing DoTs</u></h2>
-<p>
-  Just like in WoD we have the 'Pandemic' effect as baseline for any DoT or buff effects you cast.
+  Just like in past expansions we have the 'Pandemic' effect as baseline for any DoT or buff effects you cast.
 </p>
 <p>
-  You're able to refresh your DoT or buff (for us it's also most notable for Demonic Empowerment and Doom) at 30% duration remaining and not lose time on your DoT or buff. For example: Doom has a base duration of 20s, 30% of that duration is 6s. If you refresh Doom at or under 6s the remaining duration will carry over to the 'new' Doom. There are many addons that can display Pandemic range for your Doom, for Legion I will be using WeakAuras to display that information.
+  You're able to refresh your DoT or buff at 30% duration remaining and not lose time on your DoT or buff. For example: Doom has a base duration of 30s, 30% of that duration is 9s. If you refresh Doom at or under 9s the remaining duration will carry over to the 'new' Doom. There are many addons that can display Pandemic range for your Doom, for BFA I will be using WeakAuras to display that information.
 </p>
 <p>
-  In addition to all this because Doom only deals it's damage once over 20s you can still cast it during the Pandemic window and it will deal it's damage no matter when you refresh the DoT. It does damage once every 20s, period.
+  In addition to all this because Doom only deals it's damage once over 30s you can still cast it during the Pandemic window and it will deal it's damage no matter when you refresh the DoT. It does damage once every 30s, period.
 </p>
-<h2><u>Shadowflame Stacking</u></h2>
+
+  <h2><u>Choosing the right pet</u></h2>
 <p>
-  The most optimal way of using Shadowflame is to take advantage of the stacking mechanic to get the most damage out of it as possible. It follows the same logic as Shadowflame stacking (or weaving as it once was) from previous expansions except slightly modified since you can stack the new Shadowflame to 3 instead of being capped at 2.
-</p>
-<p>
-   The basic logic of Shadowflame stacking is;
-</p>
-<ul>
-    <li>Use a charge</li>
-    <li>Cast filler spells</li>
-    <li>Use another charge</li>
-    <li>Cast more filler spells</li>
-    <li>Use another charge</li>
-</ul>
-<p>
-  The more involved logic of Shadowflame stacking is;
-</p>
-<ul>
-    <li>Cast Shadowflame (1 stack)</li>
-    <li>Cast 4 filler spells (Shadow Bolt, Hand of Gul'dan, Doom, Demonic Empowerment or Summon Dreadstalkers -- any combination of spells totaling 3)</li>
-    <li>Cast Shadowflame (2 stacks)</li>
-    <li>Cast 4 filler spells (Shadow Bolt, Hand of Gul'dan, Doom, Demonic Empowerment or Summon Dreadstalkers -- any combination of spells totaling 4)</li>
-    <li>Shadowflame (3 stacks)</li>
-    <li>Wait until 2 charges again then repeat</li>
-</ul>
-<p>
-  <i>Ideally</i> you will want to use Shadowflame with the lowest time remaining on the debuff each time. Going much lower than 1s time remaining cuts it very close however.
-</p>
-<h2><u>Choosing the right pet</u></h2>
-<p>
-  There isn't much for choice anymore since they are pushing each spec towards a particular direction when it comes to using a certain pet. For Demonology you are pushed towards using Felguard as your all-purpose pet unless you are using Grimoire of Supremacy, in which case you use Doomguard for single target and Infernal for AoE.
-</p>
-<p>
-  <h3><u>Doomguard and Infernal</u></h3>
-</p>
-<p>
-  Doomguard and Infernal have changed to become our main cooldown, replacing Dark Soul. It makes Doomguard and Infernal a more 'interesting' as you can cast it more often throughout a fight instead of just one time as it has been for a long time. Doomguard still casts Doom Bolt which retained it's execute function so it is still great sub-20% (but it is much better used on CD for Thal'kiel's Consumption).
+  There isn't much for choice anymore since they are pushing each spec towards a particular direction when it comes to using a certain pet. For Demonology you are pushed towards using Felguard as your all-purpose pet.
 </p>

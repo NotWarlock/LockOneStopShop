@@ -1,33 +1,30 @@
-    <!-- initial ad script -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2077235835592164",
-    enable_page_level_ads: true
-  });
-</script>
-    <!-- end ad script -->
   <div class="center">
-    <img class="heading" src="http://i.imgur.com/Au1iAUk.png">
+    <img class="heading" src="https://i.imgur.com/e5tnNeA.png">
   </div>
   
-  <p><u><strong>Pandemic</strong></u>:</p>
+  <p><strong><u>Pandemic</u></strong>:</p>
   <ul>
     <li>You'll see this term a lot when researching Warlock. The basic concept is that you want to refresh a DoT when it has 30% of it's base duration remaining or less: <=5.4 seconds for Agony, <=4.5 seconds for Siphon Life, <=4.2 seconds for Corruption.</li>
     <li>Refreshing before a DoT hits 30% isn't the end of the world: the dps loss is tiny, and can actually be a dps gain if you're moving.</li>
     <li>Complicated Explanation (skip this if you don't care about math): Every DoT and HoT in wow can have its duration extended to up to 30% over base duration (130% total). When you apply a DoT/HoT, you effectively add 100% of its duration to the debuff. If you refresh a DoT/HoT at <30% of its base duration, you end up at or below 130%. If you refresh before the DoT/HoT hits 30%, you end up with more than 130%. Anything over 130% gets wasted.</li>
     <li>Example: Agony has a base duration of 18 seconds. The max duration it can have is 23.4 seconds (130% base). If you refresh at <=5.4 seconds (30% base) you will never exceed the 23.4 second cap. If you refresh at >5.4 seconds, you exceed 23.4 seconds and anything over that gets wasted. Say you refresh at 10 seconds remaining, 10+18=28. You've wasted 28.5-23.4=5.1 seconds.</li>
   </ul>
-  <p><strong><u><a href="http://www.wowdb.com/spells/980-agony" target="_blank">Agony</a>:</u></strong> Our primary source of soul shards. Everytime the DoT deals damage it gains a stack, and the damage increases for every stack it has. Each tick also has a chance to generate a Soul Shard.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/27285-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our AoE Soul Shard Spender. Can be used baseline to apply corruption to multiple targets, and talented to deal 3x more damage.</p>
-  <p><strong><u><a href="http://www.wowdb.com/spells/30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target Soul Shard spender.  Costs 1 shard for an extremely high damage DoT.  A few notes on Unstable Affliction:</p>
+  <p><strong><u><a href="http://www.wowhead.com/spell=980-agony" target="_blank">Agony</a>:</u></strong> Everytime the DoT deals damage it gains a stack, and the damage increases for every stack it has. It also generates Soul Shards, our primary resource. The amount of Soul Shards it generates does not scale linearly with the number of targets you have Agony on. IE if you Agony 2 targets, you do not get twice as many Soul Shards. A more complicated explanation, skip if you don't care about math:</p>
   <ul>
-    <li>Unlike other DoTs, it does not gain bonus damage from haste. It always deals damage 4 times.</li>
-    <li>Has an 8 second duration, reduced by haste. Haste effectively just makes Unstable Affliction deal its full damage more quickly.</li>
+    <li>Everytime Agony ticks, a Value gets added to a hidden Counter in-game.</li>
+    <li>When the Counter hits 1.0 or higher, you generate a Shard and the game subtracts 1.0 from the Counter.</li>
+    <li>The Value added per tick is determined by this formula: Value = random(0,0.368) / active_agonies^(2/3).</li>
+    <li>If Creeping Death is talented, the Value is also then multiplied by 0.85 to prevent the talent from increasing Shard Generation.</li>
+    <li>Quick References - A 2nd Agony increases Shard Generation by 26%, a 3rd by 14.5%, a 4th by 10%, and this continues downward.</li>
+  </ul>
+  <p><strong><u><a href="http://www.wowhead.com/spell=27243-seed-of-corruption" target="_blank">Seed of Corruption</a>:</u></strong> Our AoE Soul Shard spender. Costs 1 shard and embeds a seed in the target. When the target takes enough damage, or dies, the seed explodes, dealing AoE damage around the target.</p>
+  <p><strong><u><a href="http://www.wowhead.com/spell=30108-unstable-affliction" target="_blank">Unstable Affliction</a>:</u></strong> Our Single Target Soul Shard spender.  Costs 1 shard for an extremely high damage DoT.  A few notes on Unstable Affliction:</p>
+  <ul>
+    <li>Unlike other DoTs, it does not gain bonus damage from haste. It always deals damage 5 times.</li>
+    <li>Has an 8 second static duration. Because Haste increases the rate we get shards at, it does not scale from Haste in any other way.</li>
     <li>If a target dies with an Unstable Affliction on it, you gain 1 Soul Shard. Note: Only 1 shard is refunded per target, multiple Unstable Afflictions on one target will only refund 1 shard.</li>
   </ul>
-
-  <p><strong><u><a href="http://www.wowdb.com/spells/198590-drain-soul" target="_blank">Drain Soul</a>:</u></strong> Base Filler (used when you have nothing else to do) spell. Heals for a lot, damage is meh. Generates a soul shard if the target dies under its effect.</p>
+  <p><strong><u><a href="http://www.wowhead.com/spell=108370/soul-leech" target="_blank">Soul Leech</a>:</u></strong> All damage you deal passively generates you a shield, capped at 10% of your maximum health, based on 8% of the damage dealt.</p>
   
   <p><strong><span style="font-size:20px">Pets</span></strong><br>
-  Doomguard is your default pet of choice. It provides an interrupt and the highest dps output ST. Infernal takes over best dps on 2+ stacked targets, and gives you a purge and an aoe stun. Infernal is generally better for questing and Mythic+, but you're pretty much only using Doomguard in raids.</p>
+  <p>Pets have been largely normalized. The dps differences between them are tiny. The default pet of choice is Imp because it gives you a 5% increase to health. Felhunter and Succubus provide strong situational utility.</p>
