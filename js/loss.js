@@ -202,6 +202,10 @@
                 classie.remove(guideWrapper, 'hidden');
                 classie.remove(gridWrapper, 'hidden');
 
+                // Load Charts after content is loaded
+                bloodmallet_chart_import();
+
+
                 // If content is NOT home page load disqus
                 if (window.location.hash.split("#!/")[1] != "Home") {
                     //     //Load Disqus plugin
