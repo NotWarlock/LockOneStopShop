@@ -22,6 +22,14 @@
 
 <p><a href="http://www.wowdb.com/spells/5740-rain-of-fire">Rain of Fire</a> - Our main AoE spell, costs 3 Soul Shards and deals damage over 8 seconds at a targeted location.</p>
 
+<h3>Pandemic</h3>
+  <ul>
+    <li>You'll see this term a lot when researching Warlock. The basic concept is that you want to refresh a DoT when it has 30% of it's base duration remaining or less: <=5.4 for Immolate.</li>
+    <li>Refreshing before a DoT hits 30% isn't the end of the world: the dps loss is tiny, and can actually be a dps gain if you're moving.</li>
+    <li>Complicated Explanation (skip this if you don't care about math): Every DoT and HoT in wow can have its duration extended to up to 30% over base duration (130% total). When you apply a DoT/HoT, you effectively add 100% of its duration to the debuff. If you refresh a DoT/HoT at <30% of its base duration, you end up at or below 130%. If you refresh before the DoT/HoT hits 30%, you end up with more than 130%. Anything over 130% gets wasted.</li>
+    <li>Example: Immolate has a base duration of 18 seconds. The max duration it can have is 23.4 seconds (130% base). If you refresh at <=5.4 seconds (30% base) you will never exceed the 23.4 second cap. If you refresh at >5.4 seconds, you exceed 23.4 seconds and anything over that gets wasted. Say you refresh at 10 seconds remaining, 10+18=28. You've wasted 28.5-23.4=5.1 seconds.</li>
+  </ul>
+
 <h3>Cooldowns</h3>
 
 <p><a href="http://www.wowdb.com/spells/80240-havoc">Havoc</a> - A 10 second debuff that causes all your single target spells to also strike the affected target. Note that Havoc only deal 60% damage so you should avoid casting Havoc on the priority target. Try use this on cooldown but make sure you have stored up 2-3 Soul Shards and atleast 1 stack of Conflagrate.</p>
