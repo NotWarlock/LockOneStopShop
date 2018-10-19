@@ -1,11 +1,4 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-h1 {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  color: #333;
-}
-.accordion {
+﻿.accordion {
   width: 100%;
   max-width: 1080px;
   height: 250px;
@@ -98,11 +91,14 @@ h1 {
 .accordion.destro ul li:nth-child(1) {
   background-image: url('https://i.imgur.com/F5otWdU.png');
 }
-.accordion.destro ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/JEjsHnR.png');
-}
 .accordion.destro ul li:nth-child(3) {
-  background-image: url('https://i.imgur.com/WYzSkNV.png');
+  background-image: url('https://i.imgur.com/vW3PeRF.png');
+}
+.accordion.destro ul li:nth-child(2n) {
+  background-image: url('https://i.imgur.com/uCBCyqI.png');
+}
+.accordion ul:hover li, .accordion ul:focus-within li {
+  width: 8%;
 }
 .accordion ul li:focus {
   outline: none;
@@ -135,13 +131,15 @@ h1 {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-@media screen and (max-width: 800px) {
-  body {
-    margin: 35;
-  }
   .accordion {
     height: auto;
   }
+  
+  @media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  
   .accordion ul li, .accordion ul:hover li, .accordion ul li:hover, .accordion ul:hover li:hover {
     position: relative;
     display: table;
