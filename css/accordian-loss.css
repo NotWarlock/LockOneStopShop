@@ -1,4 +1,4 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+﻿﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 h1 {
   text-align: center;
@@ -77,32 +77,32 @@ h1 {
   top: 160px;
   font-size: 13.5px;
 }
-.accordion ul li:nth-child(1) {
-  background-image: url('https://i.imgur.com/DEeE01M.png');
+.accordion.aff ul li:nth-child(1) {
+  background-image: url('https://i.imgur.com/T7r6yED.png');
 }
-.accordion ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/SpoJQ05.png');
+.accordion.aff ul li:nth-child(2) {
+  background-image: url('https://i.imgur.com/qB2UEKZ.png');
 }
-.accordion ul li:nth-child(3) {
-  background-image: url('https://i.imgur.com/k7lB8b4.png');
+.accordion.aff ul li:nth-child(3) {
+  background-image: url('https://i.imgur.com/yT3N3gq.png');
 }
-.accordion ul li:nth-child(4) {
+.accordion.demo ul li:nth-child(1) {
   background-image: url('https://i.imgur.com/VddR2xK.png');
 }
-.accordion ul li:nth-child(5) {
+.accordion.demo ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/meqFNFU.png');
 }
-.accordion ul li:nth-child(6) {
+.accordion.demo ul li:nth-child(3) {
   background-image: url('https://i.imgur.com/285RBbs.png');
 }
-.accordion ul li:nth-child(7) {
-  background-image: url('https://i.imgur.com/kLfPKeR.png');
+.accordion.destro ul li:nth-child(1) {
+  background-image: url('https://i.imgur.com/F5otWdU.png');
 }
-.accordion ul li:nth-child(8) {
-  background-image: url('https://i.imgur.com/TrODGin.png');
+.accordion.destro ul li:nth-child(3) {
+  background-image: url('https://i.imgur.com/vW3PeRF.png');
 }
-.accordion ul li:nth-child(9) {
-  background-image: url('https://i.imgur.com/l5G9Q1e.png');
+.accordion.destro ul li:nth-child(2n) {
+  background-image: url('https://i.imgur.com/uCBCyqI.png');
 }
 .accordion ul:hover li, .accordion ul:focus-within li {
   width: 8%;
