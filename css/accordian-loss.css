@@ -91,11 +91,11 @@
 .accordion.destro ul li:nth-child(1) {
   background-image: url('https://i.imgur.com/F5otWdU.png');
 }
-.accordion.destro ul li:nth-child(3) {
-  background-image: url('https://i.imgur.com/vW3PeRF.png');
+.accordion.destro ul li:nth-child(2) {
+  background-image: url('https://i.imgur.com/JEjsHnR.png');
 }
-.accordion.destro ul li:nth-child(2n) {
-  background-image: url('https://i.imgur.com/uCBCyqI.png');
+.accordion.destro ul li:nth-child(3) {
+  background-image: url('https://i.imgur.com/WYzSkNV.png');
 }
 .accordion ul:hover li, .accordion ul:focus-within li {
   width: 8%;
