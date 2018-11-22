@@ -8,21 +8,22 @@
 <h3>Foreword</h3>
 </div>
 
-<p>Warlock is currently a diverse and powerful class, with 3 specs that fill unique roles while being enjoyable to play. The issues with the class can be mostly boiled down to 3 categories: Cooldown Balance, Bugs, and Talent Balance.
+<p>Warlock is currently a diverse and powerful class, with 3 specs that fill unique roles while being enjoyable to play. The issues with the class can be mostly boiled down to 2 main categories: Talent Balance, and Bugs.
 </p>
 
-<p>A reccuring theme across every warlock spec is that our talent balance is extremely flawed in many places. This leads to holes in each spec’s capabilities that certain talents should fill; burst talents for Demonology, single target talents for Destruction, and add management for Affliction.
+<p>A reccuring theme across every warlock spec is that our talent balance is extremely flawed in many places. This leads to holes in each spec’s capabilities that certain talents should fill; burst talents for Demonology, single target talents for Destruction, and add management talents for Affliction.
 </p>
 
 <p>This series of posts is ever-evolving based on feedback from the community. We've added a changelog so you can stay up-to-date on any and all changes made to it..
 </p>
 
 <div class = "left">
-<h3>Pet Imbalance and Bugs</h3>
+<h3>Pet Rebalancing</h3>
 </div>
 
-<p>Warlocks currently have what we believe to be the largest DPS impacting bug in the game. All of our pets currently have their energy regen scale twice off haste. This causes a massive imbalance between them, and a quadratically scaling haste value for all three specs. In the case of Demo, it also results in Felguard not being the optimal pet for single target.
+<p>Pet balance is pretty spot on after the recent PTR changes. The only issue is that Destruction lost a small amount of dps compared to live.
 </p>
+
 <!-- not fancy stuff
 <div class="center">
 <h3>Affliction</h3>
@@ -137,59 +138,61 @@
 </div>
 
 <div class="center">
-<p>Add to that the fact that we have another HUGE bug, Affliction’s spec aura doesn’t apply to pets, and you have a recipe for a tuning nightmare.
+<p>However, Affliction's spec aura still doesn't apply to pets.
 </p>
 </div>
 
 <div class="center">
-<img class="heading" src="https://i.imgur.com/G7hltT8.png">
+<img class="heading" src="https://i.imgur.com/G3Vifvu.png">
 </div><br>
 
-<p>As you can see, my imp deals 585-586 damage. I have 1464 spell power, which means my imp has 1464. The spell power coefficient of Firebolt is 40%. 1464 * 0.4 = 585.6. If the spec aura was properly applying to pets, you’d get a result of 585.6 * 1.25 = 732.
+<p>As you can see, my imp deals 732 damage. I have 1464 spell power, which means my imp has 1464 * 1.25 = 1830. The spell power coefficient of Firebolt is 40%. 1830 * 0.4 = 732. If the spec aura was properly applying to pets, you’d get a result of 732 * 1.25 = 915.
 </p>
 
-<p>This secondary bug results in large imbalances in the value of Grimoire of Sacrifice between Destruction and Affliction. Destruction’s aura applies to both, but Affliction’s only applies to Grimoire of Sacrifice.
-</p>
-
-<p>We don’t believe there’s an easy solution where you fix the energy bug and just buff each pet by an amount, inevitably you will need to nerf or buff at least one of the specs based on the changes in order to keep balance the same as live.
+<p>This results in large imbalances in the value of Grimoire of Sacrifice between Destruction and Affliction. Destruction’s aura applies to both, but Affliction’s only applies to Grimoire of Sacrifice. It also means a significantly larger percentage of Affliction's damage comes from its spells, making it scale much better than intended on cleave/aoe. We think it's extremely important this gets fixed, as a majority of the fights in the upcoming raid are spreadcleave; moving damage from Affliction's spells into its pets will cut back the massive lead it has on spreadcleave compared to most other specs in the game.
 </p>
 
 <div class = "left">
 <h3>Proposed Pet Rebalancing</h3>
 </div>
 
-<p>We’ve worked out a set of changes meant to rebalance pets, after fixing the bug, to a point where they all deal comparable DPS (aside from Voidwalker being behind ST) to Destruction’s Imp before the bug fix/changes:
-</p>
-
 <ul>
-<li>Imp’s Firebolt buffed by 42% (0.4->0.568)</li>
-<li>Felhunter’s Shadow Bite buffed by 70% (0.3->0.51)</li>
-<li>Succubus’ Lash of Pain buffed by 70% (0.3->0.51)</li>
-<li>Voidwalker’s Consuming Shadows buffed by 33% (0.075->0.1)</li>
-<li>Felguard’s Legion Strike buffed by 42% (0.68->0.966)</li>
-<li>Make Affliction’s spec aura properly apply to pets</li>
+<li>Make Affliction’s spec aura properly apply to pets (Effect 191032 Base Value 0->25)</li></li>
 <li>Nerf Sumon Darkglare’s Eye Beam by 25% (0.32->0.256) to keep its value the same as live</li>
-<li>Nerf Affliction’s spec aura to 20% (25->20)</li>
-<li>Increase Felguard’s auto attack damage by 44%</li>
-<li>Nerf Grimoire: Felguard’s damage increase to 15% (25->15)</li>
+<li>Nerf Affliction’s spec aura to 21% (25->21)</li>
+<li>Increase Destruction's spec aura to -15% (-16->-15)</li>
+<li>Given the nerfs to specific Affliction talents suggested later, leave Affliction's spec aura at 25%.</li>
+<li>Given the buffs to specific Destruction talents suggested later, reduce Destruction's spec aura to -17% (-16->-17)</li>
 </ul>
-
-<p>The last two changes are due to the fact that even with the bug rebalancing, <a href="guides/Feedback/Sims/data/demo_pets_pre_felguard.html" target="_blank"><u>Felguard still isn’t the optimal pet for Demonology single target</u></a> (because it wasn’t on live to begin with). We know it’s possible for Blizzard to buff just the auto attack damage of Felguard, as it already has a hardcoded 10% increased auto attack damage multiplier on live, making this an ideal solution to buff Felguard’s ST without buffing its AoE. <a href="guides/Feedback/Sims/data/demo_pets_post_felguard.html" target="_blank"><u>This puts Felguard</u></a> as the top dog for Demonology in any practical situation, while keeping the other pets close enough that you don’t feel incredibly punished if you need the other pets' utility.</p>
 
 <div class = "left">
 <h3>All Proposed Changes</h3>
 </div>
 
 <div class = "left">
+<h4>Pets</h4>
+</div>
+<ul>
+<li>Make Affliction’s spec aura properly apply to pets (Effect 191032 Base Value 0->25)</li></li>
+<li>Nerf Sumon Darkglare’s Eye Beam by 25% (0.32->0.256) to keep its value the same as live</li>
+<li>Nerf Affliction’s spec aura to 22% (25->22)</li>
+<li>Increase Destruction's spec aura to -15% (-16->-15)</li>
+<li>Given the changes to specific Affliction talents suggested later, leave Affliction's spec aura at 25%</li>
+<li>Given the changes to specific Destruction talents suggested later, reduce Destruction's spec aura to -18% (-16->-18)</li>
+</ul>
+
+<div class = "left">
 <h4>Affliction</h4>
 </div>
 <ul>
+<li>Deathbolt percentage of remaining damage reduced to 25% (30->25)</li>
 <li>Drain Soul damage increased by 40% (0.15->0.21)</li>
 <li>Nightfall's proc chance now scales off of Haste</li>
 <li>Nightfall's proc chance increased to 4 RPPM (3->4)</li>
-<li>Nightfall's damage bonus increased to 100% (20->100)</li>
+<li>Nightfall's damage bonus increased to 80% (20->80)</li>
 <li>Shadow Embrace's duration increased to 15 seconds (10->15)</li>
-<li>Grimoire of Sacrifice damage increased by 55% (0.35->0.542) for Affliction Warlocks</li>
+<li>Grimoire of Sacrifice damage increased by 37% (0.35->0.48)</li>
+<li>Dark Soul: Misery's effect reduced to 25% haste (30->25)</li>
 <li>Soul Conduit's proc rate increased to 20% (15->20)</li>
 <li>Creeping Death's effect increased to 20% (15->20)</li>
 <li>Consider a further nerf to Affliction's aura, as the spec is already justifying of a nerf on Live in our opinion, and these changes make it more mechanically diverse.</li>
@@ -199,56 +202,23 @@
 <h4>Demonology</h4>
 </div>
 <ul>
-<li>Demons randomly summoned through Inner Demons and Nether Portal now properly have their duration extended by Demonic Tyrant</li>
-<li>Demonic Consumption's <a href = "https://www.wowhead.com/spell=267972/demonic-consumption" target="_blank"><u>effect per stack</u></a> increased to 3% (1->3)</li>
-<li>Demonic Tyrant's damage increased by 10%</li>
-<li>Nether Portal duration reduced to 15 seconds (20->15)</li>
-<li>Nether Portal no longer costs Soul Shards</li>
-<li>The damage of Demons randomly summoned through Inner Demons and Nether Portal increased by 50%</li>
-<li>Bilescourge Bombers damage increased by 36% (0.14->0.19)</li>
+<li>Demonic Consumpion's energy consumed per 5% damage reduced to 8 (10->8)</li>
+<li>Increased the damage of Demons randomly summoned through Inner Demons and Nether Portal by 20%</li>
 <li>From the Shadows effect increased to 50% (20->50)</li>
-<li>Demonology's spec aura reduced by 5% (10->5)</li>
 </ul>
 
 <div class = "left">
 <h4>Destruction</h4>
 </div>
-<p>Infernal Rebalancing:</p>
 <ul>
-<li>Infernal duration reduced to 25 seconds (30->25)</li>
-<li>Crashing Chaos duration reduced to 25 seconds (30->25)</li>
-<li>Infernal's Immolation damage reduced by 20% (0.5->0.4)</li>
-<li>Chaos Bolt's damage increased by 10% (1.2->1.32)</li>
-<li>If Infernal Rebalancing doesn't happen, reduce effect of Grimoire of Supremacy to 7% (8->7)</li>
-</ul>
-<p>Talent Rebalancing:</p>
-<ul>
-<li>Cataclysm damage reduced by 66%, new effect "deals 200% increased damage if it hits 2 or more enemies."</li>
-<li>If the Cataclysm change isn't possible, reduce Destruction's spec aura by 2% (-16->-18)</li>
-<li>Fire and Brimstone damage percentage increased to 60% (40->60)</li>
-<li>Inferno's proc chance increased to 30% (20->30)</li>
 <li>Soul Fire damage increased by 60% (1.0->1.60)</li>
 <li>Internal Combustion now consumes 6 seconds of Immolate, OR new effect "instantly dealing 120% of damage consumed."</li>
 <li>Shadowburn damage increased by 55% (0.6->0.93)</li>
+<li>Fire and Brimstone damage percentage increased to 65% (40->65)</li>
+<li>Inferno's proc chance increased to 30% (20->30)</li>
 <li>Roaring Blaze's damage increased by 25% (0.16->0.2)</li>
-<li>Grimoire of Sacrifice damage increased by 60% (0.35->0.56) for Destruction Warlocks</li>
-<li>Channel Demonfire's damage to its primary target increased by 30% (0.16->0.208)</li>
+<li>Grimoire of Sacrifice damage increased by 37% (0.35->0.48)</li>
+<li>Channel Demonfire's damage to its primary target increased by 25% (0.16->0.2)</li>
 <li>Soul Conduit's proc rate increased to 20% (15->20)</li>
-<li>Consider a nerf to Destruction's aura, as the spec may now be too mechanically diverse compared to Live to justify it's current dps tuning.</li>
-</ul>
-
-<div class = "left">
-<h4>Pets</h4>
-</div>
-<ul>
-<li>Imp’s Firebolt buffed by 42% (0.4->0.568)</li>
-<li>Felhunter’s Shadow Bite buffed by 70% (0.3->0.51)</li>
-<li>Succubus’ Lash of Pain buffed by 70% (0.3->0.51)</li>
-<li>Voidwalker’s Consuming Shadows buffed by 33% (0.075->0.1)</li>
-<li>Felguard’s Legion Strike buffed by 42% (0.68->0.966)</li>
-<li>Make Affliction’s spec aura properly apply to pets</li>
-<li>Nerf Sumon Darkglare’s Eye Beam by 25% (0.32->0.256) to keep its value the same as live</li>
-<li>Nerf Affliction’s spec aura to 20% (25->20)</li>
-<li>Increase Felguard’s auto attack damage by 44%</li>
-<li>Nerf Grimoire: Felguard’s damage increase to 15% (25->15)</li>
+<li>Reduce Destruction's spec aura to -18% (-15->-18)</li>
 </ul>
