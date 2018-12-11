@@ -99,6 +99,36 @@
   In addition to all this because Doom only deals it's damage once over 30s you can still cast it during the Pandemic window and it will deal it's damage no matter when you refresh the DoT. It does damage once every 30s, period.
 </p>
 
+<h2><u>How Doom works</u></h2>
+<p>
+The following information about Doom is based on hours of work put in during Legion and testing Doom. With the new haste scaling effect tacked onto Doom I feel it is necessary to rehash how refreshing Doom works. This information is compiled with the help of LOSS friend, Ipse.<br>
+
+Doom is a dot, it ticks for damage at the end of it's duration. Doom can partially tick if it's doesn't tick for it's full tickrate. If Doom is going to fall off before reaching it's full tick duration, the tick will happen at the end of Doom's duration unless Doom is refreshed. Then the current tick will take how ever much more time it needs from the refresh to fully tick.<br>
+Doom's pandemic window is based on your current haste (it's current tickrate). Shard generation is based on how much Doom ticked, vs it's tickrate. Doom snapshots haste on cast, but the hasted interval is only calculated, from the next tick.<br>
+
+<strong><i>Let's look at some examples:</i></strong><br>
+
+<strong>Short -> Long | (High Haste -> Low Haste)</strong><br>
+
+Let's assume that you cast Doom, with haste such that it's tickrate is 10 seconds. Your haste when you casted the Doom, has now snapshotted it's tickrate (10 seconds). If your haste effects now fall off, such that Doom's tickrate is now 30 seconds (Doom's pandemic is now 9 seconds).<br>
+Assume that you now refresh Doom at 4 seconds remaining, bringing it's duration up to 34 seconds. Doom will then tick 4 seconds after the refresh at 30 seconds, for a full tick. The next Doom tick then starts, snapshotting the lest refresh's haste as it's tickrate.<br>
+
+<strong>Long -> Short | (Long Haste -> High Haste)</strong><br>
+
+Let's say that you opened with Doom (before your haste procs and Bloodlust). Applying a Doom with a tickrate of 30 seconds (snapshotting your haste). Now you gain some haste, through the effects of Bloodlust and/or trinkets/racials, and Doom's tickrate is brought down to 10 seconds. While under the haste effects, you refresh Doom at 5 seconds. Bringing the duration down to 13 seconds (10 + 10*0.3), because it's current pandemic is 3 seconds.<br>
+You've now brought the duration of a Doom, with the tickrate of 30 seconds, down to 13 seconds. You will get a tick at the end of Dooms duration, that will deal 43% damage (13/30) and have a 43% change to generate a shard.<br>
+
+<strong>Extended ticklength</strong><br>
+
+Let's assume a situation in which you refresh a short Doom, with a long duration above it's pandemic threshold. For simplicity we'll keep the ticks at 20 and 30 respectively.<br> 
+You cast Doom to start the fight. Then refresh it with another cast of Doom when it has 29 seconds remaining (1 seconds after you applied it).<br>
+This brings the duration up to 39 seconds (30 + 0.3*30). <br>
+Doom will tick at 27 seconds remaining (12 seconds after the refresh), snapshotting the next hasted interval with the last refreshed tickrate (30 seconds).
+Following the logic provided, Doom should partially tick at the end of it's duration for 90% damage, and an 90% chance to generate a shard.<br>
+Now assume that you refresh Doom before it expires at 3 seconds remaining, pushing Doom's duration to 33 seconds (30 + 3).<br>
+Doom now has enough time to make a full tick, so the next tick will get pushed back from the time at which it would have expired to 9 seconds after the refresh (20 seconds remaning).<br>
+</p>
+
   <h2><u>Choosing the right pet</u></h2>
 <p>
   There isn't much for choice anymore since they are pushing each spec towards a particular direction when it comes to using a certain pet. For Demonology you are pushed towards using Felguard as your all-purpose pet.
