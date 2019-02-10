@@ -145,7 +145,7 @@ xtag.register('x-talent', {
                 },
             ];
 
-                        // BFA Affliction
+            // BFA Affliction
             data.BFAAffliction[15] = [
                 {
                     name: 'Nightfall',
@@ -751,10 +751,9 @@ xtag.register('x-talent', {
                 },
             ];
 
-            console.log(this.id);
             data[selectedSpec].forEach(function (e, i) {
                 container.innerHTML += `
-                <div id="talent-id-${talentId}" class="talent-row">
+                <div data-talent-id="${talentId}" class="talent-id-${talentId} talent-row">
                     <div class="talent-level"><h2>${i}</h2></div>
                     <div class="talent talent-1"><a href="${e[0].url}"><i class="icon" style="background-image: url(${e[0].img});"></i><h2>${e[0].name}</h2></a></div>
                     <div class="talent talent-2"><a href="${e[1].url}"><i class="icon" style="background-image: url(${e[1].img});"></i><h2>${e[1].name}</h2></a></div>
@@ -762,11 +761,24 @@ xtag.register('x-talent', {
                 </div>`;
             });
 
-            // add active class
-            selectedTalents.split('').forEach(function (e, i) {
-                var selectedTalent = document.querySelectorAll('#talent-id-' + talentId + '.talent-row:nth-child(' + (i + 1) + ') .talent-' + e)[0];
-                if (selectedTalent) selectedTalent.classList.add('active');
-            });
+
+            // if selectedTalents contains | use new algo
+            if(selectedTalents.includes('|')){
+                // add active class
+                selectedTalents.split('|').forEach(function (talents, i) {
+                    talents.split('').forEach(function (e, j) {
+                        var selectedTalent = document.querySelectorAll('.talent-id-' + talentId + '.talent-row:nth-child(' + (i + 1) + ') .talent-' + e)[0];
+                        if (selectedTalent) selectedTalent.classList.add('active');
+                    });
+                });
+            } else {
+                // add active class
+                selectedTalents.split('').forEach(function (e, i) {
+                    var selectedTalent = document.querySelectorAll('.talent-id-' + talentId + '.talent-row:nth-child(' + (i + 1) + ') .talent-' + e)[0];
+                    if (selectedTalent) selectedTalent.classList.add('active');
+                });
+            }
+            
         }
     },
     methods: {
