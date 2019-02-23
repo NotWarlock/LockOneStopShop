@@ -2,9 +2,13 @@
     <img src="http://i.imgur.com/7w5mtbo.png">
 </div>
 <!-- a href="#test">dots</a -->
+  <h2><u>Wild Imps</u></h2>
+<p>Wild Imps are a core element to Demonology gameplay and have a couple mechanics that are not particularly obvious.  First and foremost, unlike in Legion where imps lasted 12s and free cast their entire duration, in BFA imps have 100 energy and spend 20 energy on each Firebolt and expire at 0 energy.  Firebolt cast is 2s baseline and scales down with haste, so higher haste means imps expire faster (e.g. at 0% haste an imp will last 10s after spawn, at 100% it will last 5s after spawn).  Wild Imps have a 10% chance to generate a Demonic Core on expiry.  Please note that while the damage of each imp is not affected by haste outside Tyrant, haste still increases the total imps you summon in a given fight via extra casts of Shadowbolt, Demonbolt, and Hand of Gul'dan so remains a strong stat.  Imps spawned from Hand of Gul'Dan have spawn delays both from the HoG animation (0.7s) and then additional 0.4s delays for each imp summoned that does not scale with haste.  For example, a 3 shard HoG will spawn imps at 1.1s, 1.5s, and 1.9s after the HoG cast completes.  These spawn delays are especially relevant to Demonic Consumption, Explosive Potential, and Implosion, explained further below.  While out of combat, imps will expire in 20s and not grant demonic cores upon expiry.</p>
+  <h2><u>Summon Demonic Tyrant</u></h2>
+<p>Demonic Tyrant is Demo's primary cooldown, it deals high single target damage on its own, extends the duration of all active demons by 15s, and causes all your active demons to deal 15% increased damage.  In order to make the most use of this ability you will want to use all of your cooldown-based demons (Dreadstalkers, Vilefiend, Grimoire: Felguard) prior to summoning Tyrant as they gain the most from the extended duration and extra damage.  Wild Imps are a special case; while active, Demonic Tyrant will cause any Wild Imps to cast for free throughout its duration and empower them for the standard 15% damage.  Imps with remaining energy will continue to cast after Tyrant expires.  For example, an imp that casts twice before Tyrant is summoned will freecast Firebolts for 15s during Tyrant then cast 3 Firebolts after Tyrant expires.  With the Baleful Invocation trait Tyrant will also generate 5 sould shards on use which drastically increases the strength of the cooldown.</p>
   <h2><u>Demonic Consumption</u></h2>
 <p>
-  Optimal use of Demonic Consumption involves some forethought or the use of a WeakAura/Addon to track the power gain from summoning Demonic Tyrant based on how many Wild Imps are currently summoned.<br>
+  Optimal use of Demonic Consumption involves some forethought or the use of a WeakAura/Addon to track the power gain from summoning Demonic Tyrant based on how many Wild Imps are currently summoned.  Keep in mind the imp spawn delay described in the Wild Imps section as at higher haste levels you will need to wait or cast an additional ability between a 3 shard HoG and Tyrant in order to consume all the imps.</p><br>
   The power gained from consuming your Wild Imps is based on how much remaining energy they have:<br>
   <div class="center">
   <table class="grid" width=250px>
@@ -28,19 +32,20 @@
 </tr>
 </table>
 </div>
-  With this in mind you should be looking to summon optimally Demonic Tyrant with two sets of Wild Imps out that are summoned back to back, one of which will be at full energy. The cast sequence would look something like this:<br>
+  With this in mind you should look to cast a minimum of 2 3-shard Hand of Gul'dan's back to back before casting Demonic Tyrant, and an additional HoG with any Demonbolt or Conduit procs.  The cast sequence would look something like this:<br>
     <ol>
     <li>Build to 5  Soul Shards</li>
     <li>Cast  Hand of Gul'dan</li>
     <li>Build to 3  Soul Shards</li>
     <li>Cast  Hand of Gul'dan</li>
+    <li>Cast Shadowbolt, Demonic Strength, wait a fraction of a second, or cast a low-shard HoG</li>
     <li>Cast  Summon Demonic Tyrant</li>
     </ol>
 </p>
 
   <h2><u>Implosion</u></h2>
 <p>
- Implosion is, as always, a topic of debate on how to best use the ability. Contrary to Legion Implosion there is a bit more of rotation, if you will, depending on if you have a Demonic Core stack or not.<br>
+ Implosion is not described very well in game so the mechanics and basic use will be outlined here.  Implosion deals damage to the primary target roughly equal to the remaining damage of each imp based on current energy, while secondary (cleave) targets will always take damage equal to a 100 imp energy implosion (e.g. if each imp Firebolt deals 100 damage, an immediate 1-imp implosion will deal 500 damage, and an implosion after 1 cast will deal 400 damage).  Implosion can crit and scales with mastery, but is not affected by From the Shadows or the Tyrant empowerment.  On single target, Implosion is only used to maintain Explosive Potential and in order to maintain the buff you will want to implode whenever the buff is close to expiring after the opener. Keep in mind the imp spawn delay described in the Wild Imps section as at higher haste levels you will need to cast additional abilities for 2 globals between a HoG and Implosion in order implode all of the imps from that HoG.  In cleave situations the Implosion rotation varies based on the amount of Demonic Cores you have stocked.</p>  <br>
  We can explore these situations a bit more in details here:<br>
  <br>
  If you have <b>2</b> or more stacks of Demonic Core you...
